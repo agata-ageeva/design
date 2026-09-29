@@ -3,202 +3,135 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ledgerly Invoicing — Agata Ageeva</title>
-  <meta name="description" content="Case study: rebuilding invoicing for 40,000 small businesses.">
+  <title>Invoicing for 40,000 small businesses — Agata Ageieva</title>
+  <meta name="description" content="Case study: rebuilding invoicing at Ledgerly around getting paid.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body style="--tint:#dfe6ff">
+<body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <nav class="container nav" aria-label="Main">
-      <a class="brand" href="../index.html">Agata Ageeva <span>· Product Designer</span></a>
-      <ul class="nav-links">
+  <header class="container topbar">
+    <a class="name" href="../index.html">Agata Ageieva</a>
+    <nav aria-label="Main">
+      <ul class="menu">
         <li><a href="../index.html#work" aria-current="page">Work</a></li>
-        <li><a href="../about.html">About</a></li>
-        <li><a href="mailto:hello@example.com">Contact</a></li>
+        <li><a href="../about.html">About me</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="main">
-    <section class="cs-hero container">
-      <p class="eyebrow">Ledgerly · B2B Fintech</p>
-      <h1 class="display">Rebuilding invoicing for 40,000 small businesses</h1>
-      <p class="lede">Small business owners didn't want a better invoice form. They wanted to get paid. Reframing the project around that changed what we built — and what we measured.</p>
-
-      <dl class="cs-facts">
-        <div><dt>Role</dt><dd>Lead Product Designer</dd></div>
-        <div><dt>Team</dt><dd>2 designers, 1 researcher, 7 engineers, PM</dd></div>
-        <div><dt>Timeline</dt><dd>9 months, 2024–2025</dd></div>
-        <div><dt>Platform</dt><dd>Web app, email, mobile web</dd></div>
-      </dl>
-
-      <!-- REPLACE: swap the SVG for a real cover image, e.g. <img src="../assets/img/ledgerly-cover.jpg" alt="..."> -->
-      <div class="cs-cover" aria-hidden="true">
-        <svg viewBox="0 0 400 240" fill="none">
-          <rect width="400" height="240" rx="12" fill="#fff"/>
-          <rect x="24" y="24" width="200" height="192" rx="8" fill="#f7f8fc" stroke="#e4e8f5"/>
-          <rect x="40" y="42" width="60" height="10" rx="5" fill="#2f5bea"/>
-          <rect x="150" y="42" width="58" height="6" rx="3" fill="#c8cee0"/>
-          <rect x="40" y="70" width="90" height="6" rx="3" fill="#c8cee0"/>
-          <rect x="40" y="82" width="70" height="6" rx="3" fill="#c8cee0"/>
-          <g fill="#e4e8f5"><rect x="40" y="108" width="168" height="1"/><rect x="40" y="132" width="168" height="1"/><rect x="40" y="156" width="168" height="1"/></g>
-          <g fill="#9aa8d6"><rect x="40" y="116" width="80" height="6" rx="3"/><rect x="40" y="140" width="64" height="6" rx="3"/></g>
-          <g fill="#1a1a18"><rect x="176" y="116" width="32" height="6" rx="3"/><rect x="176" y="140" width="32" height="6" rx="3"/></g>
-          <rect x="130" y="174" width="78" height="14" rx="4" fill="#1a1a18"/>
-          <rect x="244" y="24" width="132" height="92" rx="8" fill="#eef2ff"/>
-          <rect x="258" y="40" width="60" height="6" rx="3" fill="#9aa8d6"/>
-          <rect x="258" y="56" width="90" height="16" rx="4" fill="#2f5bea"/>
-          <rect x="258" y="86" width="104" height="18" rx="9" fill="#2f5bea" opacity=".15"/>
-          <rect x="244" y="128" width="132" height="88" rx="8" fill="#f7f8fc"/>
-          <path d="M258 196 L286 176 L312 184 L340 156 L362 150" stroke="#2f5bea" stroke-width="3" fill="none" stroke-linecap="round"/>
-        </svg>
+  <main id="main" class="container">
+    <section class="cs-head">
+      <div>
+        <p class="label">March 2025</p>
+        <h1 class="h-xl">Invoicing for 40,000 small businesses</h1>
       </div>
+      <p class="summary small">Leadership asked for a modern invoice editor. Research showed owners didn't care about invoices. They cared about cash landing in their account. Reframing the project around that changed what we built and what we measured.</p>
     </section>
 
-    <div class="container cs-body">
-      <section class="cs-section">
-        <h2>Outcome</h2>
-        <div>
-          <dl class="metrics">
+    <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
+    <div class="frame cover" data-label="Cover image"></div>
+
+    <dl class="facts"><div><dt>Role</dt><dd>Lead Product Designer</dd></div><div><dt>Team</dt><dd>2 designers, researcher, 7 engineers, PM</dd></div><div><dt>Timeline</dt><dd>9 months</dd></div><div><dt>Platform</dt><dd>Web app, email, mobile web</dd></div></dl>
+
+    <article>
+      <div class="block">
+        <p class="label">Outcome</p>
+        <dl class="metrics">
             <div class="metric"><dt>Median time to first invoice, new accounts</dt><dd>−48%</dd></div>
             <div class="metric"><dt>Invoices paid on or before the due date</dt><dd>+22%</dd></div>
             <div class="metric"><dt>Invoicing support tickets per 1k accounts</dt><dd>−31%</dd></div>
-          </dl>
-        </div>
-      </section>
+        </dl>
+      </div>
 
-      <section class="cs-section">
-        <h2>Context</h2>
-        <div class="prose">
-          <p>Ledgerly is accounting software for businesses with 1–20 people. Invoicing was the feature that brought most customers in — and the one most likely to make them leave. Activation had plateaued at 54%, and the invoice editor was the top source of support tickets for two years running.</p>
-          <p>Leadership's brief was to "modernise the invoice editor." I was asked to lead design for the effort, working with a product designer, a researcher and a squad of seven engineers.</p>
-        </div>
-      </section>
+      <div class="block prose">
+        <p class="label">Context</p>
+        <div><p>Ledgerly is accounting software for businesses with 1–20 people. Invoicing brought most customers in, and it was also the feature most likely to make them leave. Activation had plateaued at 54%, and the invoice editor had been the top source of support tickets for two years running.</p><p>The brief was to modernise the invoice editor. I led design, working with a product designer, a researcher and a squad of seven engineers.</p></div>
+      </div>
 
-      <section class="cs-section">
-        <h2>The problem</h2>
-        <div class="prose">
-          <p class="pull">Customers didn't care about invoices. They cared about cash landing in their account.</p>
-          <p>We ran 18 interviews with owners and bookkeepers and mapped 6 months of support tickets. The editor was clunky, but it wasn't the real pain. Three things came up again and again:</p>
-          <ul>
-            <li><strong>Blank-page anxiety.</strong> A 14-field form with no preview made people worry about looking unprofessional in front of a client.</li>
-            <li><strong>Silence after sending.</strong> Once the invoice went out, owners had no idea whether it had been opened, and they hated chasing.</li>
-            <li><strong>Payment friction on the client side.</strong> 40% of invoices were paid by bank transfer with a manually typed reference, which broke reconciliation.</li>
-          </ul>
-          <p>That shifted the project from "redesign a form" to "shorten the path from work done to money received." I brought this reframing to the VP of Product with a one-page opportunity map. We agreed on a new north-star metric: <strong>share of invoices paid on time</strong>.</p>
-        </div>
-      </section>
+      <div class="block prose">
+        <p class="label">The problem</p>
+        <h2 class="h-lg">Nobody wants to send invoices. They want to get paid.</h2>
+        <div><p>We ran 18 interviews with owners and bookkeepers and mapped six months of support tickets. The editor was clunky, but that wasn't the real pain. Three things kept coming up:</p><ul><li><strong>Blank-page anxiety.</strong> A 14-field form with no preview made people worry about looking unprofessional in front of a client.</li><li><strong>Silence after sending.</strong> Owners had no idea whether an invoice had been opened, and they hated chasing.</li><li><strong>Payment friction.</strong> 40% of invoices were paid by bank transfer with a hand-typed reference, which broke reconciliation.</li></ul><p>I took this to the VP of Product as a one-page opportunity map. We agreed on a new north-star metric: <strong>share of invoices paid on time</strong>.</p></div>
+      </div>
 
-      <section class="cs-section">
-        <h2>Approach</h2>
-        <div class="prose">
-          <h3>Designing the whole loop</h3>
-          <p>We mapped the loop end to end — create, send, remind, pay, reconcile — and scored each step on customer pain and effort to fix. That gave us a sequenced roadmap instead of one big-bang launch, and let engineering start on payment infrastructure in parallel with editor exploration.</p>
+      <div class="block">
+        <figure class="figure wide">
+          <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
+          <div class="frame" data-label="Journey map"></div>
+          <figcaption>The invoice-to-cash loop. Reminders and payment were the least-served steps and the cheapest to improve.</figcaption>
+        </figure>
+      </div>
 
-          <figure class="figure">
-            <!-- REPLACE with a real image: journey map / service blueprint -->
-            <div class="frame" aria-hidden="true">
-              <svg viewBox="0 0 400 200" fill="none">
-                <g font-family="Inter, sans-serif" font-size="11" fill="#1a1a18">
-                  <rect x="10" y="70" width="64" height="60" rx="10" fill="#fff"/><text x="24" y="104">Create</text>
-                  <rect x="88" y="70" width="64" height="60" rx="10" fill="#fff"/><text x="106" y="104">Send</text>
-                  <rect x="166" y="70" width="64" height="60" rx="10" fill="#2f5bea"/><text x="178" y="104" fill="#fff">Remind</text>
-                  <rect x="244" y="70" width="64" height="60" rx="10" fill="#2f5bea"/><text x="264" y="104" fill="#fff">Pay</text>
-                  <rect x="322" y="70" width="68" height="60" rx="10" fill="#fff"/><text x="332" y="104">Reconcile</text>
-                </g>
-                <g stroke="#9aa8d6" stroke-width="2"><path d="M74 100h14M152 100h14M230 100h14M308 100h14"/></g>
-                <text x="166" y="160" font-family="Inter, sans-serif" font-size="10" fill="#5a6590">Highest pain × lowest effort</text>
-              </svg>
-            </div>
-            <figcaption>The invoice-to-cash loop. Reminders and payment were the least-served steps and the cheapest to improve.</figcaption>
-          </figure>
+      <div class="block prose">
+        <p class="label">Approach</p>
+        <h2 class="h-lg">Design the whole loop, then sequence it</h2>
+        <div><p>We mapped the loop end to end (create, send, remind, pay, reconcile) and scored each step on customer pain and effort to fix. That gave us a sequenced roadmap instead of one big launch, and let engineering start on payments while design explored the editor.</p><p>The feel of typing straight onto a document was the point, so static mocks weren't enough. I built a coded prototype and ran three rounds of unmoderated tests with 42 owners. The document-first editor removed the preview step entirely.</p></div>
+      </div>
 
-          <h3>Prototyping in the real medium</h3>
-          <p>For the editor, static mocks weren't enough — the feel of typing directly onto a document was the point. I built a coded prototype and ran 3 rounds of unmoderated testing with 42 owners. It showed the document-first editor removed the preview step entirely: people could see what their client would see while they typed.</p>
-        </div>
-      </section>
+      <div class="block">
+        <p class="label">Key decisions</p>
+        <h2 class="h-lg">Three bets, three trade-offs</h2>
+        <ol class="decisions">
+          <li>
+            <h3>A document-first editor instead of a smarter form</h3>
+            <p>Owners edit directly on a live invoice, with defaults carried over from the last invoice to that client.</p>
+            <p class="tradeoff">Trade-off: Harder on small screens. We shipped a simpler mobile version and accepted it was second-class in v1.</p>
+          </li>
+          <li>
+            <h3>Polite reminders, on by default</h3>
+            <p>Reminders come from Ledgerly in a friendly tone owners can preview, so the business doesn't carry the social cost of chasing.</p>
+            <p class="tradeoff">Trade-off: Default-on could annoy clients. We tested tone with 200 end clients and added a one-click pause per invoice.</p>
+          </li>
+          <li>
+            <h3>Pay now in the email, not only the PDF</h3>
+            <p>Card and instant bank payments sit in the invoice email, with the reference pre-filled so reconciliation happens automatically.</p>
+            <p class="tradeoff">Trade-off: Processing fees. Who pays the fee is a clear per-invoice setting, never hidden.</p>
+          </li>
+        </ol>
+      </div>
 
-      <section class="cs-section">
-        <h2>Key decisions</h2>
-        <div class="prose">
-          <div class="decision">
-            <h4>Document-first editor instead of a smarter form</h4>
-            <p>Editing happens directly on a live invoice, with smart defaults from the last invoice sent to that client.</p>
-            <p class="tradeoff"><b>Trade-off:</b> Harder on small screens. We shipped a simplified mobile version and accepted it was a second-class experience in v1.</p>
-          </div>
-          <div class="decision">
-            <h4>Automatic, polite reminders on by default</h4>
-            <p>Owners told us chasing felt awkward. Reminders come from Ledgerly with a friendly tone owners can preview, so the business doesn't carry the social cost.</p>
-            <p class="tradeoff"><b>Trade-off:</b> A default-on setting risked annoying clients. We tested tone with 200 end clients and added a one-click pause per invoice.</p>
-          </div>
-          <div class="decision">
-            <h4>"Pay now" in the email, not just the PDF</h4>
-            <p>Card and instant bank payments embedded in the invoice email, with the reference pre-filled so reconciliation happens automatically.</p>
-            <p class="tradeoff"><b>Trade-off:</b> Processing fees. We made who pays the fee a clear per-invoice setting instead of hiding it.</p>
-          </div>
-        </div>
-      </section>
+      <div class="block">
+        <figure class="figure wide">
+          <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
+          <div class="frame" data-label="Final UI"></div>
+          <figcaption>The document-first editor, and the client email with one-tap payment.</figcaption>
+        </figure>
+      </div>
 
-      <section class="cs-section">
-        <h2>Solution</h2>
-        <div class="prose">
-          <figure class="figure">
-            <!-- REPLACE with final UI screens -->
-            <div class="frame" aria-hidden="true">
-              <svg viewBox="0 0 400 240" fill="none">
-                <rect x="30" y="20" width="220" height="200" rx="10" fill="#fff"/>
-                <rect x="48" y="40" width="70" height="10" rx="5" fill="#2f5bea"/>
-                <rect x="48" y="66" width="120" height="6" rx="3" fill="#c8cee0"/>
-                <rect x="48" y="96" width="184" height="24" rx="6" fill="#eef2ff" stroke="#2f5bea" stroke-dasharray="4 3"/>
-                <rect x="58" y="105" width="90" height="6" rx="3" fill="#2f5bea"/>
-                <rect x="48" y="130" width="184" height="1" fill="#e4e8f5"/>
-                <rect x="48" y="142" width="100" height="6" rx="3" fill="#c8cee0"/>
-                <rect x="190" y="142" width="42" height="6" rx="3" fill="#1a1a18"/>
-                <rect x="150" y="184" width="82" height="20" rx="6" fill="#1a1a18"/>
-                <rect x="270" y="50" width="110" height="140" rx="12" fill="#fff"/>
-                <rect x="284" y="66" width="60" height="6" rx="3" fill="#c8cee0"/>
-                <rect x="284" y="80" width="80" height="14" rx="4" fill="#1a1a18"/>
-                <rect x="284" y="150" width="82" height="24" rx="12" fill="#2f5bea"/>
-              </svg>
-            </div>
-            <figcaption>Left: the document-first editor with inline suggestions. Right: the client's email with one-tap payment.</figcaption>
-          </figure>
-          <p>We shipped in three releases over five months, each behind a feature flag with a holdout group so we could attribute impact cleanly. Payments and reminders went first because they carried the most value; the new editor followed once the design system components it needed were ready.</p>
-        </div>
-      </section>
+      <div class="block prose">
+        <p class="label">Solution</p>
+        <div><p>We shipped in three releases over five months, each behind a feature flag with a holdout group so we could attribute impact. Payments and reminders went first because they carried the most value. The editor followed once the design system components it needed were ready.</p></div>
+      </div>
 
-      <section class="cs-section">
-        <h2>Reflection</h2>
-        <div class="prose">
-          <p>The most valuable design work on this project happened before any UI existed. Pushing back on the original brief was uncomfortable, but backing it with evidence made it a conversation about outcomes instead of opinions.</p>
-          <p>What I'd do differently: I'd have brought the accounting integrations team in earlier. Reconciliation edge cases (partial payments, currency conversion) cost us three weeks late in the project, and they would have been cheap to design for up front.</p>
-        </div>
-      </section>
-    </div>
+      <div class="block prose">
+        <p class="label">Reflection</p>
+        <h2 class="h-lg">What I'd do differently</h2>
+        <div><p>The most valuable design work happened before any UI existed. Pushing back on the brief was uncomfortable, but evidence made it a conversation about outcomes instead of opinions.</p><p>I'd bring the accounting integrations team in earlier. Partial payments and currency conversion cost us three weeks late in the project, and would have been cheap to design for up front.</p></div>
+      </div>
+    </article>
 
-    <a class="next-project container" href="harbor-design-system.html">
-      <p class="eyebrow">Next project</p>
-      <p class="display">One design system for four product teams →</p>
+    <a class="next" href="harbor-design-system.html">
+      <p class="label">Next project</p>
+      <p class="h-xl">One design system, four product teams</p>
     </a>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p class="eyebrow">Get in touch</p>
-      <a class="display email" href="mailto:hello@example.com">hello@example.com</a>
-      <div class="footer-row">
-        <span>© <span data-year>2026</span> Agata Ageeva</span>
-        <ul>
-          <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-          <li><a href="#">Read.cv</a></li>
-          <li><a href="#">Résumé (PDF)</a></li>
-        </ul>
-      </div>
+  <footer class="container site-footer" id="contact">
+    <div class="top">
+      <p class="label">Get in touch</p>
+      <a class="h-md email" href="mailto:hello@example.com">hello@example.com</a>
+    </div>
+    <div class="footer-row">
+      <span>© <span data-year>2026</span> Agata Ageieva</span>
+      <ul>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="#">Résumé (PDF)</a></li>
+      </ul>
     </div>
   </footer>
 

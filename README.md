@@ -9,7 +9,7 @@ work/ledgerly-invoicing.html   Case study 1 (B2B fintech)
 work/harbor-design-system.html Case study 2 (design systems)
 work/carewell-intake.html      Case study 3 (healthcare, mobile)
 assets/css/style.css           All styles; theme tokens are at the top
-assets/js/main.js              Sticky-header border, scroll fade-ins, footer year
+assets/js/main.js              Footer year
 ```
 
 ## Preview locally
@@ -26,10 +26,10 @@ All projects, companies (Ledgerly, Harbor, Carewell, Northwind), metrics and car
 Checklist:
 
 - [ ] Name, email (`hello@example.com`) and social links in every page's header and footer
-- [ ] Hero headline and intro on `index.html`
-- [ ] Project cards on `index.html`: title, meta line, summary and impact chips
+- [ ] Intro line on `index.html`
+- [ ] Project cards on `index.html`: date, title and summary
 - [ ] Each case study: facts, metrics, and every section
-- [ ] Images: search for `REPLACE` to find each placeholder SVG and swap in `<img src="../assets/img/…" alt="…">`
+- [ ] Images: search for `REPLACE` to find each empty frame and put `<img src="../assets/img/…" alt="…">` inside it
 - [ ] Portrait on `about.html`
 - [ ] Experience timeline, principles and toolkit on `about.html`
 - [ ] Résumé PDF link
@@ -39,8 +39,8 @@ To rename a case study file, update the links on `index.html` and the "Next proj
 ## Customize the look
 
 - **Colors and fonts:** edit the tokens in `:root` at the top of `style.css`. Dark mode tokens are in the `prefers-color-scheme: dark` block below them.
-- **Project tint:** each case study sets `style="--tint:#…"` on `<body>`, and each home card sets it on `.project-media`.
-- **Fonts:** Instrument Serif (display) + Inter (text), loaded from Google Fonts.
+- **Fonts:** Bowlby One (display) + IBM Plex Mono (text), loaded from Google Fonts.
+- **Images:** every white box is a `.frame` with a `data-label`. Put an `<img>` inside it and the label disappears.
 
 ## Case study structure
 

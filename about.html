@@ -3,127 +3,89 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About — Agata Ageeva</title>
-  <meta name="description" content="About Agata Ageeva, senior product designer.">
+  <title>About — Agata Ageieva</title>
+  <meta name="description" content="About Agata Ageieva, senior product designer.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <nav class="container nav" aria-label="Main">
-      <a class="brand" href="index.html">Agata Ageeva <span>· Product Designer</span></a>
-      <ul class="nav-links">
+  <header class="container topbar">
+    <a class="name" href="index.html">Agata Ageieva</a>
+    <nav aria-label="Main">
+      <ul class="menu">
         <li><a href="index.html#work">Work</a></li>
-        <li><a href="about.html" aria-current="page">About</a></li>
-        <li><a href="mailto:hello@example.com">Contact</a></li>
+        <li><a href="about.html" aria-current="page">About me</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="main">
-    <section class="hero container">
-      <p class="eyebrow">About</p>
-      <h1 class="display">Hi, I'm Agata.<br><em>Nice to meet you.</em></h1>
+  <main id="main" class="container">
+    <section class="about-hero">
+      <p class="hello">About me</p>
+      <h1 class="display">Hi, I'm Agata</h1>
     </section>
 
-    <section class="container" style="padding-bottom: clamp(56px, 9vw, 112px)">
-      <div class="about-grid">
-        <!-- REPLACE: put your photo at assets/img/portrait.jpg and use:
-             <div class="portrait"><img src="assets/img/portrait.jpg" alt="Portrait of Agata Ageeva"></div> -->
-        <div class="portrait" role="img" aria-label="Portrait placeholder">Your portrait here</div>
-
-        <div class="prose">
-          <p class="lede" style="margin-top:0">I'm a senior product designer with ten years of experience making complex products feel simple — in fintech, healthcare and design systems.</p>
-          <p>I started out as a visual designer at an agency, moved into product through a love of research, and have spent the last six years in-house on products where getting the details wrong costs people money or health. That's made me rigorous about evidence and a little obsessive about edge cases.</p>
-          <p>Today I'm at my best on ambiguous, cross-team problems: framing what we should build with product and engineering leads, shipping it with a small squad, and building the systems and rituals that help other designers do their best work.</p>
-          <p>Outside work, I mentor early-career designers through ADPList, write occasionally about design systems, and spend too much time at the pottery wheel.</p>
-        </div>
+    <div class="block">
+      <!-- REPLACE: <div class="frame portrait"><img src="assets/img/portrait.jpg" alt="Portrait of Agata Ageieva"></div> -->
+      <div class="frame portrait col-left" data-label="Portrait"></div>
+      <div class="prose">
+        <p>I'm a senior product designer with 10+ years of experience working in startups, directly in product. I make complex products feel simple, mostly in fintech, healthcare and design systems.</p>
+        <p>I started as a visual designer at an agency and moved into product through a love of research. For the last six years I've worked in-house on products where getting details wrong costs people money or health. That made me rigorous about evidence and a little obsessive about edge cases.</p>
+        <p>I do my best work on ambiguous, cross-team problems: framing what to build with product and engineering leads, shipping it with a small squad, and building the systems that help other designers do their best work.</p>
+        <p>Outside work, I mentor early-career designers and spend too much time at the pottery wheel.</p>
       </div>
-    </section>
+    </div>
 
-    <section class="section container">
-      <div class="about-grid">
-        <div><h2 class="h2">Experience</h2></div>
-        <ol class="timeline">
-          <li>
-            <span class="when">2024 — Now</span>
-            <div>
-              <span class="role">Lead Product Designer</span> · <span class="org">Ledgerly</span>
-              <p>Leading design for invoicing and payments. Grew the design team from 3 to 6.</p>
-            </div>
-          </li>
-          <li>
-            <span class="when">2022 — 2024</span>
-            <div>
-              <span class="role">Design Systems Lead</span> · <span class="org">Harbor Group</span>
-              <p>Built and scaled the Harbor design system across four product teams.</p>
-            </div>
-          </li>
-          <li>
-            <span class="when">2020 — 2022</span>
-            <div>
-              <span class="role">Senior Product Designer</span> · <span class="org">Carewell Health</span>
-              <p>Sole designer on patient intake and clinic operations tools.</p>
-            </div>
-          </li>
-          <li>
-            <span class="when">2016 — 2020</span>
-            <div>
-              <span class="role">Product Designer</span> · <span class="org">Northwind Studio</span>
-              <p>Web and mobile products for startups and nonprofits, from research to launch.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
+    <div class="block">
+      <p class="label">Experience</p>
+      <h2 class="h-lg">Ten years, four teams</h2>
+      <ol class="timeline">
+        <li><span class="when">2024 — Now</span><div><span class="role">Lead Product Designer</span>, Ledgerly<p>Invoicing and payments. Grew the design team from 3 to 6.</p></div></li>
+        <li><span class="when">2022 — 2024</span><div><span class="role">Design Systems Lead</span>, Harbor Group<p>Built and scaled Harbor across four product teams.</p></div></li>
+        <li><span class="when">2020 — 2022</span><div><span class="role">Senior Product Designer</span>, Carewell Health<p>Sole designer on patient intake and clinic operations.</p></div></li>
+        <li><span class="when">2016 — 2020</span><div><span class="role">Product Designer</span>, Northwind Studio<p>Web and mobile products for startups, from research to launch.</p></div></li>
+      </ol>
+    </div>
 
-    <section class="section container">
-      <div class="about-grid">
-        <div><h2 class="h2">What I believe about design</h2></div>
-        <ol class="principles">
-          <li><div><h3>The brief is a hypothesis</h3><p>My job is to find the problem worth solving, which isn't always the one I was handed.</p></div></li>
-          <li><div><h3>Clarity is kindness</h3><p>Especially when people are stressed, rushed or unsure. Plain words beat clever ones.</p></div></li>
-          <li><div><h3>Ship, then learn</h3><p>Good-enough in customers' hands teaches more than perfect in Figma. I plan for measurement from day one.</p></div></li>
-          <li><div><h3>Accessibility is the baseline</h3><p>Not a phase, not a checklist at the end. Designing for the edges improves the middle.</p></div></li>
-        </ol>
-      </div>
-    </section>
+    <div class="block">
+      <p class="label">How I work</p>
+      <h2 class="h-lg">The brief is a hypothesis</h2>
+      <ol class="decisions">
+        <li><h3>Frame before I draw</h3><p>My biggest wins came from changing the question, not the UI. I spend real time with data, support tickets and customers before opening Figma.</p></li>
+        <li><h3>Design with engineering</h3><p>I prototype in code when it matters and treat technical constraints as design material.</p></li>
+        <li><h3>Accessibility is the baseline</h3><p>Not a phase or a checklist at the end. Designing for the edges improves the middle.</p></li>
+        <li><h3>Raise the bar around me</h3><p>Critique rituals, hiring, mentoring and systems work. I measure my impact by how good the team's work gets.</p></li>
+      </ol>
+    </div>
 
-    <section class="section container">
-      <div class="about-grid">
-        <div><h2 class="h2">Toolkit</h2></div>
-        <div>
-          <p class="eyebrow">Practice</p>
-          <ul class="tags" style="margin-bottom:28px">
-            <li>Product strategy</li><li>Interaction design</li><li>User research</li><li>Design systems</li>
-            <li>Prototyping</li><li>Accessibility (WCAG 2.2)</li><li>Workshop facilitation</li><li>Mentoring &amp; hiring</li>
-          </ul>
-          <p class="eyebrow">Tools</p>
-          <ul class="tags">
-            <li>Figma</li><li>FigJam</li><li>Framer</li><li>HTML/CSS</li><li>React (prototyping)</li>
-            <li>Amplitude</li><li>Dovetail</li><li>Maze</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <div class="block">
+      <p class="label">Toolkit</p>
+      <ul class="tags">
+        <li>Product strategy</li><li>Interaction design</li><li>User research</li><li>Design systems</li>
+        <li>Prototyping</li><li>Accessibility</li><li>Facilitation</li><li>Mentoring &amp; hiring</li>
+      </ul>
+      <ul class="tags">
+        <li>Figma</li><li>Framer</li><li>HTML/CSS</li><li>React</li><li>Amplitude</li><li>Dovetail</li><li>Maze</li>
+      </ul>
+    </div>
   </main>
 
-  <footer class="site-footer" id="contact">
-    <div class="container">
-      <p class="eyebrow">Get in touch</p>
-      <a class="display email" href="mailto:hello@example.com">hello@example.com</a>
-      <div class="footer-row">
-        <span>© <span data-year>2026</span> Agata Ageeva</span>
-        <ul>
-          <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-          <li><a href="#">Read.cv</a></li>
-          <li><a href="#">Résumé (PDF)</a></li>
-        </ul>
-      </div>
+  <footer class="container site-footer" id="contact">
+    <div class="top">
+      <p class="label">Get in touch</p>
+      <a class="h-md email" href="mailto:hello@example.com">hello@example.com</a>
+    </div>
+    <div class="footer-row">
+      <span>© <span data-year>2026</span> Agata Ageieva</span>
+      <ul>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="#">Résumé (PDF)</a></li>
+      </ul>
     </div>
   </footer>
 
