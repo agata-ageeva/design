@@ -12,68 +12,84 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="grid-overlay" aria-hidden="true"><div class="container grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 
-  <header class="container hero">
-    <div>
-      <p class="hello">Hi, my name is</p>
-      <h1 class="display">Agata<br>Ageieva</h1>
-      <p class="intro small">10+ years of experience working in various startups directly in product. Shipping impactful products.</p>
-    </div>
+  <header class="container grid masthead">
+    <p class="name">Agata Ageieva</p>
+    <p class="role label muted">Senior Product Designer</p>
     <nav aria-label="Main">
       <ul class="menu">
-        <li><a href="#work">Work</a></li>
+        <li><a href="index.html#work">Work</a></li>
         <li><a href="about.html">About me</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="main">
-    <section class="container work" id="work">
-      <h2 class="h-lg">Selected work</h2>
+  <main id="main" class="container">
+    <section class="hero grid">
+      <p class="hello">Hi, my name is</p>
+      <h1 class="display">Agata<br>Ageieva</h1>
+      <p class="intro small">10+ years of experience working in various startups directly in product. Shipping impactful products.</p>
+    </section>
 
-      <div class="projects">
-        <!-- REPLACE the frame contents with <img src="assets/img/…" alt="…"> -->
-        <a class="project" href="work/ledgerly-invoicing.html">
-          <div class="frame" data-label="Ledgerly — cover image"></div>
-          <div class="project-text">
-            <p class="label">March 2025</p>
-            <h3 class="h-md">Invoicing for 40,000 small businesses</h3>
-            <p class="small">Reframed a "modernise the editor" brief around getting paid. A document-first editor, polite automatic reminders and one-tap payment cut time to first invoice by 48%.</p>
-            <span class="link">Case study</span>
-          </div>
-        </a>
-
-        <a class="project" href="work/harbor-design-system.html">
-          <div class="frame" data-label="Harbor — cover image"></div>
-          <div class="project-text">
-            <p class="label">June 2024</p>
-            <h3 class="h-md">One design system, four product teams</h3>
-            <p class="small">Turned 1,100 one-off components into Harbor: tokens, accessible primitives and a contribution model. 92% of product surfaces migrated within 18 months.</p>
-            <span class="link">Case study</span>
-          </div>
-        </a>
-
-        <a class="project" href="work/carewell-intake.html">
-          <div class="frame" data-label="Carewell — cover image"></div>
-          <div class="project-text">
-            <p class="label">April 2022</p>
-            <h3 class="h-md">Patient intake people actually finish</h3>
-            <p class="small">Moved clinic paperwork from clipboard to phone for 120 clinics, designed for patients aged 18 to 94. Completion rose from 61% to 87%.</p>
-            <span class="link">Case study</span>
-          </div>
-        </a>
+    <section class="section" id="work">
+      <div class="grid row-heavy">
+        <p class="label c-label">Work</p>
+        <h2 class="h-lg c-head">Selected work</h2>
       </div>
+      <ul class="projects">
+        <li>
+          <a class="project grid row" href="work/ledgerly-invoicing.html">
+            <span class="index label">01</span>
+            <span class="date label">March 2025</span>
+            <!-- REPLACE the frame contents with <img src="assets/img/…" alt="…"> -->
+            <span class="frame" data-label="Ledgerly — cover image"></span>
+            <span class="text">
+              <span class="h-md">Invoicing for 40,000 small businesses</span>
+              <span class="small">Reframed a “modernise the editor” brief around getting paid. A document-first editor, polite automatic reminders and one-tap payment cut time to first invoice by 48%.</span>
+              <span class="link">Case study</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="project grid row" href="work/harbor-design-system.html">
+            <span class="index label">02</span>
+            <span class="date label">June 2024</span>
+            <!-- REPLACE the frame contents with <img src="assets/img/…" alt="…"> -->
+            <span class="frame" data-label="Harbor — cover image"></span>
+            <span class="text">
+              <span class="h-md">One design system, four product teams</span>
+              <span class="small">Turned 1,100 one-off components into Harbor: tokens, accessible primitives and a contribution model. 92% of product surfaces migrated within 18 months.</span>
+              <span class="link">Case study</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="project grid row" href="work/carewell-intake.html">
+            <span class="index label">03</span>
+            <span class="date label">April 2022</span>
+            <!-- REPLACE the frame contents with <img src="assets/img/…" alt="…"> -->
+            <span class="frame" data-label="Carewell — cover image"></span>
+            <span class="text">
+              <span class="h-md">Patient intake people actually finish</span>
+              <span class="small">Moved clinic paperwork from clipboard to phone for 120 clinics, designed for patients aged 18 to 94. Completion rose from 61% to 87%.</span>
+              <span class="link">Case study</span>
+            </span>
+          </a>
+        </li>
+      </ul>
     </section>
   </main>
 
   <footer class="container site-footer" id="contact">
-    <div class="top">
-      <p class="label">Get in touch</p>
-      <a class="h-md email" href="mailto:hello@example.com">hello@example.com</a>
+    <div class="grid row-heavy">
+      <p class="label c-label">Contact</p>
+      <a class="h-lg email c-head" href="mailto:hello@example.com">hello@example.com</a>
     </div>
-    <div class="footer-row">
-      <span>© <span data-year>2026</span> Agata Ageieva</span>
+    <div class="grid footer-row">
+      <span class="copy">© <span data-year>2026</span> Agata Ageieva</span>
+      <span class="toggle"><button class="grid-toggle" type="button" aria-pressed="false">Show grid</button></span>
       <ul>
         <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
         <li><a href="#">Résumé (PDF)</a></li>

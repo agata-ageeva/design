@@ -12,9 +12,11 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="grid-overlay" aria-hidden="true"><div class="container grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 
-  <header class="container topbar">
+  <header class="container grid masthead">
     <a class="name" href="../index.html">Agata Ageieva</a>
+    <p class="role label muted">Senior Product Designer</p>
     <nav aria-label="Main">
       <ul class="menu">
         <li><a href="../index.html#work" aria-current="page">Work</a></li>
@@ -25,109 +27,86 @@
   </header>
 
   <main id="main" class="container">
-    <section class="cs-head">
-      <div>
-        <p class="label">April 2022</p>
-        <h1 class="h-xl">Patient intake people actually finish</h1>
-      </div>
-      <p class="summary small">Every new visit started with 4–6 pages of paper forms. I moved intake from clipboard to phone for 120 clinics, designed for patients aged 18 to 94, on any device, in the ten minutes before an appointment.</p>
+    <section class="cs-head grid row-heavy">
+      <p class="label c-label">April 2022</p>
+      <h1 class="h-xl c-head">Patient intake people actually finish</h1>
+      <p class="summary c-text">Every new visit started with 4–6 pages of paper forms. I moved intake from clipboard to phone for 120 clinics, designed for patients aged 18 to 94, on any device, in the ten minutes before an appointment.</p>
     </section>
 
     <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
     <div class="frame cover" data-label="Cover image"></div>
 
-    <dl class="facts"><div><dt>Role</dt><dd>Senior Product Designer, sole designer</dd></div><div><dt>Team</dt><dd>PM, 4 engineers, clinical advisor</dd></div><div><dt>Timeline</dt><dd>7 months</dd></div><div><dt>Platform</dt><dd>Mobile web via SMS, clinic tablet</dd></div></dl>
+    <dl class="facts grid row"><div><dt>Role</dt><dd>Senior Product Designer, sole designer</dd></div><div><dt>Team</dt><dd>PM, 4 engineers, clinical advisor</dd></div><div><dt>Timeline</dt><dd>7 months</dd></div><div><dt>Platform</dt><dd>Mobile web via SMS, clinic tablet</dd></div></dl>
 
-    <article>
-      <div class="block">
-        <p class="label">Outcome</p>
-        <dl class="metrics">
-            <div class="metric"><dt>Intake completed before arrival, up from 61%</dt><dd>87%</dd></div>
-            <div class="metric"><dt>Median check-in time saved per visit</dt><dd>9 min</dd></div>
-            <div class="metric"><dt>Patients 65+ who finished without help</dt><dd>78%</dd></div>
-        </dl>
-      </div>
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">01</span><br>Outcome</p>
+      <dl class="metrics"><div class="metric"><dt>Intake completed before arrival, up from 61%</dt><dd>87%</dd></div><div class="metric"><dt>Median check-in time saved per visit</dt><dd>9 min</dd></div><div class="metric"><dt>Patients 65+ who finished without help</dt><dd>78%</dd></div></dl>
+    </section>
 
-      <div class="block prose">
-        <p class="label">Context</p>
-        <div><p>Carewell runs 120 primary care clinics. Front-desk staff typed paper intake forms into the EHR by hand. Waiting rooms backed up, appointments started late, and transcription errors reached patient records.</p><p>An online form already existed, but only 61% of patients who opened it finished. I joined as the only designer on a team tasked with fixing intake end to end.</p></div>
-      </div>
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">02</span><br>Context</p>
+      <div class="prose c-text"><p>Carewell runs 120 primary care clinics. Front-desk staff typed paper intake forms into the EHR by hand. Waiting rooms backed up, appointments started late, and transcription errors reached patient records.</p><p>An online form already existed, but only 61% of patients who opened it finished. I joined as the only designer on a team tasked with fixing intake end to end.</p></div>
+    </section>
 
-      <div class="block prose">
-        <p class="label">The problem</p>
-        <h2 class="h-lg">The form asked patients to remember what they couldn’t</h2>
-        <div><p>I shadowed front desks in three clinics for four days and ran 14 remote sessions with patients, half of them over 65. Analytics showed where people dropped off:</p><ul><li><strong>Medication lists</strong>, 34% of drop-offs. Patients didn't know exact names or doses.</li><li><strong>Insurance details</strong>, 22%. The card wasn't to hand, and member IDs are long.</li><li><strong>Small targets and dense layouts</strong>, especially for older patients on older phones.</li></ul></div>
-      </div>
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">03</span><br>Problem</p>
+      <h2 class="h-lg c-head-narrow sec-head">The form asked patients to remember what they couldn’t</h2>
+      <div class="prose c-text"><p>I shadowed front desks in three clinics for four days and ran 14 remote sessions with patients, half of them over 65. Analytics showed where people dropped off:</p><ul><li><strong>Medication lists</strong>, 34% of drop-offs. Patients didn't know exact names or doses.</li><li><strong>Insurance details</strong>, 22%. The card wasn't to hand, and member IDs are long.</li><li><strong>Small targets and dense layouts</strong>, especially for older patients on older phones.</li></ul></div>
+    </section>
 
-      <div class="block">
-        <figure class="figure wide">
-          <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
-          <div class="frame" data-label="Before / after"></div>
-          <figcaption>From a dense multi-field page to one clear question per screen.</figcaption>
-        </figure>
-      </div>
+    <figure class="section figure grid">
+      <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
+      <div class="frame" data-label="Before / after"></div>
+      <figcaption>From a dense multi-field page to one clear question per screen.</figcaption>
+    </figure>
 
-      <div class="block prose">
-        <p class="label">Approach</p>
-        <h2 class="h-lg">Design for the hardest user first</h2>
-        <div><p>Our baseline was a 75-year-old on a four-year-old Android phone with large text turned on. That meant one question per screen, 48px minimum targets, plain language at a 6th-grade reading level, and no timeouts.</p><p>With the clinical advisor and compliance, I set up testing with realistic synthetic health data, so we could test in waiting rooms without touching real records. We ran five rounds with 46 patients.</p></div>
-      </div>
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">04</span><br>Approach</p>
+      <h2 class="h-lg c-head-narrow sec-head">Design for the hardest user first</h2>
+      <div class="prose c-text"><p>Our baseline was a 75-year-old on a four-year-old Android phone with large text turned on. That meant one question per screen, 48px minimum targets, plain language at a 6th-grade reading level, and no timeouts.</p><p>With the clinical advisor and compliance, I set up testing with realistic synthetic health data, so we could test in waiting rooms without touching real records. We ran five rounds with 46 patients.</p></div>
+    </section>
 
-      <div class="block">
-        <p class="label">Key decisions</p>
-        <h2 class="h-lg">Three bets, three trade-offs</h2>
-        <ol class="decisions">
-          <li>
-            <h3>Photograph the pill bottle instead of typing</h3>
-            <p>Patients snap their medication labels. Text is extracted and confirmed by a nurse, instead of asking patients to spell drug names.</p>
-            <p class="tradeoff">Trade-off: A new review step for staff. We designed a verification queue that took nurses less time than their old transcription work.</p>
-          </li>
-          <li>
-            <h3>Save every answer, finish anywhere</h3>
-            <p>Patients can start at home and finish on the clinic tablet with their date of birth. No passwords.</p>
-            <p class="tradeoff">Trade-off: Longer security review. We limited what shows on resume and expired links after the appointment.</p>
-          </li>
-          <li>
-            <h3>“I’m not sure” is always an answer</h3>
-            <p>Every clinical question allows “I’m not sure, I’ll discuss it with my doctor.” Forcing an answer produced wrong answers.</p>
-            <p class="tradeoff">Trade-off: Less complete data up front. Doctors preferred honest gaps to confident errors.</p>
-          </li>
-        </ol>
-      </div>
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">05</span><br>Decisions</p>
+      <h2 class="h-lg c-head-narrow sec-head">Three bets, three trade-offs</h2>
+      <ol class="rows">
+        <li><h3>Photograph the pill bottle instead of typing</h3><div><p>Patients snap their medication labels. Text is extracted and confirmed by a nurse, instead of asking patients to spell drug names.</p><p class="tradeoff">Trade-off: A new review step for staff. We designed a verification queue that took nurses less time than their old transcription work.</p></div></li>
+        <li><h3>Save every answer, finish anywhere</h3><div><p>Patients can start at home and finish on the clinic tablet with their date of birth. No passwords.</p><p class="tradeoff">Trade-off: Longer security review. We limited what shows on resume and expired links after the appointment.</p></div></li>
+        <li><h3>“I’m not sure” is always an answer</h3><div><p>Every clinical question allows “I’m not sure, I’ll discuss it with my doctor.” Forcing an answer produced wrong answers.</p><p class="tradeoff">Trade-off: Less complete data up front. Doctors preferred honest gaps to confident errors.</p></div></li>
+      </ol>
+    </section>
 
-      <div class="block">
-        <figure class="figure wide">
-          <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
-          <div class="frame" data-label="Final flow"></div>
-          <figcaption>The SMS link, the one-question-per-screen flow and the front desk “ready” status.</figcaption>
-        </figure>
-      </div>
+    <figure class="section figure grid">
+      <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
+      <div class="frame" data-label="Final flow"></div>
+      <figcaption>The SMS link, the one-question-per-screen flow and the front desk “ready” status.</figcaption>
+    </figure>
 
-      <div class="block prose">
-        <p class="label">Solution</p>
-        <div><p>Patients get an SMS link two days before a visit. The flow adapts to the visit type, pre-fills what's already known and takes a median of 7 minutes. On arrival, the front desk sees a green ready status and the data is already in the EHR.</p><p>We piloted in 10 clinics against 10 matched clinics, then rolled out network-wide over three months.</p></div>
-      </div>
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">06</span><br>Solution</p>
+      <div class="prose c-text"><p>Patients get an SMS link two days before a visit. The flow adapts to the visit type, pre-fills what's already known and takes a median of 7 minutes. On arrival, the front desk sees a green ready status and the data is already in the EHR.</p><p>We piloted in 10 clinics against 10 matched clinics, then rolled out network-wide over three months.</p></div>
+    </section>
 
-      <div class="block prose">
-        <p class="label">Reflection</p>
-        <h2 class="h-lg">What I'd do differently</h2>
-        <div><p>Front-desk staff were the unsung users. Designing their side, the ready status and the verification queue, is what made the patient-facing work stick.</p><p>I'd include Spanish-language testing from round one instead of round three. About 18% of patients preferred Spanish, and some questions needed restructuring, not only translation.</p></div>
-      </div>
-    </article>
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">07</span><br>Reflection</p>
+      <h2 class="h-lg c-head-narrow sec-head">What I'd do differently</h2>
+      <div class="prose c-text"><p>Front-desk staff were the unsung users. Designing their side, the ready status and the verification queue, is what made the patient-facing work stick.</p><p>I'd include Spanish-language testing from round one instead of round three. About 18% of patients preferred Spanish, and some questions needed restructuring, not only translation.</p></div>
+    </section>
 
-    <a class="next" href="../about.html">
-      <p class="label">Next</p>
-      <p class="h-xl">More about me</p>
+    <a class="next section grid row-heavy" href="../about.html">
+      <p class="label c-label">Next</p>
+      <p class="h-xl c-head">More about me</p>
     </a>
   </main>
 
   <footer class="container site-footer" id="contact">
-    <div class="top">
-      <p class="label">Get in touch</p>
-      <a class="h-md email" href="mailto:hello@example.com">hello@example.com</a>
+    <div class="grid row-heavy">
+      <p class="label c-label">Contact</p>
+      <a class="h-lg email c-head" href="mailto:hello@example.com">hello@example.com</a>
     </div>
-    <div class="footer-row">
-      <span>© <span data-year>2026</span> Agata Ageieva</span>
+    <div class="grid footer-row">
+      <span class="copy">© <span data-year>2026</span> Agata Ageieva</span>
+      <span class="toggle"><button class="grid-toggle" type="button" aria-pressed="false">Show grid</button></span>
       <ul>
         <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
         <li><a href="#">Résumé (PDF)</a></li>

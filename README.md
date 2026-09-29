@@ -9,7 +9,7 @@ work/ledgerly-invoicing.html   Case study 1 (B2B fintech)
 work/harbor-design-system.html Case study 2 (design systems)
 work/carewell-intake.html      Case study 3 (healthcare, mobile)
 assets/css/style.css           All styles; theme tokens are at the top
-assets/js/main.js              Footer year
+assets/js/main.js              Footer year, grid overlay toggle
 ```
 
 ## Preview locally
@@ -35,6 +35,17 @@ Checklist:
 - [ ] Résumé PDF link
 
 To rename a case study file, update the links on `index.html` and the "Next project" link at the bottom of the previous case study.
+
+## The grid
+
+Every page sits on one 12-column grid (4 columns on phones), with spacing in multiples of 8px:
+
+- Columns 1–2: labels and index numbers (`.c-label`)
+- Columns 3–12: headings (`.c-head`, `.c-head-narrow`)
+- Columns 7–12: running text (`.c-text`)
+- Row lists (`.rows`): item title in columns 3–6, detail in 7–12
+
+Press **G** or click **Show grid** in the footer to see the columns.
 
 ## Customize the look
 

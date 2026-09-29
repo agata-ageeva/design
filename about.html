@@ -12,9 +12,11 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="grid-overlay" aria-hidden="true"><div class="container grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 
-  <header class="container topbar">
+  <header class="container grid masthead">
     <a class="name" href="index.html">Agata Ageieva</a>
+    <p class="role label muted">Senior Product Designer</p>
     <nav aria-label="Main">
       <ul class="menu">
         <li><a href="index.html#work">Work</a></li>
@@ -25,63 +27,62 @@
   </header>
 
   <main id="main" class="container">
-    <section class="about-hero">
-      <p class="hello">About me</p>
-      <h1 class="display">Hi, I'm Agata</h1>
+    <section class="cs-head grid row-heavy">
+      <p class="label c-label">About me</p>
+      <h1 class="h-xl c-head">Hi, I'm Agata</h1>
     </section>
 
-    <div class="block">
-      <!-- REPLACE: <div class="frame portrait"><img src="assets/img/portrait.jpg" alt="Portrait of Agata Ageieva"></div> -->
-      <div class="frame portrait col-left" data-label="Portrait"></div>
-      <div class="prose">
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">01</span><br>Bio</p>
+      <!-- REPLACE: put <img src="assets/img/portrait.jpg" alt="Portrait of Agata Ageieva"> inside the frame -->
+      <div class="frame portrait" data-label="Portrait"></div>
+      <div class="prose c-text">
         <p>I'm a senior product designer with 10+ years of experience working in startups, directly in product. I make complex products feel simple, mostly in fintech, healthcare and design systems.</p>
         <p>I started as a visual designer at an agency and moved into product through a love of research. For the last six years I've worked in-house on products where getting details wrong costs people money or health. That made me rigorous about evidence and a little obsessive about edge cases.</p>
         <p>I do my best work on ambiguous, cross-team problems: framing what to build with product and engineering leads, shipping it with a small squad, and building the systems that help other designers do their best work.</p>
         <p>Outside work, I mentor early-career designers and spend too much time at the pottery wheel.</p>
       </div>
-    </div>
+    </section>
 
-    <div class="block">
-      <p class="label">Experience</p>
-      <h2 class="h-lg">Ten years, four teams</h2>
-      <ol class="timeline">
-        <li><span class="when">2024 — Now</span><div><span class="role">Lead Product Designer</span>, Ledgerly<p>Invoicing and payments. Grew the design team from 3 to 6.</p></div></li>
-        <li><span class="when">2022 — 2024</span><div><span class="role">Design Systems Lead</span>, Harbor Group<p>Built and scaled Harbor across four product teams.</p></div></li>
-        <li><span class="when">2020 — 2022</span><div><span class="role">Senior Product Designer</span>, Carewell Health<p>Sole designer on patient intake and clinic operations.</p></div></li>
-        <li><span class="when">2016 — 2020</span><div><span class="role">Product Designer</span>, Northwind Studio<p>Web and mobile products for startups, from research to launch.</p></div></li>
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">02</span><br>Experience</p>
+      <h2 class="h-lg c-head-narrow sec-head">Ten years, four teams</h2>
+      <ol class="rows">
+        <li><h3>2024 — Now</h3><div><p><strong>Lead Product Designer</strong>, Ledgerly</p><p class="tradeoff">Invoicing and payments. Grew the design team from 3 to 6.</p></div></li>
+        <li><h3>2022 — 2024</h3><div><p><strong>Design Systems Lead</strong>, Harbor Group</p><p class="tradeoff">Built and scaled Harbor across four product teams.</p></div></li>
+        <li><h3>2020 — 2022</h3><div><p><strong>Senior Product Designer</strong>, Carewell Health</p><p class="tradeoff">Sole designer on patient intake and clinic operations.</p></div></li>
+        <li><h3>2016 — 2020</h3><div><p><strong>Product Designer</strong>, Northwind Studio</p><p class="tradeoff">Web and mobile products for startups, from research to launch.</p></div></li>
       </ol>
-    </div>
+    </section>
 
-    <div class="block">
-      <p class="label">How I work</p>
-      <h2 class="h-lg">The brief is a hypothesis</h2>
-      <ol class="decisions">
-        <li><h3>Frame before I draw</h3><p>My biggest wins came from changing the question, not the UI. I spend real time with data, support tickets and customers before opening Figma.</p></li>
-        <li><h3>Design with engineering</h3><p>I prototype in code when it matters and treat technical constraints as design material.</p></li>
-        <li><h3>Accessibility is the baseline</h3><p>Not a phase or a checklist at the end. Designing for the edges improves the middle.</p></li>
-        <li><h3>Raise the bar around me</h3><p>Critique rituals, hiring, mentoring and systems work. I measure my impact by how good the team's work gets.</p></li>
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">03</span><br>How I work</p>
+      <h2 class="h-lg c-head-narrow sec-head">The brief is a hypothesis</h2>
+      <ol class="rows">
+        <li><h3>Frame before I draw</h3><div><p>My biggest wins came from changing the question, not the UI. I spend real time with data, support tickets and customers before opening Figma.</p></div></li>
+        <li><h3>Design with engineering</h3><div><p>I prototype in code when it matters and treat technical constraints as design material.</p></div></li>
+        <li><h3>Accessibility is the baseline</h3><div><p>Not a phase or a checklist at the end. Designing for the edges improves the middle.</p></div></li>
+        <li><h3>Raise the bar around me</h3><div><p>Critique rituals, hiring, mentoring and systems work. I measure my impact by how good the team's work gets.</p></div></li>
       </ol>
-    </div>
+    </section>
 
-    <div class="block">
-      <p class="label">Toolkit</p>
-      <ul class="tags">
-        <li>Product strategy</li><li>Interaction design</li><li>User research</li><li>Design systems</li>
-        <li>Prototyping</li><li>Accessibility</li><li>Facilitation</li><li>Mentoring &amp; hiring</li>
-      </ul>
-      <ul class="tags">
-        <li>Figma</li><li>Framer</li><li>HTML/CSS</li><li>React</li><li>Amplitude</li><li>Dovetail</li><li>Maze</li>
-      </ul>
-    </div>
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">04</span><br>Toolkit</p>
+      <ol class="rows">
+        <li><h3>Practice</h3><div><ul class="tags"><li>Product strategy</li><li>Interaction design</li><li>User research</li><li>Design systems</li><li>Prototyping</li><li>Accessibility</li><li>Facilitation</li><li>Mentoring &amp; hiring</li></ul></div></li>
+        <li><h3>Tools</h3><div><ul class="tags"><li>Figma</li><li>Framer</li><li>HTML/CSS</li><li>React</li><li>Amplitude</li><li>Dovetail</li><li>Maze</li></ul></div></li>
+      </ol>
+    </section>
   </main>
 
   <footer class="container site-footer" id="contact">
-    <div class="top">
-      <p class="label">Get in touch</p>
-      <a class="h-md email" href="mailto:hello@example.com">hello@example.com</a>
+    <div class="grid row-heavy">
+      <p class="label c-label">Contact</p>
+      <a class="h-lg email c-head" href="mailto:hello@example.com">hello@example.com</a>
     </div>
-    <div class="footer-row">
-      <span>© <span data-year>2026</span> Agata Ageieva</span>
+    <div class="grid footer-row">
+      <span class="copy">© <span data-year>2026</span> Agata Ageieva</span>
+      <span class="toggle"><button class="grid-toggle" type="button" aria-pressed="false">Show grid</button></span>
       <ul>
         <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
         <li><a href="#">Résumé (PDF)</a></li>
