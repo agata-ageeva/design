@@ -23,7 +23,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #111110;
     --surface: #1b1b19;
     --text: #efede7;
@@ -32,6 +32,15 @@
     --accent: #7d9bff;
     color-scheme: dark;
   }
+}
+:root[data-theme="dark"] {
+  --bg: #111110;
+  --surface: #1b1b19;
+  --text: #efede7;
+  --muted: #9c9a92;
+  --line: #2c2b28;
+  --accent: #7d9bff;
+  color-scheme: dark;
 }
 
 *,
@@ -68,7 +77,7 @@ a:hover { color: var(--accent); }
 /* ---------- Header ---------- */
 
 .site-header {
-  position: sticky; top: 0; z-index: 50;
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50;
   background: color-mix(in srgb, var(--bg) 85%, transparent);
   backdrop-filter: saturate(160%) blur(12px);
   -webkit-backdrop-filter: saturate(160%) blur(12px);
