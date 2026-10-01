@@ -9,7 +9,7 @@ work/ledgerly-invoicing.html   Case study 1 (B2B fintech)
 work/harbor-design-system.html Case study 2 (design systems)
 work/carewell-intake.html      Case study 3 (healthcare, mobile)
 assets/css/style.css           All styles; theme tokens are at the top
-assets/js/main.js              Footer year, grid overlay toggle
+assets/js/main.js              Footer year, grid overlay toggle, home dot field
 ```
 
 ## Preview locally
@@ -46,6 +46,8 @@ Every page sits on one 12-column grid (4 columns on phones), with spacing in mul
 - Row lists (`.rows`): item title in columns 3–6, detail in 7–12
 
 Press **G** or click **Show grid** in the footer to see the columns.
+
+On the home page the background dots move away from the cursor (`.dot-field` canvas). Tune `RADIUS`, `PUSH` and `EASE` at the bottom of `main.js`. Visitors with reduced motion turned on see the static dots.
 
 ## Customize the look
 
