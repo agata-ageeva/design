@@ -22,7 +22,7 @@ document.addEventListener("keydown", (e) => {
   setGrid(!document.body.classList.contains("show-grid"));
 });
 
-// Home: dot field that moves away from the cursor and springs back.
+// Home: dot field that is drawn toward the cursor and springs back.
 // Keeps the same 24px grid as the static CSS dots, which stay as the fallback.
 const field = document.querySelector(".dot-field");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -30,7 +30,7 @@ if (field && field.getContext && !reduceMotion.matches) {
   const ctx = field.getContext("2d");
   const STEP = 24;      // grid spacing, matches background-size in CSS
   const RADIUS = 130;   // how far the cursor reaches
-  const PUSH = 9;       // max displacement in px
+  const PULL = 9;       // max displacement in px
   const EASE = 0.1;     // how quickly dots follow / settle
 
   let w = 0, h = 0, cols = 0, rows = 0, dpr = 1;
@@ -76,15 +76,17 @@ if (field && field.getContext && !reduceMotion.matches) {
           const d = Math.hypot(dx, dy);
           if (d < RADIUS && d > 0.01) {
             f = (1 - d / RADIUS) ** 2;
-            tx = (dx / d) * PUSH * f;
-            ty = (dy / d) * PUSH * f;
+            // Pull toward the cursor, never past it
+            const m = Math.min(PULL * f, d * 0.5);
+            tx = (-dx / d) * m;
+            ty = (-dy / d) * m;
           }
         }
         offX[k] += (tx - offX[k]) * EASE;
         offY[k] += (ty - offY[k]) * EASE;
         if (Math.abs(tx - offX[k]) > 0.05 || Math.abs(ty - offY[k]) > 0.05) moving = true;
 
-        const lift = Math.min(1, Math.hypot(offX[k], offY[k]) / PUSH);
+        const lift = Math.min(1, Math.hypot(offX[k], offY[k]) / PULL);
         ctx.globalAlpha = Math.min(1, baseAlpha * 1.2 + lift * 0.18);
         const r = 1 + lift * 0.35;
         ctx.beginPath();
