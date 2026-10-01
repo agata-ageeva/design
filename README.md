@@ -47,7 +47,7 @@ Every page sits on one 12-column grid (4 columns on phones), with spacing in mul
 
 Press **G** or click **Show grid** in the footer to see the columns.
 
-On the home page the background dots are drawn toward the cursor (`.dot-field` canvas). Tune `RADIUS`, `PULL` and `EASE` at the bottom of `main.js`. Visitors with reduced motion turned on see the static dots.
+The dotted background appears on the home page only. Its dots are drawn toward the cursor (`.dot-field` canvas). Tune `RADIUS`, `PULL` and `EASE` at the bottom of `main.js`. Visitors with reduced motion turned on see the static dots.
 
 ## Customize the look
 
