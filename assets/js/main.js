@@ -29,9 +29,9 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 if (field && field.getContext && !reduceMotion.matches) {
   const ctx = field.getContext("2d");
   const STEP = 24;      // grid spacing, matches background-size in CSS
-  const RADIUS = 160;   // how far the cursor reaches
-  const PUSH = 18;      // max displacement in px
-  const EASE = 0.14;    // how quickly dots follow / settle
+  const RADIUS = 130;   // how far the cursor reaches
+  const PUSH = 9;       // max displacement in px
+  const EASE = 0.1;     // how quickly dots follow / settle
 
   let w = 0, h = 0, cols = 0, rows = 0, dpr = 1;
   let offX = new Float32Array(0), offY = new Float32Array(0);
@@ -85,8 +85,8 @@ if (field && field.getContext && !reduceMotion.matches) {
         if (Math.abs(tx - offX[k]) > 0.05 || Math.abs(ty - offY[k]) > 0.05) moving = true;
 
         const lift = Math.min(1, Math.hypot(offX[k], offY[k]) / PUSH);
-        ctx.globalAlpha = Math.min(1, baseAlpha * 1.4 + lift * 0.45);
-        const r = 1 + lift * 0.9;
+        ctx.globalAlpha = Math.min(1, baseAlpha * 1.2 + lift * 0.18);
+        const r = 1 + lift * 0.35;
         ctx.beginPath();
         ctx.arc(x0 + offX[k], y0 + offY[k], r, 0, Math.PI * 2);
         ctx.fill();
