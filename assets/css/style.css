@@ -56,7 +56,7 @@
 }
 
 @media (max-width: 760px) {
-  :root { --cols: 4; --gap: 16px; }
+  :root { --cols: 4; --gap: 16px; --display-size: clamp(44px, 14vw, 72px); }
 }
 
 *,
