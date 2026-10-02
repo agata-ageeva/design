@@ -208,9 +208,14 @@ a { color: inherit; text-decoration: none; }
 .hero .intro { grid-column: 1 / 5; margin: calc(var(--u) * 3) 0 0 4px; }
 @media (max-width: 760px) { .hero .intro { grid-column: 1 / -1; } }
 
-.projects { list-style: none; margin: calc(var(--u) * 5) 0 0; padding: 0; display: grid; row-gap: calc(var(--u) * 8); }
+/* Equal space above and below each project, so every separator sits
+   exactly halfway between two rows. No separator under the heading. */
+.projects { list-style: none; margin: 0; padding: 0; --row-pad: calc(var(--u) * 6); }
+@media (max-width: 760px) { .projects { --row-pad: calc(var(--u) * 4); } }
 
 .project { grid-column: 1 / -1; }
+.projects .project { padding-block: var(--row-pad); }
+.projects li:first-child .project { border-top: 0; }
 .project .frame { grid-column: 1 / 7; aspect-ratio: 4 / 3; }
 .project .text  { grid-column: 7 / -1; display: flex; flex-direction: column; align-self: stretch; }
 .project .text .date { margin-bottom: calc(var(--u) * 2); }
