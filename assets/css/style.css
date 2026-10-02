@@ -17,8 +17,8 @@
   --grid-col: rgba(214, 64, 40, 0.09);
   --grid-edge: rgba(214, 64, 40, 0.35);
 
-  --font-display: "Unbounded", "Arial Black", "Helvetica Neue", sans-serif;
-  --display-weight: 800;
+  --font-display: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --display-weight: 900;
   --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
 
   --display-size: clamp(56px, 11vw, 144px);
@@ -214,7 +214,7 @@ a { color: inherit; text-decoration: none; }
 
 /* Nav beside the big name: first link's cap height lines up with the
    top of the "A" in Agata */
-.hero-nav { grid-column: 10 / -1; grid-row: 2; justify-self: end; align-self: start; margin-top: calc(var(--display-size) * 0.084 - 5.45px); }
+.hero-nav { grid-column: 10 / -1; grid-row: 2; justify-self: end; align-self: start; margin-top: calc(var(--display-size) * 0.124 - 6.85px); }
 .menu-stack { flex-direction: column; align-items: flex-end; gap: var(--u); font-size: 18px; line-height: 24px; }
 @media (max-width: 760px) {
   .hero { padding-top: calc(var(--u) * 3); }

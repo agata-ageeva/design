@@ -52,7 +52,7 @@ The dotted background appears on the home page only. Its dots are drawn toward t
 ## Customize the look
 
 - **Colors and fonts:** edit the tokens in `:root` at the top of `style.css`. Dark mode tokens are in the `prefers-color-scheme: dark` block below them.
-- **Fonts:** Unbounded ExtraBold (display) + IBM Plex Mono (text), loaded from Google Fonts.
+- **Fonts:** Schibsted Grotesk Black (display) + IBM Plex Mono (text), loaded from Google Fonts.
 - **Images:** every white box is a `.frame` with a `data-label`. Put an `<img>` inside it and the label disappears.
 
 ## Case study structure
