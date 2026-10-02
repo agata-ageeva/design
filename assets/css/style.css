@@ -181,23 +181,15 @@ a { color: inherit; text-decoration: none; }
 .projects { list-style: none; margin: calc(var(--u) * 5) 0 0; padding: 0; display: grid; row-gap: calc(var(--u) * 8); }
 
 .project { grid-column: 1 / -1; }
-.project .index { grid-column: 1 / 2; }
-.project .date  { grid-column: 2 / 4; }
-.project .frame { grid-column: 4 / 9; aspect-ratio: 4 / 3; }
-.project .text  { grid-column: 9 / -1; display: flex; flex-direction: column; align-self: stretch; }
+.project .frame { grid-column: 1 / 7; aspect-ratio: 4 / 3; }
+.project .text  { grid-column: 7 / -1; display: flex; flex-direction: column; align-self: stretch; }
+.project .text .date { margin-bottom: calc(var(--u) * 2); }
 .project .text .small { margin: calc(var(--u) * 2) 0 0; }
 .project .text .link { margin-top: auto; padding-top: calc(var(--u) * 3); align-self: flex-start; }
 .project:hover .frame { outline: 2px solid var(--ink); outline-offset: -2px; }
 
-@media (max-width: 1024px) and (min-width: 761px) {
-  .project .date  { grid-column: 2 / 4; }
-  .project .frame { grid-column: 4 / 8; }
-  .project .text  { grid-column: 8 / -1; }
-}
 @media (max-width: 760px) {
-  .project .index { grid-column: 1 / 2; }
-  .project .date  { grid-column: 2 / -1; }
-  .project .frame { grid-column: 1 / -1; margin-top: calc(var(--u) * 2); }
+  .project .frame { grid-column: 1 / -1; }
   .project .text  { grid-column: 1 / -1; margin-top: calc(var(--u) * 2); }
 }
 
