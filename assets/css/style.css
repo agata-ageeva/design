@@ -152,6 +152,24 @@ a { color: inherit; text-decoration: none; }
 .link { display: inline-block; border-bottom: 1px solid currentColor; }
 .link:hover { border-bottom-width: 2px; }
 
+/* Arrow link: a 2px line with a sharp head that stretches on hover,
+   growing from one grid unit (24px) to three (72px) */
+.cta { display: inline-flex; align-items: center; gap: calc(var(--u) * 1.5); border-bottom: 0; }
+.cta:hover { border-bottom-width: 0; }
+.arrow {
+  position: relative; display: inline-block; flex: none;
+  width: 24px; height: 2px; background: currentColor;
+  transition: width .45s cubic-bezier(.2, .8, .2, 1);
+}
+.arrow::after {
+  content: ""; position: absolute; right: 1px; top: 50%;
+  width: 8px; height: 8px;
+  border-top: 2px solid currentColor; border-right: 2px solid currentColor;
+  transform: translateY(-50%) rotate(45deg);
+}
+.project:hover .arrow,
+.project:focus-visible .arrow { width: 72px; }
+
 /* ---------- Masthead ---------- */
 
 .masthead { padding-block: calc(var(--u) * 3); }
