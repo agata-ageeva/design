@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CrowdBuilding Messaging — Agata Ageieva</title>
+  <meta name="description" content="Case study: designing broadcast messaging for CrowdBuilding admins and members.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="grid-overlay" aria-hidden="true"><div class="container grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+
+  <header class="container grid masthead">
+    <a class="name" href="../index.html">Agata Ageieva</a>
+    <p class="role label muted">Senior Product Designer</p>
+    <nav aria-label="Main">
+      <ul class="menu">
+        <li><a href="../index.html#work" aria-current="page">Work</a></li>
+        <li><a href="../about.html">About me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section class="cs-head grid row-heavy">
+      <p class="label c-label">August 2026</p>
+      <h1 class="h-xl c-head">A broadcast is not a group chat</h1>
+      <p class="summary c-text">CrowdBuilding admins use messaging to keep their members updated. We replaced a Slack-style chat with an in-house tool built around one awkward fact: members always talk one to one, but admins talk to one person or to everyone at once.</p>
+    </section>
+
+    <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
+    <div class="frame cover" data-label="Cover: the admin inbox"></div>
+
+    <dl class="facts grid row"><div><dt>Role</dt><dd>Product Designer</dd></div><div><dt>Company</dt><dd>CrowdBuilding</dd></div><div><dt>Timeline</dt><dd>May 2026, picked up again in August 2026</dd></div><div><dt>Platform</dt><dd>Web</dd></div></dl>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">01</span><br>Outcome</p>
+      <div class="prose c-text">
+        <!-- Add numbers here if you have them, e.g. messages sent per week before and after -->
+        <ul>
+          <li><strong>Shipped</strong> an in-house messaging tool that replaced the third-party chat.</li>
+          <li><strong>More people used messaging</strong> after launch.</li>
+          <li><strong>More messages were sent, and more were read.</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">02</span><br>Context</p>
+      <div class="prose c-text"><p>Admins on CrowdBuilding need a way to keep their members updated. Messaging ran on an external library, essentially a copy of Slack, and it worked poorly. Part of the problem was the implementation. The bigger part was the audience: most of our users had never used Slack, and for them it was simply too much.</p><p>We could have improved the existing tool's interface. Instead, the decision was made to build messaging in house, which gave us the chance to design it around how our users actually communicate.</p></div>
+    </section>
+
+    <figure class="section figure grid">
+      <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
+      <div class="frame" data-label="Before: the Slack-style chat"></div>
+      <figcaption>The old messaging: a Slack-style chat that most members had never seen before.</figcaption>
+    </figure>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">03</span><br>Problem</p>
+      <h2 class="h-lg c-head-narrow sec-head">One person to many is a broadcast, not a group chat</h2>
+      <div class="prose c-text"><p>About 80% of users are regular members, and for them messaging is always one to one. Admins are different. They message one person, and they message many people at once.</p><p>Sending to many isn't a group chat. It's a broadcast. That raised the questions the whole design hinged on:</p><ul><li><strong>Where does a reply to a broadcast land?</strong></li><li><strong>How does an admin keep track of the conversation</strong> when replies come back from many members?</li></ul><p>Two constraints shaped the answer. The system was built as a broadcast system from the start, so the model had to work with it. And for privacy reasons I couldn't use screen recordings to see how people actually used messaging.</p></div>
+    </section>
+
+    <figure class="section figure grid">
+      <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
+      <div class="frame" data-label="Diagram: how replies to a broadcast land"></div>
+      <figcaption>Members always see one-to-one conversations. Admins send to one person or to many, and the design question was where replies to a broadcast go.</figcaption>
+    </figure>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">04</span><br>Approach</p>
+      <h2 class="h-lg c-head-narrow sec-head">Talk, measure, then prototype</h2>
+      <div class="prose c-text"><p>Without screen recordings, I combined two sources. I talked to admins and members, and I looked at the data we did have: the ratio between messages sent, read and replied to. That showed where conversations stalled.</p><p>Later I vibe-coded working prototypes and sent them to users, so they could react to something real rather than to static screens.</p></div>
+    </section>
+
+    <figure class="section figure grid">
+      <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
+      <div class="frame" data-label="Prototypes: two or three variants"></div>
+      <figcaption>Coded prototypes sent to users to test how replies to a broadcast should appear.</figcaption>
+    </figure>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">05</span><br>Decisions</p>
+      <h2 class="h-lg c-head-narrow sec-head">Two calls, two trade-offs</h2>
+      <ol class="rows">
+        <li><h3>Broadcast, not group chat</h3><div><p>Admins send one-to-many messages as broadcasts, which keeps their workspace focused instead of turning every update into a noisy group thread.</p><p class="tradeoff">Trade-off: members don't see each other's replies, so there's no group discussion around an update.</p></div></li>
+        <li><h3>Messaging open to everyone</h3><div><p>Messaging started as a members-only feature. We opened it up to everyone.</p><p class="tradeoff">Trade-off: it brought in a set of edge cases around blocking and reporting potential spammers, which then needed designing too.</p></div></li>
+      </ol>
+    </section>
+
+    <figure class="section figure grid">
+      <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
+      <div class="frame" data-label="Final UI: broadcast and replies"></div>
+      <figcaption>The shipped tool: an admin sends a broadcast, and replies come back as conversations they can follow.</figcaption>
+    </figure>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">06</span><br>Solution</p>
+      <div class="prose c-text"><!-- Add a short walkthrough of what shipped: what admins see, what members see, how replies appear --><p>We shipped the in-house messaging tool, replacing the Slack-style chat. Members get simple one-to-one conversations. Admins can message one person or broadcast to many, with replies they can keep track of.</p></div>
+    </section>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">07</span><br>Reflection</p>
+      <h2 class="h-lg c-head-narrow sec-head">What I'd do differently</h2>
+      <div class="prose c-text"><p>I'd explore letting admins choose whether replies to a broadcast are visible to everyone or only to them. Some updates invite discussion, and others don't.</p><p>I'd also talk to users more, and sooner. There were moments when we could simply have asked, and instead spent two hours in a theoretical debate.</p></div>
+    </section>
+
+    <a class="next section grid row-heavy" href="harbor-design-system.html">
+      <p class="label c-label">Next project</p>
+      <p class="h-xl c-head">One design system, four product <span class="nowrap">teams<span class="arrow arrow-lg" aria-hidden="true"></span></span></p>
+    </a>
+  </main>
+
+  <footer class="container site-footer" id="contact">
+    <div class="grid row-heavy">
+      <p class="label c-label">Contact</p>
+      <a class="h-lg email c-head" href="mailto:hello@example.com">hello@example.com</a>
+    </div>
+    <div class="grid footer-row">
+      <span class="copy">© <span data-year>2026</span> Agata Ageieva</span>
+      <span class="toggle"><button class="grid-toggle" type="button" aria-pressed="false">Show grid</button></span>
+      <ul>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="#">Résumé (PDF)</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

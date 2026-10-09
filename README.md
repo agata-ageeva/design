@@ -5,7 +5,7 @@ A static portfolio site for a senior product designer: a home page, three case s
 ```
 index.html                     Home: hero, three project cards, "how I work"
 about.html                     About: bio, experience, principles, toolkit
-work/ledgerly-invoicing.html   Case study 1 (B2B fintech)
+work/crowdbuilding-messaging.html Case study 1 (CrowdBuilding messaging, real)
 work/harbor-design-system.html Case study 2 (design systems)
 work/carewell-intake.html      Case study 3 (healthcare, mobile)
 assets/css/style.css           All styles; theme tokens are at the top
@@ -21,7 +21,7 @@ python3 -m http.server 8000
 
 ## ⚠️ Replace the sample content
 
-All projects, companies (Ledgerly, Harbor, Carewell, Northwind), metrics and career history are **fictional sample content**. They show the structure and tone of a strong senior case study. Replace them with your own work before publishing.
+The CrowdBuilding case study is real. The other projects, companies (Harbor, Carewell, Northwind), metrics and career history are still **fictional sample content**. They show the structure and tone of a strong senior case study. Replace them with your own work before publishing.
 
 Checklist:
 
