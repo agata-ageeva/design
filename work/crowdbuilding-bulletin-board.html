@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CrowdBuilding Bulletin Board — Agata Ageieva</title>
+  <meta name="description" content="Case study: a shared bulletin board for CrowdBuilding home seekers, initiatives and landowners.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="grid-overlay" aria-hidden="true"><div class="container grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+
+  <header class="container grid masthead">
+    <a class="name" href="../index.html">Agata Ageieva</a>
+    <p class="role label muted">Senior Product Designer</p>
+    <nav aria-label="Main">
+      <ul class="menu">
+        <li><a href="../index.html#work" aria-current="page">Work</a></li>
+        <li><a href="../about.html">About me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section class="cs-head grid row-heavy">
+      <p class="label c-label">CrowdBuilding</p>
+      <h1 class="h-xl c-head">Letting everyone raise a hand</h1>
+      <p class="summary c-text">CrowdBuilding helps people start cooperative housing projects together. Finding each other used to be one-sided: initiatives listed themselves and waited. A shared bulletin board let home seekers, initiatives and landowners all post what they're looking for.</p>
+    </section>
+
+    <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
+    <div class="frame cover" data-label="Cover: the bulletin board"></div>
+
+    <dl class="facts grid row"><div><dt>Role</dt><dd>Lead Designer</dd></div><div><dt>Team</dt><dd>PM, 1 engineer</dd></div><div><dt>Timeline</dt><dd>About 2 weeks of research and design</dd></div><div><dt>Platform</dt><dd>Web</dd></div></dl>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">01</span><br>Outcome</p>
+      <dl class="metrics">
+        <div class="metric"><dt>Posts created since launch</dt><dd>72</dd></div>
+        <div class="metric"><dt>Comments left on posts</dt><dd>100s</dd></div>
+        <div class="metric"><dt>People who contacted one landowner after a single post</dt><dd>20</dd></div>
+      </dl>
+      <div class="prose c-text" style="margin-top: calc(var(--u) * 4)"><p>There was nothing to compare against, since before the board people simply couldn't post. The real signal is what surfaced. One elderly man with a large plot of land posted that he wanted to start a cooperative for older people to live together. Twenty people got in touch with him.</p></div>
+    </section>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">02</span><br>Context</p>
+      <div class="prose c-text"><p>When I joined, CrowdBuilding was essentially an index of housing initiatives. It was static, and it was hard to tell what was really going on. Was an initiative still looking for members? One, or twenty? For which housing units? A listing that said "open for members" might belong to an initiative that had long gone quiet.</p><p>Home seekers had no way to put themselves forward. Someone looking for a cooperative in Amsterdam had to search, filter, and apply to every initiative one by one. Landowners had it worse: to offer a plot, they emailed the team, and someone added it by hand through the CMS.</p><p>Within my first weeks it was clear the platform needed to be more alive, and that the work of finding each other shouldn't sit only with initiative takers.</p></div>
+    </section>
+
+    <figure class="section figure grid">
+      <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
+      <div class="frame" data-label="Before: the static initiatives index"></div>
+      <figcaption>The old CrowdBuilding: a static list of initiatives, with no way for home seekers or landowners to speak up.</figcaption>
+    </figure>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">03</span><br>Problem</p>
+      <h2 class="h-lg c-head-narrow sec-head">Only one side could speak</h2>
+      <div class="prose c-text"><p>Three groups were trying to find each other: <strong>initiative takers</strong> looking for members, <strong>home seekers</strong> looking for a cooperative, and <strong>landowners</strong> with land to offer. Only the first group had a voice on the platform.</p><p>The audiences overlap, so one shared board, a <em>prikbord</em> in Dutch, made more sense than three separate tools. It also had to work for our users, many of whom are in their sixties and older.</p><p>The main constraint was time. The board was a probe: would it spark conversations, and would people come back? Nobody wanted to invest months before we knew.</p></div>
+    </section>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">04</span><br>Approach</p>
+      <h2 class="h-lg c-head-narrow sec-head">Learn from where people already post</h2>
+      <div class="prose c-text"><p>I interviewed initiative takers about how they scout for members, and home seekers about how they discover cooperatives and try to join one. I also observed users during other research sessions.</p><p>To see what people actually post when they can, I spent a lot of time on a Dutch website about communal living, where people advertise apartments in cooperatives, look for members, and everything in between. Its ads showed how much the three audiences overlap, and which kinds of posts come up again and again.</p></div>
+    </section>
+
+    <figure class="section figure grid">
+      <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
+      <div class="frame" data-label="Research: ads on a communal living site"></div>
+      <figcaption>What people post when they can: ads from a Dutch communal living website, grouped by type.</figcaption>
+    </figure>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">05</span><br>Decisions</p>
+      <h2 class="h-lg c-head-narrow sec-head">Lean by design</h2>
+      <ol class="rows">
+        <li><h3>Five filters, not fifty</h3><div><p>Some stakeholders wanted granular filters for every scenario. My argument, shared by product, was that we didn't know yet what people would post, so we couldn't predict which filters they'd need, and the volume of posts would be low. My first proposal was no filters at all, with categories added once we saw real posts. We settled on five.</p><p class="tradeoff">Trade-off: people can't always find an exact match. At this volume that matters little, and browsing keeps people on the site longer.</p></div></li>
+        <li><h3>A board, not a feed</h3><div><p>Instead of a plain feed, posts sit in a grid, three to a row, like a real bulletin board. Each card takes a soft pastel color from the tag chosen when posting, such as looking for a home, looking for expertise, or offering land. Over time people learn to skim past what isn't for them, without touching a filter.</p><p class="tradeoff">Trade-off: a grid is visually busier than a feed, which can hurt discoverability. The color coding exists to offset that.</p></div></li>
+      </ol>
+    </section>
+
+    <figure class="section figure grid">
+      <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
+      <div class="frame" data-label="Final UI: the board and a post"></div>
+      <figcaption>The bulletin board: color-coded cards by post type, and a post with its comment thread.</figcaption>
+    </figure>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">06</span><br>Solution</p>
+      <div class="prose c-text"><p>We shipped simple post creation, an overview of all posts, and post pages where people can comment, reply to comments, like and share.</p><p>Two things surfaced right after launch. Even with a deliberately simple interface, some older users needed the support team to walk them through posting over the phone. And many people left phone numbers, email addresses and even home addresses in public comments.</p><p>We shipped a quick fix for the second one. When a comment contains something that looks like a phone number or email address, we offer to send it as a private message instead.</p></div>
+    </section>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">07</span><br>Reflection</p>
+      <h2 class="h-lg c-head-narrow sec-head">What I'd do differently</h2>
+      <div class="prose c-text"><p>I'd design for personal information from the start, instead of fixing it after launch. With an older audience, people sharing contact details in public was predictable.</p><p>I'd also give people more guidance when creating a post. One direction worth exploring: people pick a few tags, and AI drafts the post for them to edit.</p></div>
+    </section>
+
+    <a class="next section grid row-heavy" href="carewell-intake.html">
+      <p class="label c-label">Next project</p>
+      <p class="h-xl c-head">Patient intake people actually <span class="nowrap">finish<span class="arrow arrow-lg" aria-hidden="true"></span></span></p>
+    </a>
+  </main>
+
+  <footer class="container site-footer" id="contact">
+    <div class="grid row-heavy">
+      <p class="label c-label">Contact</p>
+      <a class="h-lg email c-head" href="mailto:hello@example.com">hello@example.com</a>
+    </div>
+    <div class="grid footer-row">
+      <span class="copy">© <span data-year>2026</span> Agata Ageieva</span>
+      <span class="toggle"><button class="grid-toggle" type="button" aria-pressed="false">Show grid</button></span>
+      <ul>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="#">Résumé (PDF)</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

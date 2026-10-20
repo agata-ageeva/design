@@ -6,7 +6,7 @@ A static portfolio site for a senior product designer: a home page, three case s
 index.html                     Home: hero, three project cards, "how I work"
 about.html                     About: bio, experience, principles, toolkit
 work/crowdbuilding-messaging.html Case study 1 (CrowdBuilding messaging, real)
-work/harbor-design-system.html Case study 2 (design systems)
+work/crowdbuilding-bulletin-board.html Case study 2 (CrowdBuilding bulletin board, real)
 work/carewell-intake.html      Case study 3 (healthcare, mobile)
 assets/css/style.css           All styles; theme tokens are at the top
 assets/js/main.js              Footer year, grid overlay toggle, home dot field
@@ -21,7 +21,7 @@ python3 -m http.server 8000
 
 ## ⚠️ Replace the sample content
 
-The CrowdBuilding case study is real. The other projects, companies (Harbor, Carewell, Northwind), metrics and career history are still **fictional sample content**. They show the structure and tone of a strong senior case study. Replace them with your own work before publishing.
+The two CrowdBuilding case studies are real. The other project, companies (Carewell, Harbor, Northwind), metrics and career history are still **fictional sample content**. They show the structure and tone of a strong senior case study. Replace them with your own work before publishing.
 
 Checklist:
 
