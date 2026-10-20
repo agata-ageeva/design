@@ -86,6 +86,56 @@
       </ol>
     </section>
 
+    <section class="section grid row" aria-labelledby="demo-title">
+      <p class="label c-label">Demo</p>
+      <h2 class="h-lg c-head-narrow sec-head" id="demo-title">Try the board</h2>
+      <div class="demo c-wide">
+        <p class="demo-note small">An interactive sketch of the two decisions above. The posts are made-up examples, not real users.</p>
+
+        <div class="demo-bar">
+          <div class="chips" role="group" aria-label="Filter posts by type">
+            <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="chip" data-filter="home" aria-pressed="false">Looking for a home</button>
+            <button type="button" class="chip" data-filter="members" aria-pressed="false">Looking for members</button>
+            <button type="button" class="chip" data-filter="land" aria-pressed="false">Offering land</button>
+            <button type="button" class="chip" data-filter="expertise" aria-pressed="false">Looking for expertise</button>
+          </div>
+          <label class="switch"><input type="checkbox" id="color-toggle" checked> Colour by type</label>
+        </div>
+
+        <ul class="board" id="board">
+          <li class="post" data-type="land"><span class="post-tag">Offering land</span><h3>Plot near Deventer, open to a housing group</h3><p>Two hectares on the edge of town. I’d love to see it become homes for people who want to live together.</p><span class="post-meta">Henk · 6 comments</span></li>
+          <li class="post" data-type="home"><span class="post-tag">Looking for a home</span><h3>Retired teacher looking for a cooperative in Utrecht</h3><p>Happy to join a group early and help with the plans. A small garden would be lovely.</p><span class="post-meta">Marijke · 3 comments</span></li>
+          <li class="post" data-type="members"><span class="post-tag">Looking for members</span><h3>Our group in Haarlem has three homes left</h3><p>Twelve households, building starts next spring. Families and singles welcome.</p><span class="post-meta">Wonen aan het Spaarne · 9 comments</span></li>
+          <li class="post" data-type="expertise"><span class="post-tag">Looking for expertise</span><h3>Who knows about financing a CPO project?</h3><p>We have land and a group, but the bank conversations are new to us.</p><span class="post-meta">Ahmed · 4 comments</span></li>
+          <li class="post" data-type="home"><span class="post-tag">Looking for a home</span><h3>Young family hoping for shared living near Arnhem</h3><p>Two kids, one dog, lots of energy for a shared vegetable garden.</p><span class="post-meta">Sanne · 2 comments</span></li>
+          <li class="post" data-type="members"><span class="post-tag">Looking for members</span><h3>Starting a cohousing group in Groningen</h3><p>First evening to meet each other is in March. Everyone curious is welcome.</p><span class="post-meta">Groningen Samen · 5 comments</span></li>
+        </ul>
+        <p class="board-empty small" id="board-empty" hidden>No posts of this type yet.</p>
+
+        <div class="thread">
+          <p class="label muted">The privacy check</p>
+          <p class="thread-post"><strong>Plot near Deventer, open to a housing group</strong></p>
+          <ul class="comments" id="comments">
+            <li><span class="comment-author">Marijke</span> This sounds wonderful. Is the land close to a train station?</li>
+          </ul>
+          <form class="comment-form" id="comment-form" novalidate>
+            <label for="comment-input" class="visually-hidden">Write a comment</label>
+            <input id="comment-input" type="text" autocomplete="off" value="Very interested! Call me on 06 1234 5678">
+            <button type="submit" class="demo-btn">Comment</button>
+          </form>
+          <div class="privacy-prompt" id="privacy-prompt" role="status" hidden>
+            <p id="privacy-text"></p>
+            <div class="prompt-actions">
+              <button type="button" class="demo-btn" id="send-private">Send privately to Henk</button>
+              <button type="button" class="demo-btn ghost" id="post-anyway">Post publicly anyway</button>
+            </div>
+          </div>
+          <p class="demo-note small">Try typing a phone number or an email address, then press Comment.</p>
+        </div>
+      </div>
+    </section>
+
     <figure class="section figure grid">
       <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
       <div class="frame" data-label="Final UI: the board and a post"></div>
@@ -125,5 +175,6 @@
   </footer>
 
   <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/board-demo.js" defer></script>
 </body>
 </html>
