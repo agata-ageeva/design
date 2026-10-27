@@ -30,7 +30,7 @@
     <section class="cs-head grid row-heavy">
       <p class="label c-label">August 2026</p>
       <h1 class="h-xl c-head">A broadcast is not a group chat</h1>
-      <p class="summary c-text">CrowdBuilding admins use messaging to keep their members updated. We replaced a Slack-style chat with an in-house tool built around one awkward fact: members always talk one to one, but admins talk to one person or to everyone at once.</p>
+      <p class="summary c-text">Leadership saw CrowdBuilding as a marketplace where everyone finds each other. Research showed it was really a scouting platform for initiative takers. That shift turned messaging from a chat between strangers into a tool for admins to keep their members updated, built around one awkward fact: members talk one to one, but admins talk to one person or to everyone at once.</p>
     </section>
 
     <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
@@ -62,7 +62,33 @@
     </figure>
 
     <section class="section grid row">
-      <p class="label c-label"><span class="index">03</span><br>Problem</p>
+      <p class="label c-label"><span class="index">03</span><br>Reframe</p>
+      <h2 class="h-lg c-head-narrow sec-head">Not a marketplace. A scouting platform.</h2>
+      <div class="compare">
+        <div class="compare-col is-before">
+          <p class="rows-key">What leadership believed</p>
+          <p class="h-md">A vibrant marketplace where everyone finds each other</p>
+          <ul class="small">
+            <li>Landowners find buyers</li>
+            <li>Experts find clients</li>
+            <li>Initiatives find members</li>
+          </ul>
+        </div>
+        <div class="compare-col is-after">
+          <p class="rows-key">What research showed</p>
+          <p class="h-md">A scouting platform for initiative takers</p>
+          <ul class="small">
+            <li>Experts weren’t using it</li>
+            <li>Landowners struggled to use it</li>
+            <li>Initiatives used it as one channel to attract members, next to their own website, Facebook group and Instagram</li>
+          </ul>
+        </div>
+      </div>
+      <div class="prose c-text compare-text"><p>When I started, everyone shared the marketplace picture. Before designing anything, I tested it by talking to users, and it didn’t hold up. The people actually using CrowdBuilding were initiative takers, and for them it was a place to scout for new members, not where their community lived.</p><p>That changed the question messaging had to answer. Not “how do strangers talk to each other?” but “how do initiative admins keep the people they’ve found engaged?” Every decision after this point follows from that shift.</p></div>
+    </section>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">04</span><br>Problem</p>
       <h2 class="h-lg c-head-narrow sec-head">One person to many is a broadcast, not a group chat</h2>
       <div class="prose c-text"><p>About 80% of users are regular members, and for them messaging is always one to one. Admins are different. They message one person, and they message many people at once.</p><p>Sending to many isn't a group chat. It's a broadcast. That raised the questions the whole design hinged on:</p><ul><li><strong>Where does a reply to a broadcast land?</strong></li><li><strong>How does an admin keep track of the conversation</strong> when replies come back from many members?</li></ul><p>Two constraints shaped the answer. The system was built as a broadcast system from the start, so the model had to work with it. And for privacy reasons I couldn't use screen recordings to see how people actually used messaging.</p></div>
     </section>
@@ -74,7 +100,7 @@
     </figure>
 
     <section class="section grid row">
-      <p class="label c-label"><span class="index">04</span><br>Approach</p>
+      <p class="label c-label"><span class="index">05</span><br>Approach</p>
       <h2 class="h-lg c-head-narrow sec-head">Talk, measure, then prototype</h2>
       <div class="prose c-text"><p>Without screen recordings, I combined two sources. I talked to admins and members, and I looked at the data we did have: the ratio between messages sent, read and replied to. That showed where conversations stalled.</p><p>Later I vibe-coded working prototypes and sent them to users, so they could react to something real rather than to static screens.</p></div>
     </section>
@@ -86,17 +112,17 @@
     </figure>
 
     <section class="section grid row">
-      <p class="label c-label"><span class="index">05</span><br>Assumptions</p>
+      <p class="label c-label"><span class="index">06</span><br>Assumptions</p>
       <h2 class="h-lg c-head-narrow sec-head">What we got wrong</h2>
       <ol class="rows rows-assumptions">
-        <li><h3>We assumed CrowdBuilding was a vibrant marketplace where people find each other.</h3><div><p><span class="rows-key">What happened</span> Leadership and stakeholders pictured landowners finding buyers, experts finding clients and initiatives finding members. Interviews quickly showed otherwise. Experts weren’t using the platform, and landowners struggled to. The real users were initiative takers, who used CrowdBuilding as a scouting platform: one place to attract new members, alongside their own website, Facebook group and Instagram.</p><p><span class="rows-key">What changed</span> This was the biggest shift of the project, and it shaped everything after it. Messaging became a tool for initiative admins to reach their members, not a marketplace for strangers.</p></div></li>
+        <li><h3>We assumed CrowdBuilding was a vibrant marketplace where people find each other.</h3><div><p><span class="rows-key">What happened</span> Experts weren’t using it and landowners struggled to. The real users were initiative takers, scouting for members.</p><p><span class="rows-key">What changed</span> The biggest shift of the project, covered in the Reframe above. Messaging became a tool for initiative admins, not a marketplace for strangers.</p></div></li>
         <li><h3>We assumed members wanted to talk to each other, and even to strangers.</h3><div><p><span class="rows-key">What happened</span> We pictured a lively, highly interactive platform. In practice, the people who wanted to communicate were admins, keeping their members updated. Most members weren’t looking to chat.</p><p><span class="rows-key">What changed</span> We designed messaging around admins: broadcasts to keep members informed, and simple one-to-one conversations for everyone else. This is where the broadcast model came from.</p></div></li>
         <li><h3>The old tool assumed that copying a well-known chat app would make messaging feel familiar.</h3><div><p><span class="rows-key">What happened</span> Most of our users had never used Slack. Instead of familiar, it felt like too much.</p><p><span class="rows-key">What changed</span> We designed around how our members actually communicate: simple one-to-one conversations, and broadcasts for admins.</p></div></li>
       </ol>
     </section>
 
     <section class="section grid row">
-      <p class="label c-label"><span class="index">06</span><br>Decisions</p>
+      <p class="label c-label"><span class="index">07</span><br>Decisions</p>
       <h2 class="h-lg c-head-narrow sec-head">Two calls, two trade-offs</h2>
       <ol class="rows">
         <li><h3>Broadcast, not group chat</h3><div><p>Admins send one-to-many messages as broadcasts, which keeps their workspace focused instead of turning every update into a noisy group thread.</p><p class="tradeoff">Trade-off: members don't see each other's replies, so there's no group discussion around an update.</p></div></li>
@@ -111,12 +137,12 @@
     </figure>
 
     <section class="section grid row">
-      <p class="label c-label"><span class="index">07</span><br>Solution</p>
+      <p class="label c-label"><span class="index">08</span><br>Solution</p>
       <div class="prose c-text"><!-- Add a short walkthrough of what shipped: what admins see, what members see, how replies appear --><p>We shipped the in-house messaging tool, replacing the Slack-style chat. Members get simple one-to-one conversations. Admins can message one person or broadcast to many, with replies they can keep track of.</p></div>
     </section>
 
     <section class="section grid row">
-      <p class="label c-label"><span class="index">08</span><br>Reflection</p>
+      <p class="label c-label"><span class="index">09</span><br>Reflection</p>
       <h2 class="h-lg c-head-narrow sec-head">What I'd do differently</h2>
       <div class="prose c-text"><p>I'd explore letting admins choose whether replies to a broadcast are visible to everyone or only to them. Some updates invite discussion, and others don't.</p><p>I'd also talk to users more, and sooner. There were moments when we could simply have asked, and instead spent two hours in a theoretical debate.</p></div>
     </section>

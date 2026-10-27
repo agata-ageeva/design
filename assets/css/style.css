@@ -297,6 +297,19 @@ a { color: inherit; text-decoration: none; }
 .rows p { margin: 0 0 var(--u); font-size: 14px; line-height: 22px; }
 .rows p:last-child { margin-bottom: 0; }
 .rows .tradeoff { color: var(--muted); }
+/* Before / after comparison, on columns 3–6 and 7–12 */
+.compare { grid-column: 3 / -1; display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); column-gap: var(--gap); margin-bottom: calc(var(--u) * 5); }
+.compare-col { border-top: 2px solid var(--rule); padding-top: calc(var(--u) * 2); display: grid; gap: calc(var(--u) * 2); align-content: start; }
+.compare-col:first-child { grid-column: 1 / 5; }
+.compare-col:last-child { grid-column: 5 / -1; }
+.compare-col p { margin: 0; }
+.compare-col ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.compare-col.is-before { color: var(--muted); border-top-color: var(--muted); }
+.compare-col.is-before .h-md { text-decoration: line-through; text-decoration-thickness: 2px; }
+@media (max-width: 760px) {
+  .compare { grid-column: 1 / -1; grid-template-columns: 1fr; row-gap: calc(var(--u) * 4); }
+  .compare-col:first-child, .compare-col:last-child { grid-column: 1 / -1; }
+}
 .rows-key { display: block; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
 .rows-assumptions h3 { font-family: var(--font-display); font-weight: var(--display-weight); font-size: 19px; line-height: 1.2; letter-spacing: -0.01em; word-spacing: 0.06em; text-wrap: balance; }
 @media (max-width: 760px) {
