@@ -7,7 +7,7 @@ index.html                     Home: hero, three project cards, "how I work"
 about.html                     About: bio, experience, principles, toolkit
 work/crowdbuilding-messaging.html Case study 1 (CrowdBuilding messaging, real)
 work/crowdbuilding-bulletin-board.html Case study 2 (CrowdBuilding bulletin board, real)
-work/carewell-intake.html      Case study 3 (healthcare, mobile)
+work/crowdbuilding-unit-listings.html Case study 3 (CrowdBuilding home listings, real)
 assets/css/style.css           All styles; theme tokens are at the top
 assets/js/main.js              Footer year, grid overlay toggle, home dot field
 assets/js/board-demo.js        Interactive bulletin board demo (case study 2)
@@ -22,7 +22,7 @@ python3 -m http.server 8000
 
 ## ⚠️ Replace the sample content
 
-The two CrowdBuilding case studies are real. The other project, companies (Carewell, Harbor, Northwind), metrics and career history are still **fictional sample content**. They show the structure and tone of a strong senior case study. Replace them with your own work before publishing.
+All three case studies are real CrowdBuilding projects. The About page (career history, companies like Harbor and Northwind) is still **fictional sample content**. Replace it with your own before publishing.
 
 Checklist:
 
