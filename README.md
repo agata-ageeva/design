@@ -64,9 +64,9 @@ Every case study follows the same outline:
 2. **Facts:** role, team, timeline, platform
 3. **Outcome:** three metrics, placed up front for skimmers
 4. **Context → Problem → Approach:** how you framed the problem, not only what you made
-5. **Key decisions:** each with its **trade-off**, which is the strongest signal of seniority
-6. **Solution:** what shipped
-7. **What we got wrong:** assumptions that turned out wrong, what actually happened, and what changed
+5. **What we got wrong:** assumptions that turned out wrong, what actually happened, and what changed
+6. **Key decisions:** each with its **trade-off**, which is the strongest signal of seniority
+7. **Solution:** what shipped
 8. **Reflection:** what you'd do differently
 
 ## Deploy on GitHub Pages

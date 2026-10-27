@@ -78,7 +78,16 @@
     </figure>
 
     <section class="section grid row">
-      <p class="label c-label"><span class="index">05</span><br>Decisions</p>
+      <p class="label c-label"><span class="index">05</span><br>Assumptions</p>
+      <h2 class="h-lg c-head-narrow sec-head">What we got wrong</h2>
+      <ol class="rows rows-assumptions">
+        <li><h3>We assumed a simple interface would be enough for everyone to post on their own.</h3><div><p><span class="rows-key">What happened</span> Even with a deliberately simple flow, some older users couldn’t work out how to post. Our support team ended up walking them through it over the phone.</p><p><span class="rows-key">What changed</span> For this audience, easy means guided, not just short. More guidance inside post creation is now first on my list.</p></div></li>
+        <li><h3>We assumed people would keep their contact details for private messages.</h3><div><p><span class="rows-key">What happened</span> Many people left phone numbers, email addresses and even home addresses in public comments.</p><p><span class="rows-key">What changed</span> We shipped a check that spots phone numbers and email addresses and offers to send them as a private message instead. You can try it in the demo below.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">06</span><br>Decisions</p>
       <h2 class="h-lg c-head-narrow sec-head">Lean by design</h2>
       <ol class="rows">
         <li><h3>Five filters, not fifty</h3><div><p>Some stakeholders wanted granular filters for every scenario. My argument, shared by product, was that we didn't know yet what people would post, so we couldn't predict which filters they'd need, and the volume of posts would be low. My first proposal was no filters at all, with categories added once we saw real posts. We settled on five.</p><p class="tradeoff">Trade-off: people can't always find an exact match. At this volume that matters little, and browsing keeps people on the site longer.</p></div></li>
@@ -199,17 +208,8 @@
     </figure>
 
     <section class="section grid row">
-      <p class="label c-label"><span class="index">06</span><br>Solution</p>
-      <div class="prose c-text"><p>We shipped simple post creation, an overview of all posts, and post pages where people can comment, reply to comments, like and share.</p><p>Launch also proved two of our assumptions wrong, covered below.</p></div>
-    </section>
-
-    <section class="section grid row">
-      <p class="label c-label"><span class="index">07</span><br>Assumptions</p>
-      <h2 class="h-lg c-head-narrow sec-head">What we got wrong</h2>
-      <ol class="rows rows-assumptions">
-        <li><h3>We assumed a simple interface would be enough for everyone to post on their own.</h3><div><p><span class="rows-key">What happened</span> Even with a deliberately simple flow, some older users couldn’t work out how to post. Our support team ended up walking them through it over the phone.</p><p><span class="rows-key">What changed</span> For this audience, easy means guided, not just short. More guidance inside post creation is now first on my list.</p></div></li>
-        <li><h3>We assumed people would keep their contact details for private messages.</h3><div><p><span class="rows-key">What happened</span> Many people left phone numbers, email addresses and even home addresses in public comments.</p><p><span class="rows-key">What changed</span> We shipped a check that spots phone numbers and email addresses and offers to send them as a private message instead. You can try it in the demo above.</p></div></li>
-      </ol>
+      <p class="label c-label"><span class="index">07</span><br>Solution</p>
+      <div class="prose c-text"><p>We shipped simple post creation, an overview of all posts, and post pages where people can comment, reply to comments, like and share.</p><p>Launch also proved two of our assumptions wrong, covered above.</p></div>
     </section>
 
     <section class="section grid row">
