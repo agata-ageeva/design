@@ -200,11 +200,20 @@
 
     <section class="section grid row">
       <p class="label c-label"><span class="index">06</span><br>Solution</p>
-      <div class="prose c-text"><p>We shipped simple post creation, an overview of all posts, and post pages where people can comment, reply to comments, like and share.</p><p>Two things surfaced right after launch. Even with a deliberately simple interface, some older users needed the support team to walk them through posting over the phone. And many people left phone numbers, email addresses and even home addresses in public comments.</p><p>We shipped a quick fix for the second one. When a comment contains something that looks like a phone number or email address, we offer to send it as a private message instead.</p></div>
+      <div class="prose c-text"><p>We shipped simple post creation, an overview of all posts, and post pages where people can comment, reply to comments, like and share.</p><p>Launch also proved two of our assumptions wrong, covered below.</p></div>
     </section>
 
     <section class="section grid row">
-      <p class="label c-label"><span class="index">07</span><br>Reflection</p>
+      <p class="label c-label"><span class="index">07</span><br>Assumptions</p>
+      <h2 class="h-lg c-head-narrow sec-head">What we got wrong</h2>
+      <ol class="rows rows-assumptions">
+        <li><h3>We assumed a simple interface would be enough for everyone to post on their own.</h3><div><p><span class="rows-key">What happened</span> Even with a deliberately simple flow, some older users couldn’t work out how to post. Our support team ended up walking them through it over the phone.</p><p><span class="rows-key">What changed</span> For this audience, easy means guided, not just short. More guidance inside post creation is now first on my list.</p></div></li>
+        <li><h3>We assumed people would keep their contact details for private messages.</h3><div><p><span class="rows-key">What happened</span> Many people left phone numbers, email addresses and even home addresses in public comments.</p><p><span class="rows-key">What changed</span> We shipped a check that spots phone numbers and email addresses and offers to send them as a private message instead. You can try it in the demo above.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">08</span><br>Reflection</p>
       <h2 class="h-lg c-head-narrow sec-head">What I'd do differently</h2>
       <div class="prose c-text"><p>I'd design for personal information from the start, instead of fixing it after launch. With an older audience, people sharing contact details in public was predictable.</p><p>I'd also give people more guidance when creating a post. One direction worth exploring: people pick a few tags, and AI drafts the post for them to edit.</p></div>
     </section>
