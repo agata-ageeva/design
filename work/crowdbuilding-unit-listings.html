@@ -42,8 +42,13 @@
       <div class="walk-player c-full" hidden></div>
     </section>
 
-    <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
-    <div class="frame cover" data-label="Cover: the home listings"></div>
+    <figure class="cover cover-video">
+      <video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="../assets/video/home-listings-poster.jpg" aria-describedby="cover-video-desc">
+        <source src="../assets/video/home-listings.mp4" type="video/mp4">
+      </video>
+      <figcaption class="visually-hidden" id="cover-video-desc">Screen recording of the home listings: available homes with location, price range, number of homes, delivery quarter and size, filtered by delivery year, square metres and bedrooms, then shown on a map of the Netherlands.</figcaption>
+      <button type="button" class="video-toggle" aria-pressed="false">Pause</button>
+    </figure>
 
     <dl class="facts grid row"><div><dt>Role</dt><dd>Senior Product Designer, sole designer</dd></div><div><dt>Company</dt><dd>CrowdBuilding</dd></div><div><dt>Scope</dt><dd>Discovery, home listings, paid promotion</dd></div><div><dt>Platform</dt><dd>Web</dd></div></dl>
 

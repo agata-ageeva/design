@@ -50,6 +50,10 @@ Press **G** or click **Show grid** in the footer to see the columns.
 
 The dotted background appears on the home page only. Its dots are drawn toward the cursor (`.dot-field` canvas). Tune `RADIUS`, `PULL` and `EASE` at the bottom of `main.js`. Visitors with reduced motion turned on see the static dots.
 
+## Cover videos
+
+The home listings case study uses a looping screen recording as its cover (`assets/video/`). It plays muted, pauses when scrolled out of view, has a Pause button, and stays still for visitors who prefer reduced motion. To add one elsewhere, copy the `<figure class="cover cover-video">` block. Compress recordings first, for example `ffmpeg -i in.mp4 -an -c:v libx264 -preset slow -crf 28 -movflags +faststart out.mp4`, and export a poster frame.
+
 ## Video walkthroughs (Loom)
 
 Each case study has a hidden walkthrough block under the summary, and the About page has one for a short intro under the heading. Paste the Loom share link into its `data-loom` attribute, for example `data-loom="https://www.loom.com/share/abc123…"`, and the block appears with a "Watch the 90-second walkthrough" button. The Loom player only loads when someone clicks it. In Loom, set the video to "Anyone with the link can view" and turn on captions.

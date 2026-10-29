@@ -22,6 +22,32 @@ document.addEventListener("keydown", (e) => {
   setGrid(!document.body.classList.contains("show-grid"));
 });
 
+// Case studies: looping cover videos. They pause for visitors who prefer
+// reduced motion, when scrolled out of view, and with the Pause button.
+document.querySelectorAll(".cover-video").forEach((fig) => {
+  const video = fig.querySelector("video");
+  const btn = fig.querySelector(".video-toggle");
+  let userPaused = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const sync = () => {
+    btn.textContent = video.paused ? "Play" : "Pause";
+    btn.setAttribute("aria-pressed", String(video.paused));
+  };
+  if (userPaused) { video.removeAttribute("autoplay"); video.pause(); }
+  btn.addEventListener("click", () => {
+    userPaused = !video.paused;
+    userPaused ? video.pause() : video.play();
+  });
+  video.addEventListener("play", sync);
+  video.addEventListener("pause", sync);
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(([e]) => {
+      if (!e.isIntersecting) video.pause();
+      else if (!userPaused) video.play().catch(() => {});
+    }).observe(fig);
+  }
+  sync();
+});
+
 // Case studies: Loom walkthrough. The block stays hidden until data-loom holds
 // a Loom share link or video id; the player loads only when asked for.
 document.querySelectorAll(".walkthrough[data-loom]").forEach((block) => {
