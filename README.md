@@ -50,6 +50,10 @@ Press **G** or click **Show grid** in the footer to see the columns.
 
 The dotted background appears on the home page only. Its dots are drawn toward the cursor (`.dot-field` canvas). Tune `RADIUS`, `PULL` and `EASE` at the bottom of `main.js`. Visitors with reduced motion turned on see the static dots.
 
+## Video walkthroughs (Loom)
+
+Each case study has a hidden walkthrough block under the summary, and the About page has one for a short intro under the heading. Paste the Loom share link into its `data-loom` attribute, for example `data-loom="https://www.loom.com/share/abc123…"`, and the block appears with a "Watch the 90-second walkthrough" button. The Loom player only loads when someone clicks it. In Loom, set the video to "Anyone with the link can view" and turn on captions.
+
 ## Customize the look
 
 - **Colors and fonts:** edit the tokens in `:root` at the top of `style.css`. Dark mode tokens are in the `prefers-color-scheme: dark` block below them.

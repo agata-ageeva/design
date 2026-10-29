@@ -22,6 +22,34 @@ document.addEventListener("keydown", (e) => {
   setGrid(!document.body.classList.contains("show-grid"));
 });
 
+// Case studies: Loom walkthrough. The block stays hidden until data-loom holds
+// a Loom share link or video id; the player loads only when asked for.
+document.querySelectorAll(".walkthrough[data-loom]").forEach((block) => {
+  const m = block.dataset.loom.trim().match(/(?:share|embed)\/([a-f0-9]+)/i) || block.dataset.loom.trim().match(/^([a-f0-9]{16,})$/i);
+  if (!m) return;
+  const id = m[1];
+  const btn = block.querySelector(".walk-btn");
+  const label = block.querySelector(".walk-label");
+  const watchText = label.textContent;
+  const player = block.querySelector(".walk-player");
+  block.querySelector(".walk-link").href = `https://www.loom.com/share/${id}`;
+  block.hidden = false;
+  btn.addEventListener("click", () => {
+    const open = btn.getAttribute("aria-expanded") !== "true";
+    btn.setAttribute("aria-expanded", String(open));
+    label.textContent = open ? "Close the video" : watchText;
+    if (open && !player.firstChild) {
+      const frame = document.createElement("iframe");
+      frame.src = `https://www.loom.com/embed/${id}?autoplay=1`;
+      frame.title = block.dataset.title || "Video walkthrough";
+      frame.allow = "autoplay; fullscreen";
+      frame.allowFullscreen = true;
+      player.append(frame);
+    }
+    player.hidden = !open;
+  });
+});
+
 // Home: dot field that is drawn toward the cursor and springs back.
 // Keeps the same 24px grid as the static CSS dots, which stay as the fallback.
 const field = document.querySelector(".dot-field");
