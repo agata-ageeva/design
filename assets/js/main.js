@@ -48,6 +48,31 @@ document.querySelectorAll(".cover-video").forEach((fig) => {
   sync();
 });
 
+// Case studies: play-once videos (for example a before/after). They play
+// when scrolled into view, then rest on the last frame with a Replay button.
+// Visitors who prefer reduced motion see the poster, the final frame.
+document.querySelectorAll(".play-once").forEach((box) => {
+  const video = box.querySelector("video");
+  const btn = box.querySelector(".video-toggle");
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const sync = () => {
+    btn.textContent = video.ended ? "Replay" : video.paused ? "Play" : "Pause";
+    btn.setAttribute("aria-label", `${btn.textContent} the before and after video`);
+  };
+  btn.addEventListener("click", () => {
+    if (video.ended) video.currentTime = 0;
+    video.paused ? video.play() : video.pause();
+  });
+  ["play", "pause", "ended"].forEach((ev) => video.addEventListener(ev, sync));
+  if (!reduce && "IntersectionObserver" in window) {
+    const io = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) { video.play().catch(() => {}); io.disconnect(); }
+    }, { threshold: 0.6 });
+    io.observe(box);
+  }
+  sync();
+});
+
 // Case studies: Loom walkthrough. The block stays hidden until data-loom holds
 // a Loom share link or video id; the player loads only when asked for.
 document.querySelectorAll(".walkthrough[data-loom]").forEach((block) => {

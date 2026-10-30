@@ -52,7 +52,7 @@ The dotted background appears on the home page only. Its dots are drawn toward t
 
 ## Cover videos
 
-The home listings case study uses a looping screen recording as its cover (`assets/video/`). It plays muted, pauses when scrolled out of view, has a Pause button, and stays still for visitors who prefer reduced motion. To add one elsewhere, copy the `<figure class="cover cover-video">` block. Compress recordings first, for example `ffmpeg -i in.mp4 -an -c:v libx264 -preset slow -crf 28 -movflags +faststart out.mp4`, and export a poster frame.
+The home listings case study uses a looping screen recording as its cover (`assets/video/`). It plays muted, pauses when scrolled out of view, has a Pause button, and stays still for visitors who prefer reduced motion. To add one elsewhere, copy the `<figure class="cover cover-video">` block. For a clip that should play once and rest on its last frame, such as the before/after in the same case study, use a `.frame.play-once` block instead. Compress recordings first, for example `ffmpeg -i in.mp4 -an -c:v libx264 -preset slow -crf 28 -movflags +faststart out.mp4`, and export a poster frame.
 
 ## Video walkthroughs (Loom)
 
