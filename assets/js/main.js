@@ -33,9 +33,9 @@ document.addEventListener("keydown", (e) => {
   }
 }
 
-// Case studies: looping cover videos. They pause for visitors who prefer
+// Case studies: looping videos (covers and inline). They pause for visitors who prefer
 // reduced motion, when scrolled out of view, and with the Pause button.
-document.querySelectorAll(".cover-video").forEach((fig) => {
+document.querySelectorAll(".cover-video, .loop-video").forEach((fig) => {
   const video = fig.querySelector("video");
   const btn = fig.querySelector(".video-toggle");
   let userPaused = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
