@@ -22,6 +22,17 @@ document.addEventListener("keydown", (e) => {
   setGrid(!document.body.classList.contains("show-grid"));
 });
 
+// Open every page at the top. Browsers already do this, but some embedded
+// previews keep the outer scroll position when a link opens a new page.
+// Links to a section (#work, #contact) and Back/Forward are left alone.
+{
+  const nav = performance.getEntriesByType?.("navigation")[0];
+  if (!location.hash && nav?.type !== "back_forward") {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollIntoView({ block: "start" });
+  }
+}
+
 // Case studies: looping cover videos. They pause for visitors who prefer
 // reduced motion, when scrolled out of view, and with the Pause button.
 document.querySelectorAll(".cover-video").forEach((fig) => {
