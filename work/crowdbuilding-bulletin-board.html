@@ -7,7 +7,7 @@
   <meta name="description" content="Case study: a shared bulletin board for CrowdBuilding home seekers, initiatives and landowners.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@900&family=Figtree:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -99,7 +99,7 @@
         <li><h3>We assumed opening the board to everyone would flood it with posts.</h3><div><p><span class="rows-key">What happened</span> It didn’t. Activity was steady rather than overwhelming: 72 posts since launch, with hundreds of comments around them.</p><p><span class="rows-key">What changed</span> It confirmed the case for light filtering. At this volume, people can browse the whole board, and every post gets seen.</p></div></li>
         <li><h3>We assumed most posts would come from people looking for a home.</h3><div><p><span class="rows-key">What happened</span> Plenty of home seekers did post. But we were surprised by how many people wanted to develop their land into housing, such as turning farmland into homes, and how many invited others to join their projects.</p><p><span class="rows-key">What changed</span> The board turned out to be a place where new initiatives begin, not only a list of people looking for a home. That made it more valuable to CrowdBuilding than we expected.</p></div></li>
         <li><h3>We assumed a simple interface would be enough for everyone to post on their own.</h3><div><p><span class="rows-key">What happened</span> Even with a deliberately simple flow, some older users couldn’t work out how to post. Our support team ended up walking them through it over the phone.</p><p><span class="rows-key">What changed</span> For this audience, easy means guided, not just short. More guidance inside post creation is now first on my list.</p></div></li>
-        <li><h3>We assumed people would keep their contact details for private messages.</h3><div><p><span class="rows-key">What happened</span> Many people left phone numbers, email addresses and even home addresses in public comments.</p><p><span class="rows-key">What changed</span> We shipped a check that spots phone numbers and email addresses and offers to send them as a private message instead. You can see it below, and try it in the demo further down.</p></div></li>
+        <li><h3>We assumed people would keep their contact details for private messages.</h3><div><p><span class="rows-key">What happened</span> Many people left phone numbers, email addresses and even home addresses in public comments.</p><p><span class="rows-key">What changed</span> We shipped a check that spots phone numbers and email addresses and offers to send them as a private message instead. You can see it below.</p></div></li>
       </ol>
     </section>
 
@@ -120,112 +120,6 @@
         <li><h3>Seven tags, not fifty filters</h3><div><p>Some stakeholders wanted granular filters for every scenario. My argument, shared by product, was that we didn't know yet what people would post, so we couldn't predict which filters they'd need, and the volume of posts would be low. My first proposal was no filters at all, with categories added once we saw real posts. We settled on seven tags, such as Looking for members, Home offered and Question. People pick them when posting, and the same tags work as filters, along with a filter by province.</p><p class="tradeoff">Trade-off: people can't always find an exact match. At this volume that matters little, and browsing keeps people on the site longer.</p></div></li>
         <li><h3>A board, not a feed</h3><div><p>Instead of a plain feed, posts sit in a grid, three to a row, like a real bulletin board. Cards are tinted by their tag, so a call for members, a request for expertise, a question and an update each get their own soft pastel color. Over time people learn to skim past what isn't for them, without touching a filter.</p><p class="tradeoff">Trade-off: a grid is visually busier than a feed, which can hurt discoverability. The color coding exists to offset that.</p></div></li>
       </ol>
-    </section>
-
-    <section class="section grid row" aria-labelledby="demo-title">
-      <p class="label c-label">Demo</p>
-      <h2 class="h-lg c-head-narrow sec-head" id="demo-title">Try the board</h2>
-      <div class="demo c-wide">
-        <div class="demo-bar">
-          <p class="demo-note small">A working sketch of the shipped board, in English. Click a post, share your own, or try a reply. The posts are made-up examples, not real users.</p>
-          <label class="switch"><input type="checkbox" id="color-toggle" checked> Colour by type</label>
-        </div>
-
-        <div class="pb" id="pb">
-          <div class="pb-head">
-            <h3 class="pb-title">Bulletin board</h3>
-            <button type="button" class="pb-cta" id="open-composer"><span aria-hidden="true">+</span> Share a post</button>
-          </div>
-          <div class="pb-filters">
-            <div class="pb-pills" role="group" aria-label="Filter posts">
-              <button type="button" class="pb-pill" data-filter="members" aria-pressed="false">Looking for members</button>
-              <button type="button" class="pb-pill" data-filter="house" aria-pressed="false">Looking for house</button>
-              <button type="button" class="pb-pill" data-filter="question" aria-pressed="false">Question</button>
-              <button type="button" class="pb-pill" data-filter="update" aria-pressed="false">Update</button>
-              <button type="button" class="pb-pill" data-filter="mine" aria-pressed="false">My posts</button>
-            </div>
-            <label class="visually-hidden" for="pb-location">Filter by location</label>
-            <select class="pb-select" id="pb-location">
-              <option value="">Location</option>
-              <option>Amsterdam</option><option>Deventer</option><option>Drenthe</option><option>Groningen</option><option>Rotterdam</option><option>Utrecht</option>
-            </select>
-          </div>
-          <div class="pb-board" id="pb-board"></div>
-          <p class="pb-empty" id="pb-empty" hidden>No posts match these filters yet.</p>
-        </div>
-
-        <dialog class="pb-dialog pb-post-dialog" id="post-dialog" aria-labelledby="pd-title">
-          <div class="pb-dialog-inner" id="pd-inner">
-            <div class="pb-card-head">
-              <span class="pb-avatar" id="pd-avatar"></span>
-              <span class="pb-who"><span class="pb-name" id="pd-name"></span><span class="pb-date">9 July 2025</span></span>
-              <button type="button" class="pb-close" data-close aria-label="Close">×</button>
-            </div>
-            <h4 class="pb-card-title" id="pd-title"></h4>
-            <p class="pb-body" id="pd-body"></p>
-            <div class="pb-tags" id="pd-tags"></div>
-            <div class="pb-meta">
-              <button type="button" class="pb-like" id="pd-like" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span id="pd-likes"></span></button>
-              <span class="pb-replies"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 7 0 1 1 3.2 5.6L4 19l1-3.2A6.6 6.6 0 0 1 4 12z"/></svg> Reply</span>
-            </div>
-            <ul class="pb-thread" id="pd-thread"></ul>
-            <form class="pb-reply" id="pd-reply" novalidate>
-              <label class="visually-hidden" for="pd-input">Write a reply</label>
-              <input id="pd-input" type="text" autocomplete="off">
-              <button type="submit" class="pb-send" aria-label="Send reply"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-8-6 16-2.5-6.5z"/></svg></button>
-            </form>
-            <div class="pb-privacy" id="pd-privacy" role="status" hidden>
-              <p id="pd-privacy-text"></p>
-              <div class="pb-actions">
-                <button type="button" class="pb-cta small" id="pd-private">Send as private message</button>
-                <button type="button" class="pb-ghost small" id="pd-public">Post publicly anyway</button>
-              </div>
-            </div>
-          </div>
-        </dialog>
-
-        <dialog class="pb-dialog pb-composer" id="composer" aria-labelledby="cp-title">
-          <form class="pb-dialog-inner" id="cp-form" novalidate>
-            <div class="pb-composer-head">
-              <h4 class="pb-composer-title" id="cp-title">Share your post</h4>
-              <button type="button" class="pb-close" data-close aria-label="Close">×</button>
-            </div>
-            <div class="pb-field">
-              <div class="pb-label-row"><label for="cp-title-input">Title</label></div>
-              <input id="cp-title-input" class="pb-input" type="text" maxlength="80" placeholder="For example: looking for a group in Utrecht">
-            </div>
-            <div class="pb-field">
-              <div class="pb-label-row"><label for="cp-body">Your message <span class="pb-req">*</span></label><span class="pb-count" id="cp-count">Max 800 characters</span></div>
-              <textarea id="cp-body" class="pb-input" rows="5" maxlength="800" placeholder="Tell people what you’re looking for or offering. Be specific: who, what and where?"></textarea>
-              <p class="pb-error" id="cp-error" hidden>Write a message first.</p>
-            </div>
-            <fieldset class="pb-field">
-              <legend>What do you want to do?</legend>
-              <div class="pb-tags pb-tag-picker" id="cp-tags">
-                <button type="button" class="pb-tag" data-tag="looking" aria-pressed="false">Looking</button>
-                <button type="button" class="pb-tag" data-tag="offering" aria-pressed="false">Offering</button>
-                <button type="button" class="pb-tag" data-tag="question" aria-pressed="false">Question</button>
-                <button type="button" class="pb-tag" data-tag="update" aria-pressed="false">Update</button>
-              </div>
-            </fieldset>
-            <div class="pb-field">
-              <div class="pb-label-row"><label for="cp-location">Municipality</label></div>
-              <select id="cp-location" class="pb-input"><option>Amsterdam</option><option>Deventer</option><option>Drenthe</option><option>Groningen</option><option>Rotterdam</option><option>Utrecht</option></select>
-            </div>
-            <div class="pb-privacy" id="cp-privacy" role="status" hidden>
-              <p id="cp-privacy-text"></p>
-              <div class="pb-actions">
-                <button type="button" class="pb-ghost small" id="cp-edit">Edit my message</button>
-                <button type="button" class="pb-ghost small" id="cp-anyway">Post anyway</button>
-              </div>
-            </div>
-            <div class="pb-composer-foot">
-              <button type="button" class="pb-ghost" data-close>Cancel</button>
-              <button type="submit" class="pb-cta">Post your message</button>
-            </div>
-          </form>
-        </dialog>
-      </div>
     </section>
 
     <figure class="section figure grid">
@@ -281,6 +175,5 @@
   </footer>
 
   <script src="../assets/js/main.js" defer></script>
-  <script src="../assets/js/board-demo.js" defer></script>
 </body>
 </html>

@@ -10,7 +10,6 @@ work/crowdbuilding-bulletin-board.html Case study 2 (CrowdBuilding bulletin boar
 work/crowdbuilding-unit-listings.html Case study 3 (CrowdBuilding home listings, real)
 assets/css/style.css           All styles; theme tokens are at the top
 assets/js/main.js              Footer year, grid overlay toggle, home dot field
-assets/js/board-demo.js        Interactive bulletin board demo (case study 2)
 ```
 
 ## Preview locally
