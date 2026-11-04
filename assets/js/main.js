@@ -68,7 +68,7 @@ document.querySelectorAll(".play-once").forEach((box) => {
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const sync = () => {
     btn.textContent = video.ended ? "Replay" : video.paused ? "Play" : "Pause";
-    btn.setAttribute("aria-label", `${btn.textContent} the before and after video`);
+    btn.setAttribute("aria-label", `${btn.textContent} the ${box.dataset.name || ""} video`.replace("  ", " "));
   };
   btn.addEventListener("click", () => {
     if (video.ended) video.currentTime = 0;

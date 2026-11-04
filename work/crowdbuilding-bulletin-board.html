@@ -43,7 +43,13 @@
     </section>
 
     <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
-    <div class="frame cover" data-label="Cover: the bulletin board"></div>
+    <figure class="cover cover-video is-16x9">
+      <video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="../assets/video/noticeboard-browsing-poster.jpg" aria-describedby="cover-video-desc">
+        <source src="../assets/video/noticeboard-browsing.mp4" type="video/mp4">
+      </video>
+      <figcaption class="visually-hidden" id="cover-video-desc">Screen recording of the Noticeboard: a grid of color-coded posts, filtered to “Looking for members” and then to the province of Gelderland.</figcaption>
+      <button type="button" class="video-toggle" aria-pressed="false">Pause</button>
+    </figure>
 
     <dl class="facts grid row"><div><dt>Role</dt><dd>Lead Designer</dd></div><div><dt>Team</dt><dd>PM, 1 engineer</dd></div><div><dt>Timeline</dt><dd>About 2 weeks of research and design</dd></div><div><dt>Platform</dt><dd>Web</dd></div></dl>
 
@@ -93,9 +99,19 @@
         <li><h3>We assumed opening the board to everyone would flood it with posts.</h3><div><p><span class="rows-key">What happened</span> It didn’t. Activity was steady rather than overwhelming: 72 posts since launch, with hundreds of comments around them.</p><p><span class="rows-key">What changed</span> It confirmed the case for light filtering. At this volume, people can browse the whole board, and every post gets seen.</p></div></li>
         <li><h3>We assumed most posts would come from people looking for a home.</h3><div><p><span class="rows-key">What happened</span> Plenty of home seekers did post. But we were surprised by how many people wanted to develop their land into housing, such as turning farmland into homes, and how many invited others to join their projects.</p><p><span class="rows-key">What changed</span> The board turned out to be a place where new initiatives begin, not only a list of people looking for a home. That made it more valuable to CrowdBuilding than we expected.</p></div></li>
         <li><h3>We assumed a simple interface would be enough for everyone to post on their own.</h3><div><p><span class="rows-key">What happened</span> Even with a deliberately simple flow, some older users couldn’t work out how to post. Our support team ended up walking them through it over the phone.</p><p><span class="rows-key">What changed</span> For this audience, easy means guided, not just short. More guidance inside post creation is now first on my list.</p></div></li>
-        <li><h3>We assumed people would keep their contact details for private messages.</h3><div><p><span class="rows-key">What happened</span> Many people left phone numbers, email addresses and even home addresses in public comments.</p><p><span class="rows-key">What changed</span> We shipped a check that spots phone numbers and email addresses and offers to send them as a private message instead. You can try it in the demo below.</p></div></li>
+        <li><h3>We assumed people would keep their contact details for private messages.</h3><div><p><span class="rows-key">What happened</span> Many people left phone numbers, email addresses and even home addresses in public comments.</p><p><span class="rows-key">What changed</span> We shipped a check that spots phone numbers and email addresses and offers to send them as a private message instead. You can see it below, and try it in the demo further down.</p></div></li>
       </ol>
     </section>
+
+    <figure class="section figure grid">
+      <div class="frame play-once is-16x9" data-name="private details">
+        <video class="cover-media" muted playsinline preload="metadata" poster="../assets/video/noticeboard-private-details-poster.jpg" aria-describedby="private-details-desc">
+          <source src="../assets/video/noticeboard-private-details.mp4" type="video/mp4">
+        </video>
+        <button type="button" class="video-toggle">Play</button>
+      </div>
+      <figcaption id="private-details-desc">The privacy check. A reply with a phone number and an email address gets a warning before it goes public. One click turns it into a private message to the person who posted, with the text already filled in.</figcaption>
+    </figure>
 
     <section class="section grid row">
       <p class="label c-label"><span class="index">06</span><br>Decisions</p>
@@ -213,15 +229,29 @@
     </section>
 
     <figure class="section figure grid">
-      <!-- REPLACE with <img src="../assets/img/…" alt="…"> -->
-      <div class="frame" data-label="Final UI: the board and a post"></div>
-      <figcaption>The bulletin board: color-coded cards by post type, and a post with its comment thread.</figcaption>
+      <div class="frame play-once is-16x9" data-name="post creation">
+        <video class="cover-media" muted playsinline preload="metadata" poster="../assets/video/noticeboard-post-creation-poster.jpg" aria-describedby="post-creation-desc">
+          <source src="../assets/video/noticeboard-post-creation.mp4" type="video/mp4">
+        </video>
+        <button type="button" class="video-toggle">Play</button>
+      </div>
+      <figcaption id="post-creation-desc">Creating a post: a title, a message, an image or PDF, tags and a location. The post can also be shared elsewhere, such as an initiative page. Then it goes live at the top of the board.</figcaption>
     </figure>
 
     <section class="section grid row">
       <p class="label c-label"><span class="index">07</span><br>Solution</p>
       <div class="prose c-text"><p>We shipped simple post creation, an overview of all posts, and post pages where people can comment, reply to comments, like and share.</p><p>Launch also proved two of our assumptions wrong, covered above.</p></div>
     </section>
+
+    <figure class="section figure grid">
+      <div class="frame loop-video is-16x9">
+        <video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="../assets/video/noticeboard-comments-poster.jpg" aria-describedby="comments-desc">
+          <source src="../assets/video/noticeboard-comments.mp4" type="video/mp4">
+        </video>
+        <button type="button" class="video-toggle">Pause</button>
+      </div>
+      <figcaption id="comments-desc">A post page. People like a post, read the thread, and reply to a comment, which nests under it.</figcaption>
+    </figure>
 
     <section class="section grid row">
       <p class="label c-label"><span class="index">08</span><br>Reflection</p>
