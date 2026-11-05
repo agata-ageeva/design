@@ -374,8 +374,6 @@ a { color: inherit; text-decoration: none; }
 
 .figure { margin-inline: 0; margin-bottom: 0; }
 .figure .frame { grid-column: 1 / -1; aspect-ratio: 2 / 1; }
-/* Screen recordings exported at 16:9 keep their shape instead of being cropped to 2:1 */
-.cover.is-16x9, .figure .frame.is-16x9 { aspect-ratio: 16 / 9; }
 .figure figcaption { grid-column: 7 / -1; margin-top: var(--u); font-size: 12px; line-height: 18px; color: var(--muted); }
 @media (max-width: 760px) { .figure figcaption { grid-column: 1 / -1; } }
 
