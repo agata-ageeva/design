@@ -185,8 +185,9 @@ a { color: inherit; text-decoration: none; }
 .archive-meta { color: var(--muted); text-transform: none; letter-spacing: 0; }
 .archive-title { margin-top: var(--u); font-family: var(--font-display); font-weight: var(--display-weight); font-size: 19px; line-height: 1.2; letter-spacing: -0.01em; word-spacing: 0.06em; }
 .archive-desc { margin-top: var(--u); }
-.archive-item .arrow { grid-column: 12; grid-row: 1 / span 3; justify-self: end; align-self: center; }
-.archive-item:hover .arrow, .archive-item:focus-visible .arrow { width: 48px; }
+.archive-item .arrow { grid-column: 12; grid-row: 1 / span 3; justify-self: end; align-self: center; transform: translateX(-20px); transition: transform .45s cubic-bezier(.2, .8, .2, 1); }
+.archive-item:hover .arrow, .archive-item:focus-visible .arrow { transform: translateX(0); }
+@media (prefers-reduced-motion: reduce) { .archive-item .arrow { transition: none; } }
 @media (max-width: 760px) {
   .archive-meta, .archive-title, .archive-desc { grid-column: 1 / 4; }
   .archive-item .arrow { grid-column: 4; }
