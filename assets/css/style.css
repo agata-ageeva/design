@@ -21,7 +21,7 @@
   --display-weight: 900;
   --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
 
-  --display-size: clamp(56px, 11vw, 144px);
+  --display-size: clamp(48px, 9.5vw, 124px);
   --u: 8px;
   --cols: 12;
   --gap: 24px;
@@ -57,7 +57,7 @@
 }
 
 @media (max-width: 760px) {
-  :root { --cols: 4; --gap: 16px; --display-size: clamp(44px, 14vw, 72px); }
+  :root { --cols: 4; --gap: 16px; --display-size: clamp(40px, 12.5vw, 64px); }
 }
 
 *,
