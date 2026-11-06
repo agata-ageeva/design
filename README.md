@@ -70,7 +70,7 @@ Every case study follows the same outline:
 1. **Hero:** a one-line title and the insight in a sentence
 2. **Facts:** role, team, timeline, platform
 3. **Impact:** three metrics, placed up front for skimmers
-4. **Context → Problem → Approach:** how you framed the problem, not only what you made
+4. **Context → Problem → Method:** how you framed the problem, not only what you made
 5. **What we got wrong:** assumptions that turned out wrong, what actually happened, and what changed
 6. **Key decisions:** each with its **trade-off**, which is the strongest signal of seniority
 7. **Solution:** what shipped
