@@ -182,7 +182,7 @@ a { color: inherit; text-decoration: none; }
 .archive li + li .archive-item { border-top: 1px solid var(--rule); }
 .archive-item { padding-block: calc(var(--u) * 3); align-items: start; }
 .archive-meta, .archive-title, .archive-desc { grid-column: 1 / 9; margin: 0; }
-.archive-meta { color: var(--muted); }
+.archive-meta { color: var(--muted); text-transform: none; letter-spacing: 0; }
 .archive-title { margin-top: var(--u); font-family: var(--font-display); font-weight: var(--display-weight); font-size: 19px; line-height: 1.2; letter-spacing: -0.01em; word-spacing: 0.06em; }
 .archive-desc { margin-top: var(--u); }
 .archive-item .arrow { grid-column: 12; grid-row: 1 / span 3; justify-self: end; align-self: center; }
