@@ -372,7 +372,7 @@ a { color: inherit; text-decoration: none; }
 }
 .rows-key { display: block; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
 .sub-key { margin: calc(var(--u) * 4) 0 var(--u); font-weight: 400; line-height: 24px; }
-.rows-assumptions h3 { font-family: var(--font-display); font-weight: var(--display-weight); font-size: 19px; line-height: 1.2; letter-spacing: -0.01em; word-spacing: 0.06em; text-wrap: balance; }
+.rows-assumptions h3, .rows-decisions h3 { font-family: var(--font-display); font-weight: var(--display-weight); font-size: 19px; line-height: 1.2; letter-spacing: -0.01em; word-spacing: 0.06em; text-wrap: balance; }
 @media (max-width: 760px) {
   .rows { grid-column: 1 / -1; }
   .rows > li { grid-template-columns: 1fr; row-gap: var(--u); }
