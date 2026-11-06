@@ -91,7 +91,26 @@
     </section>
 
     <section class="section grid row">
-      <p class="label c-label"><span class="index">05</span><br>Assumptions</p>
+      <p class="label c-label"><span class="index">05</span><br>Decisions</p>
+      <h2 class="h-lg c-head-narrow sec-head">Lean by design</h2>
+      <ol class="rows">
+        <li><h3>Seven tags, not fifty filters</h3><div><p>Some stakeholders wanted granular filters for every scenario. My argument, shared by product, was that we didn't know yet what people would post, so we couldn't predict which filters they'd need, and the volume of posts would be low. My first proposal was no filters at all, with categories added once we saw real posts. We settled on seven tags, such as Looking for members, Home offered and Question. People pick them when posting, and the same tags work as filters, along with a filter by province.</p><p class="tradeoff">Trade-off: people can't always find an exact match. At this volume that matters little, and browsing keeps people on the site longer.</p></div></li>
+        <li><h3>A board, not a feed</h3><div><p>Instead of a plain feed, posts sit in a grid, three to a row, like a real bulletin board. Cards are tinted by their tag, so a call for members, a request for expertise, a question and an update each get their own soft pastel color. Over time people learn to skim past what isn't for them, without touching a filter.</p><p class="tradeoff">Trade-off: a grid is visually busier than a feed, which can hurt discoverability. The color coding exists to offset that.</p></div></li>
+      </ol>
+    </section>
+
+    <figure class="section figure grid">
+      <div class="frame loop-video">
+        <video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="../assets/video/noticeboard-responsive-poster.jpg" aria-describedby="responsive-desc">
+          <source src="../assets/video/noticeboard-responsive.mp4" type="video/mp4">
+        </video>
+        <button type="button" class="video-toggle">Pause</button>
+      </div>
+      <figcaption id="responsive-desc">The board on any screen: three columns on desktop, two on a tablet and one on a phone. On smaller screens the menu folds into an icon, and on a phone Create a listing becomes a + button.</figcaption>
+    </figure>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">06</span><br>Assumptions</p>
       <h2 class="h-lg c-head-narrow sec-head">What we got wrong</h2>
       <ol class="rows rows-assumptions">
         <li><h3>We assumed opening the board to everyone would flood it with posts.</h3><div><p><span class="rows-key">What happened</span> It didn’t. Activity was steady rather than overwhelming: 80 posts since launch, with hundreds of comments around them.</p><p><span class="rows-key">What changed</span> It confirmed the case for light filtering. At this volume, people can browse the whole board, and every post gets seen.</p></div></li>
@@ -109,25 +128,6 @@
         <button type="button" class="video-toggle">Play</button>
       </div>
       <figcaption id="private-details-desc">The privacy check. A reply with a phone number and an email address gets a warning before it goes public. One click turns it into a private message to the person who posted, with the text already filled in.</figcaption>
-    </figure>
-
-    <section class="section grid row">
-      <p class="label c-label"><span class="index">06</span><br>Decisions</p>
-      <h2 class="h-lg c-head-narrow sec-head">Lean by design</h2>
-      <ol class="rows">
-        <li><h3>Seven tags, not fifty filters</h3><div><p>Some stakeholders wanted granular filters for every scenario. My argument, shared by product, was that we didn't know yet what people would post, so we couldn't predict which filters they'd need, and the volume of posts would be low. My first proposal was no filters at all, with categories added once we saw real posts. We settled on seven tags, such as Looking for members, Home offered and Question. People pick them when posting, and the same tags work as filters, along with a filter by province.</p><p class="tradeoff">Trade-off: people can't always find an exact match. At this volume that matters little, and browsing keeps people on the site longer.</p></div></li>
-        <li><h3>A board, not a feed</h3><div><p>Instead of a plain feed, posts sit in a grid, three to a row, like a real bulletin board. Cards are tinted by their tag, so a call for members, a request for expertise, a question and an update each get their own soft pastel color. Over time people learn to skim past what isn't for them, without touching a filter.</p><p class="tradeoff">Trade-off: a grid is visually busier than a feed, which can hurt discoverability. The color coding exists to offset that.</p></div></li>
-      </ol>
-    </section>
-
-    <figure class="section figure grid">
-      <div class="frame loop-video">
-        <video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="../assets/video/noticeboard-responsive-poster.jpg" aria-describedby="responsive-desc">
-          <source src="../assets/video/noticeboard-responsive.mp4" type="video/mp4">
-        </video>
-        <button type="button" class="video-toggle">Pause</button>
-      </div>
-      <figcaption id="responsive-desc">The board on any screen: three columns on desktop, two on a tablet and one on a phone. On smaller screens the menu folds into an icon, and on a phone Create a listing becomes a + button.</figcaption>
     </figure>
 
     <figure class="section figure grid">
