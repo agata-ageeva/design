@@ -180,6 +180,7 @@ a { color: inherit; text-decoration: none; }
 /* Previous / next project at the foot of each case study: two words in the
    heading face, with an arrow that is sized to the text and stretches on hover. */
 .nowrap { white-space: nowrap; }
+.project-nav { padding-top: calc(var(--u) * 6); }
 .pn { display: inline-flex; align-items: center; gap: 0.3em; }
 .pn-prev { grid-column: 1 / 7; justify-self: start; }
 .pn-next { grid-column: 7 / -1; justify-self: end; }
