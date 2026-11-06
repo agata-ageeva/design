@@ -181,15 +181,15 @@ a { color: inherit; text-decoration: none; }
 .archive { list-style: none; margin: 0; padding: 0; }
 .archive li + li .archive-item { border-top: 1px solid var(--rule); }
 .archive-item { padding-block: calc(var(--u) * 3); align-items: start; }
-.archive-meta, .archive-title, .archive-desc { grid-column: 1 / 9; margin: 0; }
+.archive-meta, .archive-title, .archive-desc, .archive-item .pills { grid-column: 1 / 9; margin: 0; }
 .archive-meta { color: var(--muted); text-transform: none; letter-spacing: 0; }
 .archive-title { margin-top: var(--u); font-family: var(--font-display); font-weight: var(--display-weight); font-size: 19px; line-height: 1.2; letter-spacing: -0.01em; word-spacing: 0.06em; }
 .archive-desc { margin-top: var(--u); }
 /* left edge stays put and the point travels right: the margin gives up exactly what the width gains */
-.archive-item .arrow { grid-column: 12; grid-row: 1 / span 3; justify-self: end; align-self: center; margin-right: 48px; transition: width .45s cubic-bezier(.2, .8, .2, 1), margin-right .45s cubic-bezier(.2, .8, .2, 1); }
+.archive-item .arrow { grid-column: 12; grid-row: 1 / span 4; justify-self: end; align-self: center; margin-right: 48px; transition: width .45s cubic-bezier(.2, .8, .2, 1), margin-right .45s cubic-bezier(.2, .8, .2, 1); }
 .archive-item:hover .arrow, .archive-item:focus-visible .arrow { width: 72px; margin-right: 0; }
 @media (max-width: 760px) {
-  .archive-meta, .archive-title, .archive-desc { grid-column: 1 / 4; }
+  .archive-meta, .archive-title, .archive-desc, .archive-item .pills { grid-column: 1 / 4; }
   .archive-item .arrow { grid-column: 4; }
 }
 
@@ -263,6 +263,11 @@ a { color: inherit; text-decoration: none; }
 .project .text  { grid-column: 7 / -1; display: flex; flex-direction: column; align-self: stretch; }
 .project .text .date { margin-bottom: calc(var(--u) * 2); }
 .project .text .small { margin: calc(var(--u) * 2) 0 0; }
+/* Topic pills: audience and platform */
+.pills { display: flex; flex-wrap: wrap; gap: var(--u); }
+.pill { font-size: 12px; line-height: 18px; padding: 1px 10px; border: 1px solid var(--muted); border-radius: 999px; color: var(--muted); white-space: nowrap; }
+.project .text .pills { margin-top: calc(var(--u) * 2); }
+.archive-item .pills { margin-top: calc(var(--u) * 1.5); }
 .project .text .link { margin-top: auto; padding-top: calc(var(--u) * 3); align-self: flex-start; }
 .project:hover .frame { outline: 2px solid var(--ink); outline-offset: -2px; }
 
