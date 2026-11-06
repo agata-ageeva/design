@@ -153,6 +153,9 @@ a { color: inherit; text-decoration: none; }
 
 .index { font-variant-numeric: tabular-nums; }
 
+/* Text for screen readers only */
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
 .link { display: inline-block; border-bottom: 1px solid currentColor; }
 .link:hover { border-bottom-width: 2px; }
 
@@ -174,21 +177,20 @@ a { color: inherit; text-decoration: none; }
 .project:hover .arrow,
 .project:focus-visible .arrow { width: 72px; }
 
-/* Previous / next project at the foot of each case study. Each half is a
-   link: a label with an arrow that stretches on hover, then the title. */
+/* Previous / next project at the foot of each case study: two words in the
+   heading face, with an arrow that is sized to the text and stretches on hover. */
 .nowrap { white-space: nowrap; }
-.project-nav { row-gap: calc(var(--u) * 4); }
-.pn { display: flex; flex-direction: column; gap: calc(var(--u) * 2); }
-.pn-prev { grid-column: 1 / 7; }
-.pn-next { grid-column: 7 / -1; }
-.pn-label { display: inline-flex; align-items: center; gap: calc(var(--u) * 1.5); }
-.pn-title { max-width: 18ch; }
+.pn { display: inline-flex; align-items: center; gap: 0.3em; }
+.pn-prev { grid-column: 1 / 7; justify-self: start; }
+.pn-next { grid-column: 7 / -1; justify-self: end; }
+.pn .arrow { width: 1.4em; height: 0.12em; }
+.pn .arrow::after { width: 0.36em; height: 0.36em; right: -0.03em; border-width: 0.12em; }
 .arrow-back { transform: rotate(180deg); }
 .pn:hover .arrow,
-.pn:focus-visible .arrow { width: 72px; }
+.pn:focus-visible .arrow { width: 2.6em; }
 @media (max-width: 760px) {
-  .pn-prev, .pn-next { grid-column: 1 / -1; }
-  .pn-next { border-top: 1px solid var(--rule); padding-top: calc(var(--u) * 2); }
+  .pn-prev { grid-column: 1 / 3; }
+  .pn-next { grid-column: 3 / -1; }
 }
 
 /* ---------- Masthead ---------- */
