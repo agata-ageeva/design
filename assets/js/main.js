@@ -5,10 +5,7 @@ document.querySelectorAll("[data-year]").forEach((el) => (el.textContent = new D
 const toggle = document.querySelector(".grid-toggle");
 const setGrid = (on) => {
   document.body.classList.toggle("show-grid", on);
-  if (toggle) {
-    toggle.setAttribute("aria-pressed", String(on));
-    toggle.textContent = on ? "Hide grid" : "Show grid";
-  }
+  toggle?.setAttribute("aria-checked", String(on));
   try { localStorage.setItem("show-grid", on ? "1" : "0"); } catch (e) {}
 };
 let saved = false;
@@ -40,7 +37,7 @@ const saveTheme = (t) => {
 };
 const isDark = () => (root.dataset.theme || (darkQuery.matches ? "dark" : "light")) === "dark";
 const syncThemeToggle = () => {
-  if (themeToggle) themeToggle.textContent = isDark() ? "Light mode" : "Dark mode";
+  themeToggle?.setAttribute("aria-checked", String(isDark()));
 };
 const enforceTheme = () => {
   const chosen = readTheme();
