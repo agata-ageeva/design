@@ -34,7 +34,7 @@ Checklist:
 - [ ] Experience timeline, principles and toolkit on `about.html`
 - [ ] Résumé PDF link
 
-To rename a case study file, update the links on `index.html` and the "Next project" link at the bottom of the previous case study.
+To rename a case study file, update the links on `index.html` and the "Previous project" and "Next project" links at the bottom of every case study (they loop: the last project leads back to the first).
 
 ## The grid
 

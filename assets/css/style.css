@@ -174,16 +174,21 @@ a { color: inherit; text-decoration: none; }
 .project:hover .arrow,
 .project:focus-visible .arrow { width: 72px; }
 
-/* Large arrow after the "Next project" title: same shape, heavier stroke,
-   two grid units at rest, five on hover */
+/* Previous / next project at the foot of each case study. Each half is a
+   link: a label with an arrow that stretches on hover, then the title. */
 .nowrap { white-space: nowrap; }
-.arrow-lg { width: 48px; height: 0.12em; margin-left: 0.3em; vertical-align: 0.26em; }
-.arrow-lg::after { width: 0.36em; height: 0.36em; right: -0.03em; border-width: 0.12em; }
-.next:hover .arrow-lg,
-.next:focus-visible .arrow-lg { width: 120px; }
+.project-nav { row-gap: calc(var(--u) * 4); }
+.pn { display: flex; flex-direction: column; gap: calc(var(--u) * 2); }
+.pn-prev { grid-column: 1 / 7; }
+.pn-next { grid-column: 7 / -1; }
+.pn-label { display: inline-flex; align-items: center; gap: calc(var(--u) * 1.5); }
+.pn-title { max-width: 18ch; }
+.arrow-back { transform: rotate(180deg); }
+.pn:hover .arrow,
+.pn:focus-visible .arrow { width: 72px; }
 @media (max-width: 760px) {
-  .arrow-lg { width: 32px; }
-  .next:hover .arrow-lg { width: 64px; }
+  .pn-prev, .pn-next { grid-column: 1 / -1; }
+  .pn-next { border-top: 1px solid var(--rule); padding-top: calc(var(--u) * 2); }
 }
 
 /* ---------- Masthead ---------- */
