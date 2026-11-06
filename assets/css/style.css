@@ -440,3 +440,5 @@ a { color: inherit; text-decoration: none; }
 .grid-overlay .grid { align-items: stretch; }
 .grid-overlay span { background: var(--grid-col); border-inline: 1px solid var(--grid-edge); }
 @media (max-width: 760px) { .grid-overlay span:nth-child(n+5) { display: none; } }
+.project .para { display: block; }
+.project .para + .para { margin-top: 1em; }
