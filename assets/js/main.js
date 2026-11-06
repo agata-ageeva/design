@@ -22,6 +22,24 @@ document.addEventListener("keydown", (e) => {
   setGrid(!document.body.classList.contains("show-grid"));
 });
 
+// Theme: footer button switches light/dark; the choice is remembered, otherwise the OS setting applies
+const themeToggle = document.querySelector(".theme-toggle");
+const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+const isDark = () => (document.documentElement.dataset.theme || (darkQuery.matches ? "dark" : "light")) === "dark";
+const syncThemeToggle = () => {
+  if (!themeToggle) return;
+  const dark = isDark();
+  themeToggle.textContent = dark ? "Light mode" : "Dark mode";
+};
+themeToggle?.addEventListener("click", () => {
+  const next = isDark() ? "light" : "dark";
+  document.documentElement.dataset.theme = next;
+  try { localStorage.setItem("theme", next); } catch (e) {}
+  syncThemeToggle();
+});
+darkQuery.addEventListener?.("change", syncThemeToggle);
+syncThemeToggle();
+
 // Open every page at the top. Browsers already do this, but some embedded
 // previews keep the outer scroll position when a link opens a new page.
 // Links to a section (#work, #contact) and Back/Forward are left alone.
