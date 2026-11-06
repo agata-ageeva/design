@@ -329,7 +329,7 @@ a { color: inherit; text-decoration: none; }
 .rows h3 { font-family: var(--font-mono); font-weight: 500; font-size: 15px; line-height: 24px; margin: 0; }
 .rows p { margin: 0 0 var(--u); font-size: 14px; line-height: 22px; }
 .rows p:last-child { margin-bottom: 0; }
-.rows .tradeoff { color: var(--muted); }
+.rows .tradeoff { color: var(--muted); margin-top: calc(var(--u) * 2); }
 /* Before / after comparison, on columns 3–6 and 7–12 */
 
 .compare { grid-column: 3 / -1; display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); column-gap: var(--gap); margin-bottom: calc(var(--u) * 5); }
