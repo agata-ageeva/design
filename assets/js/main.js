@@ -22,23 +22,41 @@ document.addEventListener("keydown", (e) => {
   setGrid(!document.body.classList.contains("show-grid"));
 });
 
-// Theme: footer button switches light/dark; the choice is remembered, otherwise the OS setting applies
+// Theme: footer button switches light/dark. The visitor's choice is remembered and wins;
+// without one, the theme follows the OS (or whatever the embedding page sets).
 const themeToggle = document.querySelector(".theme-toggle");
 const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
-const isDark = () => (document.documentElement.dataset.theme || (darkQuery.matches ? "dark" : "light")) === "dark";
+const root = document.documentElement;
+const readTheme = () => {
+  for (const store of ["localStorage", "sessionStorage"]) {
+    try { const t = window[store].getItem("theme"); if (t === "dark" || t === "light") return t; } catch (e) {}
+  }
+  return null;
+};
+const saveTheme = (t) => {
+  for (const store of ["localStorage", "sessionStorage"]) {
+    try { window[store].setItem("theme", t); } catch (e) {}
+  }
+};
+const isDark = () => (root.dataset.theme || (darkQuery.matches ? "dark" : "light")) === "dark";
 const syncThemeToggle = () => {
-  if (!themeToggle) return;
-  const dark = isDark();
-  themeToggle.textContent = dark ? "Light mode" : "Dark mode";
+  if (themeToggle) themeToggle.textContent = isDark() ? "Light mode" : "Dark mode";
+};
+const enforceTheme = () => {
+  const chosen = readTheme();
+  if (chosen && root.dataset.theme !== chosen) root.dataset.theme = chosen;
+  syncThemeToggle();
 };
 themeToggle?.addEventListener("click", () => {
   const next = isDark() ? "light" : "dark";
-  document.documentElement.dataset.theme = next;
-  try { localStorage.setItem("theme", next); } catch (e) {}
+  saveTheme(next);
+  root.dataset.theme = next;
   syncThemeToggle();
 });
+new MutationObserver(enforceTheme).observe(root, { attributes: true, attributeFilter: ["data-theme"] });
 darkQuery.addEventListener?.("change", syncThemeToggle);
-syncThemeToggle();
+window.addEventListener("storage", (e) => { if (e.key === "theme") enforceTheme(); });
+enforceTheme();
 
 // Open every page at the top. Browsers already do this, but some embedded
 // previews keep the outer scroll position when a link opens a new page.
