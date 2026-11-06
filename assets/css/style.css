@@ -270,6 +270,8 @@ a { color: inherit; text-decoration: none; }
 
 .cs-head { margin-top: calc(var(--u) * 6); }
 .cs-head .summary { margin: calc(var(--u) * 5) 0 0; }
+.cs-head .summary p { margin: 0; }
+.cs-head .summary p + p { margin-top: 1em; }
 
 .cover-video { position: relative; margin: calc(var(--u) * 6) 0 0; background: var(--paper); overflow: hidden; }
 .cover-media { display: block; width: 100%; height: 100%; object-fit: cover; }
