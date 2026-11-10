@@ -364,6 +364,7 @@ a { color: inherit; text-decoration: none; }
 .rows > li > :first-child { grid-column: 1 / 5; }
 .rows > li > :last-child  { grid-column: 5 / -1; }
 .rows h3 { font-family: var(--font-mono); font-weight: 500; font-size: 15px; line-height: 24px; margin: 0; }
+.rows h3 .where { display: block; font-weight: 400; font-size: 13px; line-height: 20px; color: var(--muted); }
 .rows p { margin: 0 0 var(--u); font-size: 14px; line-height: 22px; }
 .rows p:last-child { margin-bottom: 0; }
 .rows .tradeoff { color: var(--muted); margin-top: calc(var(--u) * 2); }
