@@ -8,7 +8,7 @@ about.html                     About: bio, experience, principles, toolkit
 work/crowdbuilding-messaging.html Case study 1 (CrowdBuilding messaging, real)
 work/crowdbuilding-bulletin-board.html Case study 2 (CrowdBuilding bulletin board, real)
 work/crowdbuilding-unit-listings.html Case study 3 (CrowdBuilding home listings, real)
-work/playbook-*.html, work/relive-*.html, work/mycujoo-*.html, work/undeveloped-*.html  Earlier work: short archive case studies, linked from "Earlier work" on index.html
+work/playbook-*.html, work/relive-*.html, work/mycujoo-*.html, work/undeveloped-*.html  Archive: short case studies of earlier work, linked from "Archive" on index.html
 assets/css/style.css           All styles; theme tokens are at the top
 assets/js/main.js              Footer year, grid overlay toggle, home dot field
 ```
