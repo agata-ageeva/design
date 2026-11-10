@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Agata Ageieva, résumé</title>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 16mm 16mm 14mm; }
+  :root {
+    --ink: #1d1d1b; --muted: #5f5c57; --rule: #1d1d1b;
+    --display: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #fff; color: var(--ink); }
+  body { font-family: var(--mono); font-size: 8.6pt; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+
+  /* 12-column grid like the site: label 1–2, heading 3–12, text 7–12 */
+  .grid { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 4mm; }
+  .label { grid-column: 1 / 3; font-size: 7.4pt; letter-spacing: .06em; text-transform: uppercase; margin: 0; }
+  .muted { color: var(--muted); }
+
+  header { padding-bottom: 6mm; }
+  header h1 { grid-column: 1 / 9; font-family: var(--display); font-weight: 900; font-size: 34pt; line-height: .95; letter-spacing: -.02em; margin: 0; }
+  header .role { grid-column: 1 / 9; margin: 2.5mm 0 0; font-size: 7.4pt; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  header .contact { grid-column: 9 / -1; grid-row: 1 / span 2; align-self: end; text-align: right; margin: 0; list-style: none; padding: 0; }
+  header .contact li { line-height: 1.6; }
+
+  section { border-top: 1.5pt solid var(--rule); padding-top: 3mm; margin-top: 6mm; }
+  section.first { margin-top: 0; }
+  .body { grid-column: 3 / -1; }
+  .lede { grid-column: 3 / 11; margin: 0; }
+  .lede p { margin: 0 0 2mm; }
+
+  h2 { font-family: var(--display); font-weight: 900; font-size: 15pt; line-height: 1.05; letter-spacing: -.01em; margin: 0 0 3mm; grid-column: 3 / -1; }
+
+  /* Impact: three numbers per project, like the case-study metrics */
+  .impact { grid-column: 3 / -1; display: grid; gap: 0; }
+  .impact-row { display: grid; grid-template-columns: 3fr 7fr; column-gap: 4mm; padding: 2.4mm 0; border-top: .5pt solid var(--rule); break-inside: avoid; }
+  .impact-row:first-child { border-top: 0; padding-top: 0; }
+  .impact-row h3 { font-family: var(--display); font-weight: 900; font-size: 9.5pt; line-height: 1.2; margin: 0; }
+  .impact-row h3 span { display: block; font-family: var(--mono); font-weight: 400; font-size: 7.4pt; color: var(--muted); margin-top: .6mm; letter-spacing: .02em; }
+  .nums { display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 3mm; margin: 0; }
+  .nums div { margin: 0; }
+  .nums dd { margin: 0; font-family: var(--display); font-weight: 900; font-size: 14pt; line-height: 1; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+  .nums dt { font-size: 7pt; line-height: 1.35; color: var(--muted); margin-top: .8mm; }
+
+  /* Experience: dates and place on the left, role and text on the right */
+  .jobs { grid-column: 3 / -1; list-style: none; margin: 0; padding: 0; }
+  .job { display: grid; grid-template-columns: 3fr 7fr; column-gap: 4mm; padding: 2.4mm 0; border-top: .5pt solid var(--rule); break-inside: avoid; }
+  .job:first-child { border-top: 0; padding-top: 0; }
+  .when { font-weight: 500; }
+  .when span { display: block; font-weight: 400; font-size: 7.4pt; color: var(--muted); }
+  .what p { margin: 0; }
+  .what .title { font-weight: 500; margin-bottom: .8mm; }
+  .what .title span { font-weight: 400; }
+
+  footer { margin-top: 6mm; border-top: 1.5pt solid var(--rule); padding-top: 2.5mm; font-size: 7.4pt; color: var(--muted); }
+  footer .l { grid-column: 1 / 7; }
+  footer .r { grid-column: 7 / -1; text-align: right; }
+</style>
+</head>
+<body>
+
+<header class="grid">
+  <h1>Agata Ageieva</h1>
+  <p class="role">Senior Product Designer</p>
+  <ul class="contact">
+    <li>Amsterdam</li>
+    <li><a href="mailto:agata.ageieva@gmail.com">agata.ageieva@gmail.com</a></li>
+    <li><a href="https://www.linkedin.com/in/agata-ageieva/">linkedin.com/in/agata-ageieva</a></li>
+  </ul>
+</header>
+
+<section class="grid first">
+  <p class="label">Profile</p>
+  <div class="lede">
+    <p>I’m a senior product designer with over ten years of experience. I specialise in reshaping how a product works, especially on two-sided platforms where design decisions affect revenue, and I judge my work by what it changes for users and the business.</p>
+    <p>I think in systems and care about the details. I work with product and engineering to decide what’s worth building, then stay close to the build through design systems and prototypes, so what ships matches the intent.</p>
+  </div>
+</section>
+
+<section class="grid">
+  <p class="label">Impact</p>
+  <div class="impact">
+    <div class="impact-row">
+      <h3>A broadcast is not a group chat<span>CrowdBuilding · Messaging</span></h3>
+      <dl class="nums"><div><dd>+43%</dd><dt>Messages sent</dt></div><div><dd>+38%</dd><dt>Read rate within 72 hours</dt></div><div><dd>+17%</dd><dt>Reply rate</dt></div></dl>
+    </div>
+    <div class="impact-row">
+      <h3>Letting everyone raise a hand<span>CrowdBuilding · Noticeboard</span></h3>
+      <dl class="nums"><div><dd>80</dd><dt>Organic posts since launch</dt></div><div><dd>63</dd><dt>Replies on the top post</dt></div><div><dd>+11%</dd><dt>Monthly active users</dt></div></dl>
+    </div>
+    <div class="impact-row">
+      <h3>Making the offering concrete<span>CrowdBuilding · Home listings</span></h3>
+      <dl class="nums"><div><dd>8</dd><dt>Listings in the first week</dt></div><div><dd>+16%</dd><dt>Returning users</dt></div><div><dd>+5%</dd><dt>Active users</dt></div></dl>
+    </div>
+    <div class="impact-row">
+      <h3>A modal that made Relive social<span>Relive · Growth</span></h3>
+      <dl class="nums"><div><dd>+37%</dd><dt>Users with at least one friend</dt></div><div><dd>+12%</dd><dt>Referrals</dt></div><div><dd>+19%</dd><dt>Activities in the first 28 days</dt></div></dl>
+    </div>
+  </div>
+</section>
+
+<section class="grid">
+  <p class="label">Experience</p>
+  <ol class="jobs">
+    <li class="job"><div class="when">2025 – now<span>Amsterdam</span></div><div class="what"><p class="title">Senior Product Designer<span>, CrowdBuilding</span></p><p>Led the complete redesign that turned a static index of housing initiatives into an interactive platform. Designed new tools for broadcast messaging, event creation and home listings, plus an enriched user dashboard. Reworked initiative creation and search, shifting discovery from initiatives to available homes.</p></div></li>
+    <li class="job"><div class="when">2023 – 2024<span>Remote · Contract</span></div><div class="what"><p class="title">Senior Product Designer<span>, Playbook</span></p><p>Led the project that moved a subscription platform for fitness creators from a single subscription to multiple subscriptions. Researched creator and subscriber scenarios, then designed a modular system that could support future subscription models and opened new revenue streams for creators.</p></div></li>
+    <li class="job"><div class="when">2021 – 2023<span>Amsterdam</span></div><div class="what"><p class="title">Lead Product Designer<span>, Relive</span></p><p>Grew the design team from one designer to nine through hiring and mentoring. Set the team’s priorities against business goals and shaped product strategy together with the Lead Product Manager.</p></div></li>
+    <li class="job"><div class="when">2020 – 2021<span>Amsterdam</span></div><div class="what"><p class="title">Senior Product Designer, Growth<span>, Relive</span></p><p>Designed and ran experiments across the growth funnel. Formed hypotheses with the Product Manager, designed the solutions, and turned experiment results and follow-up research into next steps.</p></div></li>
+    <li class="job"><div class="when">2019 – 2020<span>Amsterdam</span></div><div class="what"><p class="title">Senior Product Designer<span>, Asellion</span></p><p>Designed the partner side of an enterprise B2B e-commerce platform for chemical suppliers, covering both supply and demand. Streamlined how partners set up and close deals, saving them time and money.</p></div></li>
+    <li class="job"><div class="when">2017 – 2019<span>Amsterdam</span></div><div class="what"><p class="title">Product Designer, then Lead Product Designer<span>, MyCujoo</span></p><p>Designed the partner tools for a live-streaming platform for amateur and semi-pro football, and the company’s first native consumer app. Promoted to Lead Product Designer and grew the design team from one to four.</p></div></li>
+    <li class="job"><div class="when">2015 – 2017<span>Amsterdam</span></div><div class="what"><p class="title">Product &amp; UX/UI Designer<span>, Undeveloped</span></p><p>Created the brand identity from scratch and led a platform redesign that built customer trust and sharply reduced cancelled transactions. Designed the UI style guide that became a library of front-end components.</p></div></li>
+    <li class="job"><div class="when">2013 – 2015<span>Kharkiv and Amsterdam</span></div><div class="what"><p class="title">Freelance and agency designer</p><p>Designed websites, logos and promotional materials for small and medium-sized businesses, independently and with ATON creative agency and Spotzer Media Group.</p></div></li>
+  </ol>
+</section>
+
+</body>
+</html>
