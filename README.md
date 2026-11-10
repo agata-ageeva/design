@@ -26,7 +26,7 @@ All three case studies are real CrowdBuilding projects. The About page (career h
 
 Checklist:
 
-- [ ] Name, email (`hello@example.com`) and social links in every page's header and footer
+- [ ] Social links (LinkedIn URL) and the résumé PDF in every page's footer; the email is set
 - [ ] Intro line on `index.html`
 - [ ] Project cards on `index.html`: date, title and summary
 - [ ] Each case study: facts, metrics, and every section
