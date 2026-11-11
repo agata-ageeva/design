@@ -5,7 +5,7 @@
 <title>Agata Ageieva, résumé</title>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  @page { size: A4; margin: 16mm 16mm 14mm; }
+  @page { size: A4; margin: 13mm 15mm 11mm; }
   :root {
     --ink: #1d1d1b; --muted: #5f5c57; --rule: #1d1d1b;
     --display: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
@@ -13,7 +13,7 @@
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; background: #fff; color: var(--ink); }
-  body { font-family: var(--mono); font-size: 8.6pt; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  body { font-family: var(--mono); font-size: 8pt; line-height: 1.42; -webkit-font-smoothing: antialiased; }
   a { color: inherit; text-decoration: none; }
 
   /* 12-column grid like the site: label 1–2, heading 3–12, text 7–12 */
@@ -21,17 +21,18 @@
   .label { grid-column: 1 / 3; font-size: 7.4pt; letter-spacing: .06em; text-transform: uppercase; margin: 0; }
   .muted { color: var(--muted); }
 
-  header { padding-bottom: 6mm; }
-  header h1 { grid-column: 1 / 9; font-family: var(--display); font-weight: 900; font-size: 34pt; line-height: .95; letter-spacing: -.02em; margin: 0; }
+  header { padding-bottom: 4.5mm; }
+  header h1 { grid-column: 1 / 9; font-family: var(--display); font-weight: 900; font-size: 28pt; line-height: .95; letter-spacing: -.02em; margin: 0; }
   header .role { grid-column: 1 / 9; margin: 2.5mm 0 0; font-size: 7.4pt; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
   header .contact { grid-column: 9 / -1; grid-row: 1 / span 2; align-self: end; text-align: right; margin: 0; list-style: none; padding: 0; }
   header .contact li { line-height: 1.6; }
 
-  section { border-top: 1.5pt solid var(--rule); padding-top: 3mm; margin-top: 6mm; }
+  section { border-top: 1.5pt solid var(--rule); padding-top: 2.6mm; margin-top: 4.5mm; }
   section.first { margin-top: 0; }
   .body { grid-column: 3 / -1; }
-  .lede { grid-column: 3 / 11; margin: 0; }
-  .lede p { margin: 0 0 2mm; }
+  .lede { grid-column: 3 / -1; margin: 0; }
+  .lede p { margin: 0 0 1.4mm; }
+  .lede p:last-child { margin-bottom: 0; }
 
   h2 { font-family: var(--display); font-weight: 900; font-size: 15pt; line-height: 1.05; letter-spacing: -.01em; margin: 0 0 3mm; grid-column: 3 / -1; }
 
@@ -48,12 +49,12 @@
 
   /* Experience: dates and place on the left, role and text on the right */
   .jobs { grid-column: 3 / -1; list-style: none; margin: 0; padding: 0; }
-  .job { display: grid; grid-template-columns: 3fr 7fr; column-gap: 4mm; padding: 2.4mm 0; border-top: .5pt solid var(--rule); break-inside: avoid; }
+  .job { display: grid; grid-template-columns: 3fr 7fr; column-gap: 4mm; padding: 1.8mm 0; border-top: .5pt solid var(--rule); break-inside: avoid; }
   .job:first-child { border-top: 0; padding-top: 0; }
   .when { font-weight: 500; }
   .when span { display: block; font-weight: 400; font-size: 7.4pt; color: var(--muted); }
   .what p { margin: 0; }
-  .what .title { font-weight: 500; margin-bottom: .8mm; }
+  .what .title { font-weight: 500; margin-bottom: .4mm; }
   .what .title span { font-weight: 400; }
 
   footer { margin-top: 6mm; border-top: 1.5pt solid var(--rule); padding-top: 2.5mm; font-size: 7.4pt; color: var(--muted); }
