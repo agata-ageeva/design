@@ -438,7 +438,7 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- About ---------- */
 
-.portrait { grid-column: 3 / 7; aspect-ratio: 4 / 5; }
+.portrait { grid-column: 3 / 7; aspect-ratio: 2 / 3; }
 @media (max-width: 760px) { .portrait { grid-column: 1 / -1; margin-bottom: calc(var(--u) * 3); } }
 /* About: portrait and bio sit side by side under the heading */
 .cs-head .about-portrait { grid-row: 2; margin-top: calc(var(--u) * 5); }
