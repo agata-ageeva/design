@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solo Operator · Agata Ageieva</title>
+  <meta name="description" content="Archive case study: a mode for MyCujoo that lets one person stream football and mark highlights on the same phone.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(!t)try{t=sessionStorage.getItem("theme")}catch(e){}if(t==="dark"||t==="light")document.documentElement.setAttribute("data-site-theme",t)})()</script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="grid-overlay" aria-hidden="true"><div class="container grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+
+  <header class="container grid masthead">
+    <a class="name" href="../index.html">Agata Ageieva</a>
+    <p class="role label muted">Senior Product Designer</p>
+    <nav aria-label="Main">
+      <ul class="menu">
+        <li><a href="../index.html#archive" aria-current="page">Work</a></li>
+        <li><a href="../about.html">About me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section class="cs-head grid row-heavy">
+      <p class="label c-label">December 2018<br>Archive</p>
+      <h1 class="h-xl c-head">Solo Operator</h1>
+      <p class="summary c-text">MyCujoo streams semi-professional and amateur football. Many clubs could spare only one volunteer per match, so streams often went out without highlights. I designed a mode that lets one person stream and mark highlights on the same phone.</p>
+    </section>
+
+    <figure class="cover cover-video" style="aspect-ratio: 1768 / 1024">
+      <video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="../assets/video/solo-operator-poster.jpg" aria-describedby="cover-video-desc">
+        <source src="../assets/video/solo-operator.mp4" type="video/mp4">
+      </video>
+      <figcaption class="visually-hidden" id="cover-video-desc">Screen recording of Solo Operator, a live football stream on a phone with a button to add a highlight.</figcaption>
+      <button type="button" class="video-toggle" aria-pressed="false">Pause</button>
+    </figure>
+
+    <dl class="facts grid row"><div><dt>Discipline</dt><dd>UI/UX design</dd></div><div><dt>Company</dt><dd>MyCujoo</dd></div><div><dt>Year</dt><dd>2018</dd></div><div><dt>Platform</dt><dd>iOS</dd></div></dl>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">01</span><br>Problem</p>
+      <div class="prose c-text"><p>To stream on MyCujoo, a club needed a camera or a smartphone, plus a laptop running MyCujoo Studio to mark the highlights.</p><p>Interviews showed that many clubs couldn't regularly spare more than one volunteer. That was one of the main reasons so many streams ended up without highlights.</p></div>
+    </section>
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">02</span><br>What I did</p>
+      <div class="prose c-text"><p>My first idea was a companion app for marking highlights, but it still needed a second person. The second concept became a mode of the existing streaming app instead.</p><p>The screen is small and the operator needs to see the game, so my PO and I cut Studio's nine highlight types down to five. These are goal, red card, yellow card, substitution and the clock. The operator picks a highlight, then a team, and a pin on the seek bar confirms it.</p><p>Users and the business liked the clickable prototype, so we built a proof of concept on iOS in 1.5 sprints. We released it behind a feature flag and watched people use it at stadiums in Alkmaar and Amsterdam.</p></div>
+    </section>
+    <figure class="section figure grid">
+      <div class="frame" style="aspect-ratio: 1840 / 687"><img src="../assets/img/archive/solo-5-sketch2.webp" width="1840" height="687" loading="lazy" decoding="async" alt="Second concept sketch: one app that streams and marks highlights, with a highlight menu over the video and pins on the seek bar."></div>
+      <figcaption>The second concept, streaming and marking highlights on one device.</figcaption>
+    </figure>
+    <figure class="section figure grid">
+      <div class="frame" style="aspect-ratio: 1840 / 1117"><img src="../assets/img/archive/solo-7-wireframes.webp" width="1840" height="1117" loading="lazy" decoding="async" alt="Wireframes of the flow: go live, start the clock, add a highlight, pick a team, and see a pin on the seek bar."></div>
+      <figcaption>The flow, from going live to a highlight pinned on the seek bar.</figcaption>
+    </figure>
+    <figure class="section figure grid">
+      <div class="frame" style="aspect-ratio: 1840 / 737"><img src="../assets/img/archive/solo-9-testing.webp" width="1840" height="737" loading="lazy" decoding="async" alt="Photos from testing at a football pitch at night: a phone on a tripod streaming the match."></div>
+      <figcaption>Testing the proof of concept at a real match.</figcaption>
+    </figure>
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">03</span><br>What I learned</p>
+      <div class="prose c-text"><p>A prototype couldn't show the tripod. Most tripods are made for right-handed people. Operators steer the phone with the right hand and tap with the left, covering the screen while they mark a highlight. The next build let them choose which side the controls sit on.</p></div>
+    </section>
+
+    <nav class="project-nav section grid row-heavy" aria-label="More archive projects">
+      <a class="pn pn-prev h-md" href="mycujoo-broadcast-app.html" rel="prev"><span class="arrow arrow-back" aria-hidden="true"></span>Previous<span class="visually-hidden"> project: Making content findable again</span></a>
+      <a class="pn pn-next h-md" href="playbook-mailer.html" rel="next">Next<span class="visually-hidden"> project: Giving teams their independence back</span><span class="arrow" aria-hidden="true"></span></a>
+    </nav>
+  </main>
+
+  <footer class="container site-footer" id="contact">
+    <div class="grid footer-row row-heavy">
+      <a class="copy footer-email" href="mailto:agata.ageieva@gmail.com">agata.ageieva@gmail.com</a>
+      <span class="toggle"><button class="switch grid-toggle" type="button" role="switch" aria-checked="false"><span class="switch-label">Show grid</span><span class="switch-track" aria-hidden="true"></span></button><button class="switch theme-toggle" type="button" role="switch" aria-checked="false"><span class="switch-label">Dark mode</span><span class="switch-track" aria-hidden="true"></span></button></span>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/agata-ageieva/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="../assets/docs/agata-ageieva-resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

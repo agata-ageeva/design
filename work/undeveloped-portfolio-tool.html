@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio management tool · Agata Ageieva</title>
+  <meta name="description" content="Archive case study: redesigning the domain portfolio tool at Undeveloped so big sellers could manage large numbers of domains.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(!t)try{t=sessionStorage.getItem("theme")}catch(e){}if(t==="dark"||t==="light")document.documentElement.setAttribute("data-site-theme",t)})()</script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="grid-overlay" aria-hidden="true"><div class="container grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+
+  <header class="container grid masthead">
+    <a class="name" href="../index.html">Agata Ageieva</a>
+    <p class="role label muted">Senior Product Designer</p>
+    <nav aria-label="Main">
+      <ul class="menu">
+        <li><a href="../index.html#archive" aria-current="page">Work</a></li>
+        <li><a href="../about.html">About me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section class="cs-head grid row-heavy">
+      <p class="label c-label">January 2016<br>Archive</p>
+      <h1 class="h-xl c-head">Portfolio management tool</h1>
+      <p class="summary c-text">Undeveloped, now Dan.com, is a marketplace for buying and selling domain names. Sales grew almost in step with the size of the inventory, but there was no automated way for sellers to add domains. I redesigned the portfolio tool so sellers could manage large numbers of them.</p>
+    </section>
+
+    <div class="frame cover" style="aspect-ratio: 1768 / 1027"><img src="../assets/img/archive/dom-1-cover.webp" width="1768" height="1027" decoding="async" alt="The redesigned portfolio tool: a table of domains with prices, a domain importer, and an upload dialog."></div>
+
+    <dl class="facts grid row"><div><dt>Discipline</dt><dd>UX/UI design</dd></div><div><dt>Company</dt><dd>Undeveloped</dd></div><div><dt>Year</dt><dd>2016</dd></div><div><dt>Platform</dt><dd>Web</dd></div></dl>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">01</span><br>Problem</p>
+      <div class="prose c-text"><p>The company had focused on buyers. To grow, it needed more domains on the platform, and that meant caring about sellers.</p></div>
+    </section>
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">02</span><br>What I did</p>
+      <div class="prose c-text"><p>I started with support, looking at the most common requests and contacting the most active sellers. With my PM I interviewed them, and I read dozens of threads on domain forums to check that the loudest sellers spoke for everyone.</p><p>Big sellers managed all their domains and prices in Excel, which we hadn't expected. And most sellers try a new platform with a few domains first, so the tool had to work for bulk uploads and small ones. Sketches became wireframes and prototypes, refined after rounds of remote usability testing.</p><p>During development we found that processing a big file could take 5 to 30 minutes. So I designed the wait. A message explains what happens next, then an email and an in-app message link to the results.</p></div>
+    </section>
+    <figure class="section figure grid">
+      <div class="frame" style="aspect-ratio: 1840 / 827"><img src="../assets/img/archive/dom-3-bigseller.webp" width="1840" height="827" loading="lazy" decoding="async" alt="Two flows compared: a big seller uploads a CSV file and gets a report by email minutes later; a small seller types in a few domains."></div>
+      <figcaption>Big sellers and small sellers needed different flows.</figcaption>
+    </figure>
+    <figure class="section figure grid">
+      <div class="frame" style="aspect-ratio: 1840 / 473"><img src="../assets/img/archive/dom-6-expectation.webp" width="1840" height="473" loading="lazy" decoding="async" alt="Sketch: expectation, a file upload that appears on the platform instantly; reality, a server queue that can take 5 to 30 minutes."></div>
+      <figcaption>Expectation and reality of a big upload.</figcaption>
+    </figure>
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">03</span><br>Impact</p>
+      <div class="prose c-text"><p>After launch, the platform's inventory doubled. Engineers and success managers stopped spending their time uploading domains by hand.</p></div>
+    </section>
+    <figure class="section figure grid">
+      <div class="frame" style="aspect-ratio: 1840 / 536"><img src="../assets/img/archive/dom-7-uiflow.webp" width="1840" height="536" loading="lazy" decoding="async" alt="The upload flow: upload dialog, a message explaining the wait, an email with a link, and the results page."></div>
+      <figcaption>Designing the wait.</figcaption>
+    </figure>
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">04</span><br>What I learned</p>
+      <div class="prose c-text"><p>We spent 2.5 months polishing every pixel instead of shipping in steps and getting feedback sooner. I also learned to check what we thought we knew. Our customer journeys didn't match reality, and we ignored our users for too long.</p></div>
+    </section>
+
+    <nav class="project-nav section grid row-heavy" aria-label="More archive projects">
+      <a class="pn pn-prev h-md" href="mycujoo-solo-operator.html" rel="prev"><span class="arrow arrow-back" aria-hidden="true"></span>Previous<span class="visually-hidden"> project: Solo Operator</span></a>
+      <a class="pn pn-next h-md" href="playbook-mailer.html" rel="next">Next<span class="visually-hidden"> project: Giving teams their independence back</span><span class="arrow" aria-hidden="true"></span></a>
+    </nav>
+  </main>
+
+  <footer class="container site-footer" id="contact">
+    <div class="grid footer-row row-heavy">
+      <a class="copy footer-email" href="mailto:agata.ageieva@gmail.com">agata.ageieva@gmail.com</a>
+      <span class="toggle"><button class="switch grid-toggle" type="button" role="switch" aria-checked="false"><span class="switch-label">Show grid</span><span class="switch-track" aria-hidden="true"></span></button><button class="switch theme-toggle" type="button" role="switch" aria-checked="false"><span class="switch-label">Dark mode</span><span class="switch-track" aria-hidden="true"></span></button></span>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/agata-ageieva/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="../assets/docs/agata-ageieva-resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

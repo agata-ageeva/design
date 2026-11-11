@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CrowdBuilding Home Listings · Agata Ageieva</title>
+  <meta name="description" content="Case study: moving CrowdBuilding from initiative stories to listings of available homes, and where the model breaks for housing cooperatives.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(!t)try{t=sessionStorage.getItem("theme")}catch(e){}if(t==="dark"||t==="light")document.documentElement.setAttribute("data-site-theme",t)})()</script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="grid-overlay" aria-hidden="true"><div class="container grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+
+  <header class="container grid masthead">
+    <a class="name" href="../index.html">Agata Ageieva</a>
+    <p class="role label muted">Senior Product Designer</p>
+    <nav aria-label="Main">
+      <ul class="menu">
+        <li><a href="../index.html#work" aria-current="page">Work</a></li>
+        <li><a href="../about.html">About me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section class="cs-head grid row-heavy">
+      <p class="label c-label">CrowdBuilding<br>2026</p>
+      <h1 class="h-xl c-head">Listing homes instead of initiatives</h1>
+      <p class="summary c-text">CrowdBuilding presented housing initiatives through renders and long texts about their values. Research showed that home seekers decide on size, price and move-in date. I shifted discovery from initiatives to available homes, and mapped where the model breaks, which is housing cooperatives.</p>
+    </section>
+
+    <!-- Loom walkthrough: paste the Loom share link into data-loom to show this block -->
+    <section class="walkthrough grid" data-loom="" data-title="Video walkthrough of this case study" hidden>
+      <div class="walk-bar c-text">
+        <button type="button" class="walk-btn" aria-expanded="false"><span class="walk-play" aria-hidden="true"></span><span class="walk-label">Watch the 90-second walkthrough</span></button>
+        <a class="walk-link small" href="#" target="_blank" rel="noopener">Open in Loom</a>
+      </div>
+      <div class="walk-player c-full" hidden></div>
+    </section>
+
+    <figure class="cover cover-video">
+      <video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="../assets/video/home-listings-poster.jpg" aria-describedby="cover-video-desc">
+        <source src="../assets/video/home-listings.mp4" type="video/mp4">
+      </video>
+      <figcaption class="visually-hidden" id="cover-video-desc">Screen recording of the home listings. Available homes show location, price range, number of homes, delivery quarter and size. The list is filtered by delivery year, square metres and bedrooms, then shown on a map of the Netherlands.</figcaption>
+      <button type="button" class="video-toggle" aria-pressed="false">Pause</button>
+    </figure>
+
+    <dl class="facts grid row"><div><dt>Role</dt><dd>Senior Product Designer, sole designer</dd></div><div><dt>Company</dt><dd>CrowdBuilding</dd></div><div><dt>Scope</dt><dd>Discovery, home listings</dd></div><div><dt>Platform</dt><dd>Web</dd></div></dl>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">01</span><br>Impact</p>
+      <dl class="metrics">
+        <div class="metric"><dt>Listings in the first week</dt><dd>8</dd></div>
+        <div class="metric"><dt>Increase in returning users</dt><dd>+16%</dd></div>
+        <div class="metric"><dt>Increase in active users</dt><dd>+5%</dd></div>
+      </dl>
+      <div class="prose c-text" style="margin-top: calc(var(--u) * 4)">
+        <ul>
+          <li><strong>Homes became visible.</strong> Discovery moved from a list of initiatives to a listing of available homes.</li>
+          <li><strong>A new revenue stream.</strong> Initiatives can pay to list and promote their homes, through tiered promotion packages.</li>
+          <li><strong>An open problem, mapped.</strong> A proposed direction for housing cooperatives, already 35–40% of listings, where the model doesn't fit.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">02</span><br>Context</p>
+      <div class="prose c-text"><p>CrowdBuilding was built to show housing initiatives, each with a few renders and a lot of text about who the group is and what they value. Discovery was an index of those initiatives.</p><p>The idea was that a strong story would attract the right home seekers. A home seeker would read about the group, feel connected, and get in touch.</p><p>That was partly true, but to decide, people needed details such as the price range or the units an initiative plans to build.</p></div>
+    </section>
+
+    <figure class="section figure grid">
+      <div class="frame play-once" data-name="before and after">
+        <video class="cover-media" muted playsinline preload="metadata" poster="../assets/video/before-after-poster.jpg" aria-describedby="before-after-desc">
+          <source src="../assets/video/before-after.mp4" type="video/mp4">
+        </video>
+        <button type="button" class="video-toggle">Play</button>
+      </div>
+      <figcaption id="before-after-desc">Before and after: the old index of initiatives, told through renders and values, next to the new listing of available homes with price, size and delivery.</figcaption>
+    </figure>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">03</span><br>Problem</p>
+      <h2 class="h-lg c-head-narrow sec-head">How big, how much, and when?</h2>
+      <div class="prose c-text"><p>Home seekers decide on how big the home is, what it costs and when they can move in. On CrowdBuilding, that information was hard to find or missing. A story creates interest, but it doesn't answer the questions that decide whether someone takes the next step.</p><p>Showing those facts came with its own challenge. These homes are still being developed. Prices are estimates, and delivery dates can be years away and can slip. The design had to show those numbers without promising more certainty than anyone had.</p></div>
+    </section>
+
+    <figure class="section figure grid">
+      <div class="frame"><img src="../assets/img/home-listings-object-model.webp" width="2000" height="999" loading="lazy" decoding="async" alt="Object model diagram. Before: a single box, initiative. After: an initiative branches into two housing units; the first housing unit branches into two homes, the second into one home."></div>
+      <figcaption>The object model. Before, an initiative was the only thing on the platform. Now an initiative holds housing units, and each housing unit holds one or more homes, each with its own size and price. The delivery date mostly stays at the initiative level.</figcaption>
+    </figure>
+
+    <figure class="section figure grid">
+      <div class="frame"><img src="../assets/img/home-listings-card-anatomy.webp" width="2000" height="999" loading="lazy" decoding="async" alt="Left, the old initiative card: a 'looking for members' badge, a render, location, financing phase and name. Right, the revised initiative card, annotated: a '5 homes available' badge for the concrete offering, a photo of the building group next to the render, location and name, the price range, the number of homes as the size of the project, the delivery date, the space range in square metres, and avatars of people interested as the social aspect."></div>
+      <figcaption>The revised card keeps the initiative but leads with how many homes are available, the price and space range, the delivery date and the size of the project. A photo of the building group and the people interested keep the human side visible.</figcaption>
+    </figure>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">04</span><br>Assumptions</p>
+      <h2 class="h-lg c-head-narrow sec-head">What we got wrong</h2>
+      <ol class="rows rows-assumptions">
+        <li><h3>We assumed a story about the initiative was enough to attract home seekers.</h3><div><p><span class="rows-key">What happened</span> Home seekers decide on size, price and move-in date. The story created interest, but the facts drove the decision.</p><p><span class="rows-key">What changed</span> Homes became visible, and discovery shifted from an index of initiatives to a listing of available homes, closer to a real estate site.</p></div></li>
+        <li><h3>We assumed every project would have homes to list.</h3><div><p><span class="rows-key">What happened</span> That holds for CPO projects, where people buy a specific home. It breaks for housing cooperatives, where there is no fixed home or price to list until late in the process.</p><p><span class="rows-key">What changed</span> It became the open problem at the end of this case study, about where the model breaks.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">05</span><br>Decisions</p>
+      <h2 class="h-lg c-head-narrow sec-head">The decisions and their trade-offs</h2>
+      <ol class="rows rows-decisions">
+        <li><h3>List homes, not only initiatives</h3><div><p>Each available home shows its size, price and expected delivery, and discovery became a listing of homes, closer to a real estate site.</p><p class="tradeoff">Trade-off: the initiative's story moves out of the spotlight, and the platform starts to look more like a property portal than a community.</p></div></li>
+        <li><h3>Be honest about uncertainty</h3><div><p>Homes still in development carry estimated prices and delivery dates that can be years away and can slip. Listings say so instead of hiding it.</p><p class="tradeoff">Trade-off: honest estimates look less certain than a polished property listing, which can make a home feel less real.</p></div></li>
+        <li><h3>No unit creation flow, yet</h3><div><p>Initiatives can't add their own homes. We wanted to stay lean, and with low volume expected at first, our team adds the listings itself.</p><p class="tradeoff">Trade-off: every new listing depends on our team's time, and it won't scale as the number of listings grows.</p></div></li>
+      </ol>
+    </section>
+
+    <figure class="section figure grid">
+      <div class="frame loop-video">
+        <video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="../assets/video/initiative-unit-poster.jpg" aria-describedby="initiative-unit-desc">
+          <source src="../assets/video/initiative-unit.mp4" type="video/mp4">
+        </video>
+        <button type="button" class="video-toggle">Pause</button>
+      </div>
+      <figcaption id="initiative-unit-desc">From listing to home. An initiative's page lists its housing types under Units, each with a price range and the number of homes available. Each housing type opens its own page with the floor plan, price, size, bedrooms and delivery, and a button to respond.</figcaption>
+    </figure>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">06</span><br>Solution</p>
+      <div class="prose c-text"><p>Each home now has its own listing, with the facts home seekers decide on. Home seekers browse available homes instead of reading through initiatives one by one.</p><p>Admins also needed somewhere for applications to land. I designed a dashboard where they can see and compare applicants, review each application, send a message, remove someone from the list, or make them a member of the initiative.</p><p>Accepting or rejecting someone for a home happens elsewhere, so the dashboard does one job. Admins see who applied and get in touch with the people they like.</p></div>
+    </section>
+
+    <figure class="section figure grid">
+      <div class="frame loop-video">
+        <video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="../assets/video/applicant-dashboard-poster.jpg" aria-describedby="applicant-dashboard-desc">
+          <source src="../assets/video/applicant-dashboard.mp4" type="video/mp4">
+        </video>
+        <button type="button" class="video-toggle">Pause</button>
+      </div>
+      <figcaption id="applicant-dashboard-desc">The admin side. Applications land in their own tab, next to members, followers and the interest list, with new ones marked. From the list, an admin can open an application or get in touch straight away, here inviting an applicant to a viewing.</figcaption>
+    </figure>
+
+    <section class="section grid row">
+      <p class="label c-label"><span class="index">07</span><br>Open problem</p>
+      <h2 class="h-lg c-head-narrow sec-head">Where the model breaks</h2>
+      <div class="compare">
+        <div class="compare-col is-fits">
+          <p class="h-md">You buy a specific home</p>
+          <ul class="small"><li>A known unit, size and price</li><li>Estimated, but listable from day one</li></ul>
+        </div>
+        <div class="compare-col is-after">
+          <p class="h-md">You join, then members decide who lives where</p>
+          <ul class="small"><li>Members usually rent from the cooperative</li><li>Who gets which home is decided late, by the members themselves</li><li>No fixed home or price to list</li></ul>
+        </div>
+      </div>
+      <div class="prose c-text compare-text"><p>Listing homes works for CPO, where a group commissions homes together and each member buys a specific one. It doesn't work for a <em>wooncoöperatie</em>, a housing cooperative. There, members usually rent from the cooperative, and the members themselves decide late in the process who gets which home. There's no fixed unit or price to list. This problem isn't solved yet.</p><p>My proposed direction is to list the place in the cooperative instead of a home, and describe the pool honestly.</p></div>
+      <ol class="rows">
+        <li><h3>Show the housing mix, personally</h3><div><p>For example 2 three-bed, 10 two-bed and 8 one-bed homes, and what that means for you: "2 of 20 homes would suit your household".</p></div></li>
+        <li><h3>Show cost as a range</h3><div><p>A range of monthly costs plus any member contribution, marked as an estimate.</p></div></li>
+        <li><h3>Make allocation rules visible</h3><div><p>Every listing says whether homes go by merit, need, lottery or seniority.</p></div></li>
+        <li><h3>One search, two card types</h3><div><p>Shared filters across all projects, with separate cards for CPO homes and cooperative places.</p></div></li>
+        <li><h3>Start with research</h3><div><p>Find the minimum common data model across cooperatives before designing the listing itself.</p></div></li>
+      </ol>
+      <figure class="mix c-wide" aria-label="Concept: housing mix for a cooperative with 20 homes, 2 of which suit this household">
+        <p class="rows-key">Concept · not shipped</p>
+        <div class="mix-card">
+          <p class="mix-title">De Groene Hof, wooncoöperatie in Utrecht</p>
+          <div class="mix-bar" aria-hidden="true"><span class="mix-unit is-three is-fit"></span><span class="mix-unit is-three is-fit"></span><span class="mix-unit is-two"></span><span class="mix-unit is-two"></span><span class="mix-unit is-two"></span><span class="mix-unit is-two"></span><span class="mix-unit is-two"></span><span class="mix-unit is-two"></span><span class="mix-unit is-two"></span><span class="mix-unit is-two"></span><span class="mix-unit is-two"></span><span class="mix-unit is-two"></span><span class="mix-unit is-one"></span><span class="mix-unit is-one"></span><span class="mix-unit is-one"></span><span class="mix-unit is-one"></span><span class="mix-unit is-one"></span><span class="mix-unit is-one"></span><span class="mix-unit is-one"></span><span class="mix-unit is-one"></span></div>
+          <p class="mix-legend"><span><i class="is-three"></i>2 three-bed</span><span><i class="is-two"></i>10 two-bed</span><span><i class="is-one"></i>8 one-bed</span></p>
+          <p class="mix-fit"><strong>2 of 20 homes would suit your household</strong></p>
+          <dl class="mix-facts">
+            <div><dt>Monthly cost</dt><dd>€850–1,150 <span>estimate</span></dd></div>
+            <div><dt>Member contribution</dt><dd>€5,000 <span>estimate</span></dd></div>
+            <div><dt>Who gets which home</dt><dd>Decided by members, by need</dd></div>
+          </dl>
+        </div>
+        <figcaption>A cooperative listing that describes the pool honestly, with an invented example. The household's fit is personal, the costs are ranges, and the allocation rule is always visible.</figcaption>
+      </figure>
+      <div class="prose c-text compare-text"><!-- Check and source these policy figures before publishing --><p><strong>Why it matters.</strong> Cooperatives are already 35–40% of listings. Policy in 2026 points to more of them, including a cooperative housing bill passed by the Tweede Kamer and a €60.6M fund for cooperative housing. Solving it is the next step for CrowdBuilding.</p></div>
+    </section>
+
+    <nav class="project-nav section grid row-heavy" aria-label="More projects">
+      <a class="pn pn-prev h-md" href="crowdbuilding-bulletin-board.html" rel="prev"><span class="arrow arrow-back" aria-hidden="true"></span>Previous<span class="visually-hidden"> project: A noticeboard where everyone can post</span></a>
+      <a class="pn pn-next h-md" href="crowdbuilding-messaging.html" rel="next">Next<span class="visually-hidden"> project: Broadcast messaging for initiative admins</span><span class="arrow" aria-hidden="true"></span></a>
+    </nav>
+  </main>
+
+  <footer class="container site-footer" id="contact">
+    <div class="grid footer-row row-heavy">
+      <a class="copy footer-email" href="mailto:agata.ageieva@gmail.com">agata.ageieva@gmail.com</a>
+      <span class="toggle"><button class="switch grid-toggle" type="button" role="switch" aria-checked="false"><span class="switch-label">Show grid</span><span class="switch-track" aria-hidden="true"></span></button><button class="switch theme-toggle" type="button" role="switch" aria-checked="false"><span class="switch-label">Dark mode</span><span class="switch-track" aria-hidden="true"></span></button></span>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/agata-ageieva/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="../assets/docs/agata-ageieva-resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>
