@@ -55,6 +55,18 @@
   --grid-edge: rgba(255, 120, 90, 0.35);
   color-scheme: dark;
 }
+/* The visitor's own choice from the footer switch. It uses its own attribute, so it
+   never competes with a host page that sets data-theme, and it comes last so it wins. */
+:root[data-site-theme="light"] {
+  --bg: #e8e5e1; --paper: #ffffff; --ink: #1d1d1b; --muted: #5f5c57; --rule: #1d1d1b;
+  --dot: rgba(29, 29, 27, 0.10); --grid-col: rgba(214, 64, 40, 0.09); --grid-edge: rgba(214, 64, 40, 0.35);
+  color-scheme: light;
+}
+:root[data-site-theme="dark"] {
+  --bg: #1a1918; --paper: #282725; --ink: #eceae6; --muted: #a39f98; --rule: #eceae6;
+  --dot: rgba(236, 234, 230, 0.08); --grid-col: rgba(255, 120, 90, 0.08); --grid-edge: rgba(255, 120, 90, 0.35);
+  color-scheme: dark;
+}
 
 @media (max-width: 760px) {
   :root { --cols: 4; --gap: 16px; --display-size: clamp(34px, 12vw, 64px); }
