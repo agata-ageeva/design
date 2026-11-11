@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Managing many subscriptions in one place — Agata Ageieva</title>
-  <meta name="description" content="Archive case study: subscription management for Playbook’s move to a multi-subscription model.">
+  <title>Managing many subscriptions in one place · Agata Ageieva</title>
+  <meta name="description" content="Archive case study: subscription management for Playbook's move to a multi-subscription model.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -31,7 +31,7 @@
     <section class="cs-head grid row-heavy">
       <p class="label c-label">September 2023<br>Archive</p>
       <h1 class="h-xl c-head">Managing many subscriptions in one place</h1>
-      <p class="summary c-text">To support growth, Playbook moved from one subscription to many: one for each creator. I led the design of that move, from a single plan to managing several in the app.</p>
+      <p class="summary c-text">To support growth, Playbook moved from one subscription to one for each creator. I led the design of that move, from a single plan to managing several in the app.</p>
     </section>
 
     <div class="frame cover" style="aspect-ratio: 2400 / 1552"><img src="../assets/img/archive/subs-1-compare.webp" width="2400" height="1552" decoding="async" alt="Before and after: the old Stripe web page for one subscription, and the new in-app list of active and inactive subscriptions per creator."></div>
@@ -40,15 +40,15 @@
 
     <section class="section grid row">
       <p class="label c-label"><span class="index">01</span><br>Problem</p>
-      <div class="prose c-text"><p>Playbook used to be a single subscription: one flat fee for all content and all creators. Subscriptions were managed in Stripe, so people had to leave the app for an outdated web page to make any change.</p><p>Paying per creator added complexity on both sides. Creators wanted different things: discounts, annual-only plans, or monthly plans only. Members had new questions: how to manage several subscriptions, pay with different methods, or change one plan without touching the others.</p><p>Our goals: a smooth subscription management experience, easy handling of many subscriptions, and fewer cancellations.</p></div>
+      <div class="prose c-text"><p>Playbook used to have a single subscription, one flat fee for all content and all creators. Stripe handled subscriptions, so people had to leave the app for an outdated web page to make any change.</p><p>Paying per creator added complexity on both sides. Creators wanted different things: discounts, annual-only plans, or monthly plans only. Members had new questions: how to manage several subscriptions, pay with different methods, or change one plan without touching the others.</p><p>We wanted subscriptions to be easy to manage, even many at once, and we wanted fewer cancellations.</p></div>
     </section>
     <section class="section grid row">
       <p class="label c-label"><span class="index">02</span><br>What I did</p>
-      <div class="prose c-text"><p>With the creator economy growing, I assumed others had solved this before. I did competitor research and worked with my team and PM on how other apps handled it. It quickly became clear that to give creators the flexibility they needed, the UI had to be modular and easy to scale. We tested a few approaches before landing on the final one.</p><p>I mapped every action available on each page, so navigation stayed simple and an upgrade was reachable from every page where it made sense. Then I designed the subscription card to hold every variation while staying clear.</p></div>
+      <div class="prose c-text"><p>With the creator economy growing, I assumed others had solved this before. I did competitor research and worked with my team and PM on how other apps handled it. To give creators the flexibility they needed, the UI had to be modular and easy to extend. We tested a few approaches before landing on the final one.</p><p>I mapped every action available on each page, so navigation stayed simple and an upgrade was reachable from every page where it made sense. Then I designed the subscription card to hold every variation while staying clear.</p></div>
     </section>
     <figure class="section figure grid">
       <div class="frame" style="aspect-ratio: 1728 / 1118"><img src="../assets/img/archive/subs-2-links.webp" width="1728" height="1118" loading="lazy" decoding="async" alt="A map of page links: from My subs to subscription details, upgrade, cancel and billing modals, and back."></div>
-      <figcaption>The link map: every action, on every page.</figcaption>
+      <figcaption>The link map, with every action on every page.</figcaption>
     </figure>
     <figure class="section figure grid">
       <div class="frame" style="aspect-ratio: 1728 / 1118"><img src="../assets/img/archive/subs-3-card.webp" width="1728" height="1118" loading="lazy" decoding="async" alt="The creator card, annotated: creator photo for quick recognition, terms and price, a one-tap upgrade to annual, and a door to the manage page. Next to it, variations for discounts, cancelled plans, billing errors and monthly-only creators."></div>
@@ -56,7 +56,7 @@
     </figure>
     <section class="section grid row">
       <p class="label c-label"><span class="index">03</span><br>Solution</p>
-      <div class="prose c-text"><p>A scalable, modular interface that helps creators reach their business goals and shows members clearly what they pay for and when. We built it in React Native: a web page still opens, but so smoothly inside the app that people barely notice.</p></div>
+      <div class="prose c-text"><p>A modular interface that supports creators' pricing choices and shows members what they pay for and when. We built it in React Native. A web page still opens, but inside the app, and people barely notice.</p></div>
     </section>
     <figure class="section figure grid">
       <div class="frame" style="aspect-ratio: 2400 / 1552"><img src="../assets/img/archive/subs-4-screens.webp" width="2400" height="1552" loading="lazy" decoding="async" alt="Final screens: subscriptions overview, a single subscription with an annual plan offer and payment method, and the upgrade-to-annual modal."></div>
@@ -64,7 +64,7 @@
     </figure>
     <section class="section grid row">
       <p class="label c-label"><span class="index">04</span><br>Impact</p>
-      <div class="prose c-text"><p>Members and creators both responded well to the new page. Cancellations went down: the cancel button sits below the fold, and people thinking about cancelling are offered a discount. The design balanced creators’ different needs while staying clean and simple for members.</p></div>
+      <div class="prose c-text"><p>Members and creators both responded well to the new page. Cancellations went down. The cancel button sits below the fold, and people who start to cancel get a discount offer. The design covers creators' different needs and stays simple for members.</p></div>
     </section>
 
     <nav class="project-nav section grid row-heavy" aria-label="More archive projects">
