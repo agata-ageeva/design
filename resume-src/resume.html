@@ -7,7 +7,7 @@
 <style>
   @page { size: A4; margin: 14mm 22mm 12mm; }
   :root {
-    --ink: #1d1d1b; --muted: #5f5c57; --rule: #1d1d1b;
+    --ink: #1d1d1b; --muted: #5f5c57; --rule: #1d1d1b; --hair: #8d8a85;
     --display: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
     --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
   }
@@ -38,7 +38,7 @@
 
   /* Impact: three numbers per project, like the case-study metrics */
   .impact { grid-column: 3 / -1; display: grid; gap: 0; }
-  .impact-row { display: grid; grid-template-columns: 3fr 7fr; column-gap: 4mm; padding: 2.4mm 0; border-top: .5pt solid var(--rule); break-inside: avoid; }
+  .impact-row { display: grid; grid-template-columns: 3fr 7fr; column-gap: 4mm; padding: 2.4mm 0; border-top: .75pt solid var(--hair); break-inside: avoid; }
   .impact-row:first-child { border-top: 0; padding-top: 0; }
   .impact-row h3 { font-family: var(--display); font-weight: 900; font-size: 9.5pt; line-height: 1.2; margin: 0; }
   .impact-row h3 span { display: block; font-family: var(--mono); font-weight: 400; font-size: 7.4pt; color: var(--muted); margin-top: .6mm; letter-spacing: .02em; }
@@ -49,7 +49,7 @@
 
   /* Experience: dates and place on the left, role and text on the right */
   .jobs { grid-column: 1 / -1; list-style: none; margin: 2mm 0 0; padding: 0; }
-  .job { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 4mm; padding: 1.8mm 0; border-top: .5pt solid var(--rule); break-inside: avoid; }
+  .job { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 4mm; padding: 1.8mm 0; border-top: .75pt solid var(--hair); break-inside: avoid; }
   .job:first-child { border-top: 0; padding-top: 0; }
   .when { grid-column: 1 / 4; font-weight: 500; }
   .what { grid-column: 4 / -1; }
