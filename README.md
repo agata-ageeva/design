@@ -79,4 +79,17 @@ Every case study follows the same outline:
 
 ## Deploy on GitHub Pages
 
-Settings → Pages → Source: *Deploy from a branch* → pick the branch and `/ (root)`. The site will be live at `https://<user>.github.io/<repo>/`.
+The workflow in `.github/workflows/pages.yml` publishes the site on every push to `main`.
+
+1. One time: Settings → Pages → Build and deployment → Source: *GitHub Actions*.
+2. Push to `main` (or run the workflow by hand from the Actions tab). The site goes live at `https://agata-ageeva.github.io/design/`.
+
+### Custom domain
+
+1. At your domain registrar, add DNS records:
+   - for `www.example.com`: a `CNAME` record pointing to `agata-ageeva.github.io`;
+   - for the bare `example.com`: four `A` records pointing to `185.199.108.153`, `185.199.109.153`, `185.199.110.153` and `185.199.111.153`.
+2. Settings → Pages → Custom domain: enter the domain and save. GitHub checks the DNS.
+3. Once the check passes, tick *Enforce HTTPS*.
+
+With the Actions workflow, the custom domain lives in the Pages settings, so the repo needs no `CNAME` file.
