@@ -26,7 +26,7 @@ All three case studies are real CrowdBuilding projects. The About page (career h
 
 Checklist:
 
-- [ ] LinkedIn URL in every page's footer. Résumé: assets/docs/agata-ageieva-resume.pdf, printed from resume-src/resume.html
+- Résumé: assets/docs/agata-ageieva-resume.pdf, printed from resume-src/resume.html
 - [ ] Intro line on `index.html`
 - [ ] Project cards on `index.html`: date, title and summary
 - [ ] Each case study: facts, metrics, and every section
